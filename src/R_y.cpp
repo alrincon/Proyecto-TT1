@@ -31,16 +31,16 @@ Matrix R_y(double angle){
     double S = sin(angle);
 
     sol(1,1) = C;
-    sol(1,2) = S;
-    sol(1,3) = 0.0;
+    sol(1,2) = 0.0;
+    sol(1,3) = -1.0*S;
 
-    sol(2,1) = -1.0*S;
-    sol(2,2) = C;
+    sol(2,1) = 0.0;
+    sol(2,2) = 1.0;
     sol(2,3) = 0.0;
 
-    sol(3,1) = 0.0;
+    sol(3,1) = S;
     sol(3,2) = 0.0;
-    sol(3,3) = 1.0;
+    sol(3,3) = C;
 
     return sol;
 }
