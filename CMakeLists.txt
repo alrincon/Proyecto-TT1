@@ -5,4 +5,4 @@ project(Proyecto)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(Proyecto main.cpp include/tests.cpp include/Matrix.cpp include/Matrix.h)
+add_executable(Proyecto main.cpp src/tests.cpp src/Matrix.cpp include/Matrix.h)

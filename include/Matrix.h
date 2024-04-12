@@ -1,36 +1,30 @@
-#ifndef MATRIX_H
-#define MATRIX_H
+#ifndef _MATRIX_
+#define _MATRIX_
 
-#include <vector>
-#include <stdexcept>
-
-class Matrix {
-private:
-    std::vector<std::vector<double>> datos;
-    int filas;
-    int columnas;
-
+class Matrix
+{
 public:
-    // Constructor
-    Matrix(int filas, int columnas);
+    Matrix(int fil, int col);
+    Matrix(int fil, int col, double v[], int n);
+    Matrix(const Matrix& m);
+    ~Matrix();
 
-    // Métodos para obtener el número de filas y columnas
-    int numColumnas() const;
-    int numFilas() const;
+    Matrix& operator=(const Matrix& matrix2);
+    Matrix  operator+(const Matrix& matrix2);
+    Matrix  operator-(const Matrix& matrix2);
+    Matrix  operator*(const Matrix& matrix2);
+    double& operator()(const int i, const int j) const;
 
-    // Métodos para establecer y obtener valores
-    void set(int row, int column, double value);
-    double get(int row, int column) const;
+    void print();
 
-    // Operadores aritméticos
-    Matrix operator+(const Matrix& other) const;
-    Matrix operator-(const Matrix& other) const;
-    Matrix operator*(double scalar) const;
-    Matrix transpose() const;
-    Matrix operator*(const Matrix& other) const;
+private:
+    void initMatrix();
 
-    // Método para resolver sistemas de ecuaciones lineales
-    std::vector<double> solve(std::vector<double> b) const;
+private:
+    int fil;
+    int col;
+    double **matrix;
 };
 
-#endif // MATRIX_H
+#endif
+
