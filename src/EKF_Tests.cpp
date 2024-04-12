@@ -39,3 +39,7 @@ int R_z_01(){
 
     _assert(fabs(sol(1,1)) -0.416146836547142 < TOL_ && fabs(sol(1,2)) - 0.909297426825682 < TOL_ && fabs(sol(1,3)) < TOL_);
 }
+
+int main(){
+    _verify(R_z_01);
+}

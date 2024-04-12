@@ -65,9 +65,3 @@ void test_all() {
     test_arithmetic_operations();
     test_bounds_checking();
 }
-
-int main() {
-    test_all();
-    cout << "All tests passed successfully.\n";
-    return 0;
-}
