@@ -78,13 +78,13 @@ int AzElPa_01() {
 }
 
 
-
 int all_tests(){
 
     _verify(R_x_01);
     _verify(R_y_01);
     _verify(R_z_01);
     _verify(AzElPa_01);
+
 
     return 0;
 }
