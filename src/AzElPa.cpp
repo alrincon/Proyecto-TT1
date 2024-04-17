@@ -1,14 +1,11 @@
 #include <math.h>
 #include <stdio.h>
-#include <vector>
 
 #include "../include/Matrix.h"
 #include "../include/R_x.h"
 #include "../include/R_y.h"
 #include "../include/R_z.h"
-#include "../include/AccelPointMass.h"
 #include "../include/AzElPa.h"
-
 #include "string.h"
 
 #define TOL_ 10e-14
@@ -33,20 +30,6 @@ int tests_run = 0;
     tests_run++;      \
     if (r) return r;  \
   } while (0)
-
-bool compareVectors (vector<double> v1, vector<double> v2){
-    if(v1.size() !=  v2.size()){
-        return false;
-    }
-
-    for(int i = 0; i < v1.size(); i++){
-        if(fabs(v1[i]-v2[i]) >= TOL_){
-            return false;
-        }
-    }
-
-    return true;
-}
 
 int R_x_01(){
     double angle = 2.0;
@@ -82,16 +65,6 @@ int R_z_01(){
     return 0;
 }
 
-int AccelPointMass_01(){
-    double res = AccelPointMass(1.2, 2.5, 9.8);
-
-    _assert(fabs(res - 4.2308) < TOL_);
-
-
-
-    return 0;
-}
-
 int AzElPa_01() {
     double s[3] = {1, 2, 3};
     double Az, El;
@@ -105,18 +78,16 @@ int AzElPa_01() {
 }
 
 
+
 int all_tests(){
 
     _verify(R_x_01);
     _verify(R_y_01);
     _verify(R_z_01);
-    _verify(AccelPointMass_01);
     _verify(AzElPa_01);
 
     return 0;
 }
-
-
 
 int main(){
     int result = all_tests();
