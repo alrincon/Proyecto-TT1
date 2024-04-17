@@ -1,0 +1,4 @@
+ToolSet: 5.2 (local)@C:\URApps\CLion_2022_2_2\MinGW
+Options: 
+
+Options:
