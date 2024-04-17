@@ -32,6 +32,20 @@ int tests_run = 0;
     if (r) return r;  \
   } while (0)
 
+bool compareVectors (vector<double> v1, vector<double> v2){
+    if(v1.size() !=  v2.size()){
+        return false;
+    }
+
+    for(int i = 0; i < v1.size(); i++){
+        if(fabs(v1[i]-v2[i]) >= TOL_){
+            return false;
+        }
+    }
+
+    return true;
+}
+
 int R_x_01(){
     double angle = 2.0;
     Matrix sol(3,3);
@@ -71,6 +85,8 @@ int AccelPointMass_01(){
 
     _assert(fabs(res - 4.2308) < TOL_);
 
+
+
     return 0;
 }
 
@@ -87,19 +103,7 @@ int all_tests(){
     return 0;
 }
 
-bool compareVectors (vector<double> v1, vector<double> v2){
-    if(v1.size() !=  v2.size()){
-        return false;
-    }
 
-    for(int i = 0; i < v1.size(); i++){
-        if(fabs(v1[i]-v2[i]) >= TOL_){
-            return false;
-        }
-    }
-
-    return true;
-}
 
 int main(){
     int result = all_tests();
