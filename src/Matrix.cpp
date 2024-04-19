@@ -7,7 +7,6 @@ Matrix::Matrix(int fil, int col) : fil(fil), col(col)
 {
     initMatrix();
 }
-
 Matrix::Matrix(int fil, int col, double v[], int n): fil(fil), col(col)
 {
     initMatrix();
@@ -109,4 +108,12 @@ void Matrix::print()
         std::cout << std::endl;
     }
     std::cout << std::endl;
+}
+
+int Matrix::getFilas(){
+    return fil;
+}
+
+int Matrix::getColumnas(){
+    return col;
 }

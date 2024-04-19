@@ -17,10 +17,13 @@ public:
 
     void print();
 
+    int getFilas();
+    int getColumnas();
+
 private:
     void initMatrix();
 
-private:
+protected:
     int fil;
     int col;
     double **matrix;

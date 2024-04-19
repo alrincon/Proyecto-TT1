@@ -56,10 +56,10 @@ RM = C:\URApps\CLion_2022_2_2\CLion-2022.2.2.win\bin\cmake\win\bin\cmake.exe -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\lamorer\CLionProjects\Proyecto-TT11
+CMAKE_SOURCE_DIR = C:\Users\alrincon\CLionProjects\Proyecto-TT1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\lamorer\CLionProjects\Proyecto-TT11\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\alrincon\CLionProjects\Proyecto-TT1\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lamorer\CLionProjects\Proyecto-TT11\cmake-build-debug\CMakeFiles C:\Users\lamorer\CLionProjects\Proyecto-TT11\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\alrincon\CLionProjects\Proyecto-TT1\cmake-build-debug\CMakeFiles C:\Users\alrincon\CLionProjects\Proyecto-TT1\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lamorer\CLionProjects\Proyecto-TT11\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\alrincon\CLionProjects\Proyecto-TT1\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -151,6 +151,30 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+src/AccelPointMass.obj: src/AccelPointMass.cpp.obj
+.PHONY : src/AccelPointMass.obj
+
+# target to build an object file
+src/AccelPointMass.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/AccelPointMass.cpp.obj
+.PHONY : src/AccelPointMass.cpp.obj
+
+src/AccelPointMass.i: src/AccelPointMass.cpp.i
+.PHONY : src/AccelPointMass.i
+
+# target to preprocess a source file
+src/AccelPointMass.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/AccelPointMass.cpp.i
+.PHONY : src/AccelPointMass.cpp.i
+
+src/AccelPointMass.s: src/AccelPointMass.cpp.s
+.PHONY : src/AccelPointMass.s
+
+# target to generate assembly for a file
+src/AccelPointMass.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/AccelPointMass.cpp.s
+.PHONY : src/AccelPointMass.cpp.s
 
 src/AzElPa.obj: src/AzElPa.cpp.obj
 .PHONY : src/AzElPa.obj
@@ -296,6 +320,30 @@ src/R_z.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/R_z.cpp.s
 .PHONY : src/R_z.cpp.s
 
+src/Vector.obj: src/Vector.cpp.obj
+.PHONY : src/Vector.obj
+
+# target to build an object file
+src/Vector.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/Vector.cpp.obj
+.PHONY : src/Vector.cpp.obj
+
+src/Vector.i: src/Vector.cpp.i
+.PHONY : src/Vector.i
+
+# target to preprocess a source file
+src/Vector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/Vector.cpp.i
+.PHONY : src/Vector.cpp.i
+
+src/Vector.s: src/Vector.cpp.s
+.PHONY : src/Vector.s
+
+# target to generate assembly for a file
+src/Vector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/Vector.cpp.s
+.PHONY : src/Vector.cpp.s
+
 src/tests.obj: src/tests.cpp.obj
 .PHONY : src/tests.obj
 
@@ -332,6 +380,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/AccelPointMass.obj
+	@echo ... src/AccelPointMass.i
+	@echo ... src/AccelPointMass.s
 	@echo ... src/AzElPa.obj
 	@echo ... src/AzElPa.i
 	@echo ... src/AzElPa.s
@@ -350,6 +401,9 @@ help:
 	@echo ... src/R_z.obj
 	@echo ... src/R_z.i
 	@echo ... src/R_z.s
+	@echo ... src/Vector.obj
+	@echo ... src/Vector.i
+	@echo ... src/Vector.s
 	@echo ... src/tests.obj
 	@echo ... src/tests.i
 	@echo ... src/tests.s
