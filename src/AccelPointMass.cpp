@@ -1,6 +1,11 @@
 #include "../include/AccelPointMass.h"
 #include <cmath>
-#include "../include/Vector.h"
+
+#include <iostream>
+#include "stdio.h"
+#include <string.h>
+using namespace std;
+
 
 /*
 %--------------------------------------------------------------------------
@@ -21,10 +26,10 @@
 %--------------------------------------------------------------------------
 */
 
-double AccelPointMass(Vector r, Vector s, double GM){
+Matrix AccelPointMass(Matrix& r, Matrix& s, double GM){
     //Relative position vector of satellite w.r.t. point mass
-    Vector d = r - s;
+    Matrix d = r - s;
 
     //Acceleration
-    return -GM * ( d/(d.norm()) + s/(s.norm()^3) );
+    return (d*(1.0/(pow(d.norm(),3))) + s*(1.0/(pow(s.norm(),3))))*(-GM);
 }

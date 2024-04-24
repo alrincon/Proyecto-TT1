@@ -320,29 +320,29 @@ src/R_z.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/R_z.cpp.s
 .PHONY : src/R_z.cpp.s
 
-src/Vector.obj: src/Vector.cpp.obj
-.PHONY : src/Vector.obj
+src/sign_.obj: src/sign_.cpp.obj
+.PHONY : src/sign_.obj
 
 # target to build an object file
-src/Vector.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/Vector.cpp.obj
-.PHONY : src/Vector.cpp.obj
+src/sign_.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/sign_.cpp.obj
+.PHONY : src/sign_.cpp.obj
 
-src/Vector.i: src/Vector.cpp.i
-.PHONY : src/Vector.i
+src/sign_.i: src/sign_.cpp.i
+.PHONY : src/sign_.i
 
 # target to preprocess a source file
-src/Vector.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/Vector.cpp.i
-.PHONY : src/Vector.cpp.i
+src/sign_.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/sign_.cpp.i
+.PHONY : src/sign_.cpp.i
 
-src/Vector.s: src/Vector.cpp.s
-.PHONY : src/Vector.s
+src/sign_.s: src/sign_.cpp.s
+.PHONY : src/sign_.s
 
 # target to generate assembly for a file
-src/Vector.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/Vector.cpp.s
-.PHONY : src/Vector.cpp.s
+src/sign_.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/sign_.cpp.s
+.PHONY : src/sign_.cpp.s
 
 src/tests.obj: src/tests.cpp.obj
 .PHONY : src/tests.obj
@@ -401,9 +401,9 @@ help:
 	@echo ... src/R_z.obj
 	@echo ... src/R_z.i
 	@echo ... src/R_z.s
-	@echo ... src/Vector.obj
-	@echo ... src/Vector.i
-	@echo ... src/Vector.s
+	@echo ... src/sign_.obj
+	@echo ... src/sign_.i
+	@echo ... src/sign_.s
 	@echo ... src/tests.obj
 	@echo ... src/tests.i
 	@echo ... src/tests.s

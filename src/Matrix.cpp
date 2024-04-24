@@ -1,6 +1,7 @@
 #include "../include/Matrix.h"
 #include <iostream>
 #include <iomanip>
+#include <cmath>
 using namespace std;
 
 Matrix::Matrix(int fil, int col) : fil(fil), col(col)
@@ -49,8 +50,9 @@ void Matrix::initMatrix()
 Matrix& Matrix::operator=(const Matrix& matrix2)
 {
     for (int i = 0; i < fil; i++)
-        for (int j = 0; j < col; j++)
+        for (int j = 0; j < col; j++){
             this->matrix[i][j] = matrix2.matrix[i][j];
+        }
 
     return *this;
 }
@@ -116,4 +118,28 @@ int Matrix::getFilas(){
 
 int Matrix::getColumnas(){
     return col;
+}
+
+double Matrix::norm(){
+    double suma = 0;
+
+    if(fil == 1){
+        for(int i = 0; i < col; i++){
+            suma += pow(matrix[0][i],2);
+        }
+    }else{
+        throw runtime_error("An error occurred");
+    }
+
+    return sqrt(suma);
+}
+
+Matrix Matrix::operator*(const double scalar) {
+    Matrix result(fil, col);
+    for (int i = 0; i < fil; i++) {
+        for (int j = 0; j < col; j++) {
+            result(i + 1, j+ 1) = matrix[i][j] * scalar;
+        }
+    }
+    return result;
 }

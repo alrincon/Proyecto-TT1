@@ -13,12 +13,14 @@ public:
     Matrix  operator+(const Matrix& matrix2);
     Matrix  operator-(const Matrix& matrix2);
     Matrix  operator*(const Matrix& matrix2);
+    Matrix  operator*(const double scalar);
     double& operator()(const int i, const int j) const;
 
     void print();
 
     int getFilas();
     int getColumnas();
+    double norm();
 
 private:
     void initMatrix();

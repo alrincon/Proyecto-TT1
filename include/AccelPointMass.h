@@ -1,6 +1,7 @@
 #ifndef ACCELPOINTMASS_H
 #define ACCELPOINTMASS_H
+#include "../include/Matrix.h"
 
-double AccelPointMass(double r, double s, double GM);
+Matrix AccelPointMass(Matrix& r, Matrix& s, double GM);
 
 #endif

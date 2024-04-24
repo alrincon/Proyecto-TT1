@@ -98,6 +98,9 @@
 		<Unit filename="C:/Users/alrincon/CLionProjects/Proyecto-TT1/include/R_z.h">
 			<Option target="Proyecto"/>
 		</Unit>
+		<Unit filename="C:/Users/alrincon/CLionProjects/Proyecto-TT1/include/sign_.h">
+			<Option target="Proyecto"/>
+		</Unit>
 		<Unit filename="C:/Users/alrincon/CLionProjects/Proyecto-TT1/main.cpp">
 			<Option target="Proyecto"/>
 		</Unit>
@@ -122,10 +125,7 @@
 		<Unit filename="C:/Users/alrincon/CLionProjects/Proyecto-TT1/src/R_z.cpp">
 			<Option target="Proyecto"/>
 		</Unit>
-		<Unit filename="C:/Users/alrincon/CLionProjects/Proyecto-TT1/src/Vector.cpp">
-			<Option target="Proyecto"/>
-		</Unit>
-		<Unit filename="C:/Users/alrincon/CLionProjects/Proyecto-TT1/src/Vector.h">
+		<Unit filename="C:/Users/alrincon/CLionProjects/Proyecto-TT1/src/sign_.cpp">
 			<Option target="Proyecto"/>
 		</Unit>
 		<Unit filename="C:/Users/alrincon/CLionProjects/Proyecto-TT1/src/tests.cpp">
