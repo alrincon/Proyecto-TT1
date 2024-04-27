@@ -56,10 +56,10 @@ RM = C:\URApps\CLion_2022_2_2\CLion-2022.2.2.win\bin\cmake\win\bin\cmake.exe -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\alrincon\CLionProjects\Proyecto-TT1
+CMAKE_SOURCE_DIR = "C:\Mi PC\ProyectoTT1"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\alrincon\CLionProjects\Proyecto-TT1\cmake-build-debug
+CMAKE_BINARY_DIR = "C:\Mi PC\ProyectoTT1\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\alrincon\CLionProjects\Proyecto-TT1\cmake-build-debug\CMakeFiles C:\Users\alrincon\CLionProjects\Proyecto-TT1\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Mi PC\ProyectoTT1\cmake-build-debug\CMakeFiles" "C:\Mi PC\ProyectoTT1\cmake-build-debug\\CMakeFiles\progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\alrincon\CLionProjects\Proyecto-TT1\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Mi PC\ProyectoTT1\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -200,6 +200,30 @@ src/AzElPa.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/AzElPa.cpp.s
 .PHONY : src/AzElPa.cpp.s
 
+src/Cheb3D.obj: src/Cheb3D.cpp.obj
+.PHONY : src/Cheb3D.obj
+
+# target to build an object file
+src/Cheb3D.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/Cheb3D.cpp.obj
+.PHONY : src/Cheb3D.cpp.obj
+
+src/Cheb3D.i: src/Cheb3D.cpp.i
+.PHONY : src/Cheb3D.i
+
+# target to preprocess a source file
+src/Cheb3D.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/Cheb3D.cpp.i
+.PHONY : src/Cheb3D.cpp.i
+
+src/Cheb3D.s: src/Cheb3D.cpp.s
+.PHONY : src/Cheb3D.s
+
+# target to generate assembly for a file
+src/Cheb3D.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/Cheb3D.cpp.s
+.PHONY : src/Cheb3D.cpp.s
+
 src/EKF_Tests.obj: src/EKF_Tests.cpp.obj
 .PHONY : src/EKF_Tests.obj
 
@@ -223,6 +247,54 @@ src/EKF_Tests.s: src/EKF_Tests.cpp.s
 src/EKF_Tests.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/EKF_Tests.cpp.s
 .PHONY : src/EKF_Tests.cpp.s
+
+src/EccAnom.obj: src/EccAnom.cpp.obj
+.PHONY : src/EccAnom.obj
+
+# target to build an object file
+src/EccAnom.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/EccAnom.cpp.obj
+.PHONY : src/EccAnom.cpp.obj
+
+src/EccAnom.i: src/EccAnom.cpp.i
+.PHONY : src/EccAnom.i
+
+# target to preprocess a source file
+src/EccAnom.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/EccAnom.cpp.i
+.PHONY : src/EccAnom.cpp.i
+
+src/EccAnom.s: src/EccAnom.cpp.s
+.PHONY : src/EccAnom.s
+
+# target to generate assembly for a file
+src/EccAnom.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/EccAnom.cpp.s
+.PHONY : src/EccAnom.cpp.s
+
+src/Frac.obj: src/Frac.cpp.obj
+.PHONY : src/Frac.obj
+
+# target to build an object file
+src/Frac.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/Frac.cpp.obj
+.PHONY : src/Frac.cpp.obj
+
+src/Frac.i: src/Frac.cpp.i
+.PHONY : src/Frac.i
+
+# target to preprocess a source file
+src/Frac.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/Frac.cpp.i
+.PHONY : src/Frac.cpp.i
+
+src/Frac.s: src/Frac.cpp.s
+.PHONY : src/Frac.s
+
+# target to generate assembly for a file
+src/Frac.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/Frac.cpp.s
+.PHONY : src/Frac.cpp.s
 
 src/Matrix.obj: src/Matrix.cpp.obj
 .PHONY : src/Matrix.obj
@@ -386,9 +458,18 @@ help:
 	@echo ... src/AzElPa.obj
 	@echo ... src/AzElPa.i
 	@echo ... src/AzElPa.s
+	@echo ... src/Cheb3D.obj
+	@echo ... src/Cheb3D.i
+	@echo ... src/Cheb3D.s
 	@echo ... src/EKF_Tests.obj
 	@echo ... src/EKF_Tests.i
 	@echo ... src/EKF_Tests.s
+	@echo ... src/EccAnom.obj
+	@echo ... src/EccAnom.i
+	@echo ... src/EccAnom.s
+	@echo ... src/Frac.obj
+	@echo ... src/Frac.i
+	@echo ... src/Frac.s
 	@echo ... src/Matrix.obj
 	@echo ... src/Matrix.i
 	@echo ... src/Matrix.s

@@ -2,9 +2,7 @@
 #define AZELPA_H
 
 #include <cmath>
-#include <vector>
 
-void AzElPa(double s[], double& Az, double& El, std::vector<double>& dAds, std::vector<double>& dEds);
-
+void AzElPa(const double s[3], double& Az, double& El, double dAds[3], double dEds[3]);
 
 #endif // AZELPA_H

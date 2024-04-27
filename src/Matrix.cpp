@@ -1,8 +1,4 @@
 #include "../include/Matrix.h"
-#include <iostream>
-#include <iomanip>
-#include <cmath>
-using namespace std;
 
 Matrix::Matrix(int fil, int col) : fil(fil), col(col)
 {

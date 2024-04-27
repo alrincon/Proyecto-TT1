@@ -1,11 +1,4 @@
 #include "../include/AccelPointMass.h"
-#include <cmath>
-
-#include <iostream>
-#include "stdio.h"
-#include <string.h>
-using namespace std;
-
 
 /*
 %--------------------------------------------------------------------------

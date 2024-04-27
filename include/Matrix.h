@@ -1,6 +1,11 @@
 #ifndef _MATRIX_
 #define _MATRIX_
 
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+using namespace std;
+
 class Matrix
 {
 public:

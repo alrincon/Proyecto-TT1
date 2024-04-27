@@ -7,6 +7,11 @@ set(CMAKE_DEPENDS_GENERATOR "MinGW Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "../CMakeLists.txt"
+  "CMakeFiles/3.23.2/CMakeCCompiler.cmake"
+  "CMakeFiles/3.23.2/CMakeCXXCompiler.cmake"
+  "CMakeFiles/3.23.2/CMakeRCCompiler.cmake"
+  "CMakeFiles/3.23.2/CMakeSystem.cmake"
   "C:/URApps/CLion_2022_2_2/CLion-2022.2.2.win/bin/cmake/win/share/cmake-3.23/Modules/CMakeCInformation.cmake"
   "C:/URApps/CLion_2022_2_2/CLion-2022.2.2.win/bin/cmake/win/share/cmake-3.23/Modules/CMakeCXXInformation.cmake"
   "C:/URApps/CLion_2022_2_2/CLion-2022.2.2.win/bin/cmake/win/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake"
@@ -31,11 +36,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/URApps/CLion_2022_2_2/CLion-2022.2.2.win/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows.cmake"
   "C:/URApps/CLion_2022_2_2/CLion-2022.2.2.win/bin/cmake/win/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake"
   "C:/URApps/CLion_2022_2_2/CLion-2022.2.2.win/bin/cmake/win/share/cmake-3.23/Modules/ProcessorCount.cmake"
-  "../CMakeLists.txt"
-  "CMakeFiles/3.23.2/CMakeCCompiler.cmake"
-  "CMakeFiles/3.23.2/CMakeCXXCompiler.cmake"
-  "CMakeFiles/3.23.2/CMakeRCCompiler.cmake"
-  "CMakeFiles/3.23.2/CMakeSystem.cmake"
   )
 
 # The corresponding makefile is:

@@ -2,6 +2,14 @@
 #include "../include/R_y.h"
 #include <cmath>
 
+/*%--------------------------------------------------------------------------
+%  input:
+%    angle       - angle of rotation [rad]
+%
+%  output:
+%    rotmat      - vector result
+%--------------------------------------------------------------------------*/
+
 Matrix R_y(double angle){
     Matrix rotmat(3,3);
 

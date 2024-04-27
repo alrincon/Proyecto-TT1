@@ -1,4 +1,4 @@
-C:\URApps\CLion_2022_2_2\CLion-2022.2.2.win\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S C:\Users\alrincon\CLionProjects\Proyecto-TT1 -B C:\Users\alrincon\CLionProjects\Proyecto-TT1\cmake-build-debug
+C:\URApps\CLion_2022_2_2\CLion-2022.2.2.win\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S "C:\Mi PC\ProyectoTT1" -B "C:\Mi PC\ProyectoTT1\cmake-build-debug"
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/alrincon/CLionProjects/Proyecto-TT1/cmake-build-debug
+-- Build files have been written to: C:/Mi PC/ProyectoTT1/cmake-build-debug
