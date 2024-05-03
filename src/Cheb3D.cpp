@@ -14,12 +14,12 @@ Matrix Cheb3D(double t, int N, double Ta, double Tb, Matrix& Cx, Matrix& Cy, Mat
     double v[3] = {Cx(1,1),Cy(1,1),Cz(1,1)};
     Matrix aux(1,3,v,3);
 
-    for (int i = N - 1; i >= 1; --i) {
-        Matrix old_f1 = f1;
-        double w[3] = {Cx(i,1),Cy(i,1),Cz(i,1)};
+    for (int i = N; i >= 2; i--) {
+        Matrix old_f1(1,3);
+        old_f1 = f1;
+        double w[3] = {Cx(1,i),Cy(1,i),Cz(1,i)};
         Matrix aux2(1,3,w,3);
         f1 = f1 * tau * 2 - f2 + aux2;
-
         f2 = old_f1;
     }
 

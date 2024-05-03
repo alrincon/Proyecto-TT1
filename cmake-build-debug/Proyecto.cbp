@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Mi PC/ProyectoTT1/cmake-build-debug"/>
+				<Option working_dir="C:/Users/lamorer/CLionProjects/Proyecto-TT1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Mi PC/ProyectoTT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Mi PC/ProyectoTT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Mi PC/ProyectoTT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Mi PC/ProyectoTT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/lamorer/CLionProjects/Proyecto-TT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/lamorer/CLionProjects/Proyecto-TT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/lamorer/CLionProjects/Proyecto-TT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/lamorer/CLionProjects/Proyecto-TT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Proyecto">
-				<Option output="C:/Mi PC/ProyectoTT1/cmake-build-debug/Proyecto.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Mi PC/ProyectoTT1/cmake-build-debug"/>
+				<Option output="C:/Users/lamorer/CLionProjects/Proyecto-TT1/cmake-build-debug/Proyecto.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/lamorer/CLionProjects/Proyecto-TT1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -30,18 +30,17 @@
 					<Add directory="c:\urapps\clion_2022_2_2\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
 					<Add directory="c:\urapps\clion_2022_2_2\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
 					<Add directory="c:\urapps\clion_2022_2_2\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
-					<Add directory="/mingw/lib/gcc/mingw32/../../../include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Mi PC/ProyectoTT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Proyecto"/>
-					<CompileFile command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Mi PC/ProyectoTT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Mi PC/ProyectoTT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Mi PC/ProyectoTT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/lamorer/CLionProjects/Proyecto-TT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Proyecto"/>
+					<CompileFile command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/lamorer/CLionProjects/Proyecto-TT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/lamorer/CLionProjects/Proyecto-TT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/lamorer/CLionProjects/Proyecto-TT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Proyecto/fast">
-				<Option output="C:/Mi PC/ProyectoTT1/cmake-build-debug/Proyecto.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Mi PC/ProyectoTT1/cmake-build-debug"/>
+				<Option output="C:/Users/lamorer/CLionProjects/Proyecto-TT1/cmake-build-debug/Proyecto.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/lamorer/CLionProjects/Proyecto-TT1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -52,106 +51,117 @@
 					<Add directory="c:\urapps\clion_2022_2_2\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
 					<Add directory="c:\urapps\clion_2022_2_2\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
 					<Add directory="c:\urapps\clion_2022_2_2\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
-					<Add directory="/mingw/lib/gcc/mingw32/../../../include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Mi PC/ProyectoTT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Proyecto/fast"/>
-					<CompileFile command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Mi PC/ProyectoTT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Mi PC/ProyectoTT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Mi PC/ProyectoTT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/lamorer/CLionProjects/Proyecto-TT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Proyecto/fast"/>
+					<CompileFile command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/lamorer/CLionProjects/Proyecto-TT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/lamorer/CLionProjects/Proyecto-TT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/lamorer/CLionProjects/Proyecto-TT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Mi PC/ProyectoTT1/cmake-build-debug"/>
+				<Option working_dir="C:/Users/lamorer/CLionProjects/Proyecto-TT1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Mi PC/ProyectoTT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Mi PC/ProyectoTT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Mi PC/ProyectoTT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Mi PC/ProyectoTT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/lamorer/CLionProjects/Proyecto-TT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/lamorer/CLionProjects/Proyecto-TT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/lamorer/CLionProjects/Proyecto-TT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/lamorer/CLionProjects/Proyecto-TT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Mi PC/ProyectoTT1/cmake-build-debug"/>
+				<Option working_dir="C:/Users/lamorer/CLionProjects/Proyecto-TT1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Mi PC/ProyectoTT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Mi PC/ProyectoTT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Mi PC/ProyectoTT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Mi PC/ProyectoTT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/lamorer/CLionProjects/Proyecto-TT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/lamorer/CLionProjects/Proyecto-TT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/lamorer/CLionProjects/Proyecto-TT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/URApps/CLion_2022_2_2/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/lamorer/CLionProjects/Proyecto-TT1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Mi PC/ProyectoTT1/include/AccelPointMass.h">
+		<Unit filename="C:/Users/lamorer/CLionProjects/Proyecto-TT1/include/AccelPointMass.h">
 			<Option target="Proyecto"/>
 		</Unit>
-		<Unit filename="C:/Mi PC/ProyectoTT1/include/AzElPa.h">
+		<Unit filename="C:/Users/lamorer/CLionProjects/Proyecto-TT1/include/AzElPa.h">
 			<Option target="Proyecto"/>
 		</Unit>
-		<Unit filename="C:/Mi PC/ProyectoTT1/include/Cheb3D.h">
+		<Unit filename="C:/Users/lamorer/CLionProjects/Proyecto-TT1/include/Cheb3D.h">
 			<Option target="Proyecto"/>
 		</Unit>
-		<Unit filename="C:/Mi PC/ProyectoTT1/include/EccAnom.h">
+		<Unit filename="C:/Users/lamorer/CLionProjects/Proyecto-TT1/include/EccAnom.h">
 			<Option target="Proyecto"/>
 		</Unit>
-		<Unit filename="C:/Mi PC/ProyectoTT1/include/Frac.h">
+		<Unit filename="C:/Users/lamorer/CLionProjects/Proyecto-TT1/include/Frac.h">
 			<Option target="Proyecto"/>
 		</Unit>
-		<Unit filename="C:/Mi PC/ProyectoTT1/include/Matrix.h">
+		<Unit filename="C:/Users/lamorer/CLionProjects/Proyecto-TT1/include/Geodetic.h">
 			<Option target="Proyecto"/>
 		</Unit>
-		<Unit filename="C:/Mi PC/ProyectoTT1/include/R_x.h">
+		<Unit filename="C:/Users/lamorer/CLionProjects/Proyecto-TT1/include/Matrix.h">
 			<Option target="Proyecto"/>
 		</Unit>
-		<Unit filename="C:/Mi PC/ProyectoTT1/include/R_y.h">
+		<Unit filename="C:/Users/lamorer/CLionProjects/Proyecto-TT1/include/R_x.h">
 			<Option target="Proyecto"/>
 		</Unit>
-		<Unit filename="C:/Mi PC/ProyectoTT1/include/R_z.h">
+		<Unit filename="C:/Users/lamorer/CLionProjects/Proyecto-TT1/include/R_y.h">
 			<Option target="Proyecto"/>
 		</Unit>
-		<Unit filename="C:/Mi PC/ProyectoTT1/include/sign_.h">
+		<Unit filename="C:/Users/lamorer/CLionProjects/Proyecto-TT1/include/R_z.h">
 			<Option target="Proyecto"/>
 		</Unit>
-		<Unit filename="C:/Mi PC/ProyectoTT1/main.cpp">
+		<Unit filename="C:/Users/lamorer/CLionProjects/Proyecto-TT1/include/SAT_const.h">
 			<Option target="Proyecto"/>
 		</Unit>
-		<Unit filename="C:/Mi PC/ProyectoTT1/src/AccelPointMass.cpp">
+		<Unit filename="C:/Users/lamorer/CLionProjects/Proyecto-TT1/include/sign_.h">
 			<Option target="Proyecto"/>
 		</Unit>
-		<Unit filename="C:/Mi PC/ProyectoTT1/src/AzElPa.cpp">
+		<Unit filename="C:/Users/lamorer/CLionProjects/Proyecto-TT1/main.cpp">
 			<Option target="Proyecto"/>
 		</Unit>
-		<Unit filename="C:/Mi PC/ProyectoTT1/src/Cheb3D.cpp">
+		<Unit filename="C:/Users/lamorer/CLionProjects/Proyecto-TT1/src/AccelPointMass.cpp">
 			<Option target="Proyecto"/>
 		</Unit>
-		<Unit filename="C:/Mi PC/ProyectoTT1/src/EKF_Tests.cpp">
+		<Unit filename="C:/Users/lamorer/CLionProjects/Proyecto-TT1/src/AzElPa.cpp">
 			<Option target="Proyecto"/>
 		</Unit>
-		<Unit filename="C:/Mi PC/ProyectoTT1/src/EccAnom.cpp">
+		<Unit filename="C:/Users/lamorer/CLionProjects/Proyecto-TT1/src/Cheb3D.cpp">
 			<Option target="Proyecto"/>
 		</Unit>
-		<Unit filename="C:/Mi PC/ProyectoTT1/src/Frac.cpp">
+		<Unit filename="C:/Users/lamorer/CLionProjects/Proyecto-TT1/src/EKF_Tests.cpp">
 			<Option target="Proyecto"/>
 		</Unit>
-		<Unit filename="C:/Mi PC/ProyectoTT1/src/Matrix.cpp">
+		<Unit filename="C:/Users/lamorer/CLionProjects/Proyecto-TT1/src/EccAnom.cpp">
 			<Option target="Proyecto"/>
 		</Unit>
-		<Unit filename="C:/Mi PC/ProyectoTT1/src/R_x.cpp">
+		<Unit filename="C:/Users/lamorer/CLionProjects/Proyecto-TT1/src/Frac.cpp">
 			<Option target="Proyecto"/>
 		</Unit>
-		<Unit filename="C:/Mi PC/ProyectoTT1/src/R_y.cpp">
+		<Unit filename="C:/Users/lamorer/CLionProjects/Proyecto-TT1/src/Geodetic.cpp">
 			<Option target="Proyecto"/>
 		</Unit>
-		<Unit filename="C:/Mi PC/ProyectoTT1/src/R_z.cpp">
+		<Unit filename="C:/Users/lamorer/CLionProjects/Proyecto-TT1/src/Matrix.cpp">
 			<Option target="Proyecto"/>
 		</Unit>
-		<Unit filename="C:/Mi PC/ProyectoTT1/src/sign_.cpp">
+		<Unit filename="C:/Users/lamorer/CLionProjects/Proyecto-TT1/src/R_x.cpp">
 			<Option target="Proyecto"/>
 		</Unit>
-		<Unit filename="C:/Mi PC/ProyectoTT1/src/tests.cpp">
+		<Unit filename="C:/Users/lamorer/CLionProjects/Proyecto-TT1/src/R_y.cpp">
 			<Option target="Proyecto"/>
 		</Unit>
-		<Unit filename="C:/Mi PC/ProyectoTT1/CMakeLists.txt">
+		<Unit filename="C:/Users/lamorer/CLionProjects/Proyecto-TT1/src/R_z.cpp">
+			<Option target="Proyecto"/>
+		</Unit>
+		<Unit filename="C:/Users/lamorer/CLionProjects/Proyecto-TT1/src/SAT_const.cpp">
+			<Option target="Proyecto"/>
+		</Unit>
+		<Unit filename="C:/Users/lamorer/CLionProjects/Proyecto-TT1/src/sign_.cpp">
+			<Option target="Proyecto"/>
+		</Unit>
+		<Unit filename="C:/Users/lamorer/CLionProjects/Proyecto-TT1/src/tests.cpp">
+			<Option target="Proyecto"/>
+		</Unit>
+		<Unit filename="C:/Users/lamorer/CLionProjects/Proyecto-TT1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

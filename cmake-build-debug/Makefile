@@ -56,10 +56,10 @@ RM = C:\URApps\CLion_2022_2_2\CLion-2022.2.2.win\bin\cmake\win\bin\cmake.exe -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Mi PC\ProyectoTT1"
+CMAKE_SOURCE_DIR = C:\Users\lamorer\CLionProjects\Proyecto-TT1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Mi PC\ProyectoTT1\cmake-build-debug"
+CMAKE_BINARY_DIR = C:\Users\lamorer\CLionProjects\Proyecto-TT1\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Mi PC\ProyectoTT1\cmake-build-debug\CMakeFiles" "C:\Mi PC\ProyectoTT1\cmake-build-debug\\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lamorer\CLionProjects\Proyecto-TT1\cmake-build-debug\CMakeFiles C:\Users\lamorer\CLionProjects\Proyecto-TT1\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Mi PC\ProyectoTT1\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lamorer\CLionProjects\Proyecto-TT1\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -296,6 +296,30 @@ src/Frac.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/Frac.cpp.s
 .PHONY : src/Frac.cpp.s
 
+src/Geodetic.obj: src/Geodetic.cpp.obj
+.PHONY : src/Geodetic.obj
+
+# target to build an object file
+src/Geodetic.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/Geodetic.cpp.obj
+.PHONY : src/Geodetic.cpp.obj
+
+src/Geodetic.i: src/Geodetic.cpp.i
+.PHONY : src/Geodetic.i
+
+# target to preprocess a source file
+src/Geodetic.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/Geodetic.cpp.i
+.PHONY : src/Geodetic.cpp.i
+
+src/Geodetic.s: src/Geodetic.cpp.s
+.PHONY : src/Geodetic.s
+
+# target to generate assembly for a file
+src/Geodetic.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/Geodetic.cpp.s
+.PHONY : src/Geodetic.cpp.s
+
 src/Matrix.obj: src/Matrix.cpp.obj
 .PHONY : src/Matrix.obj
 
@@ -392,6 +416,30 @@ src/R_z.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/R_z.cpp.s
 .PHONY : src/R_z.cpp.s
 
+src/SAT_const.obj: src/SAT_const.cpp.obj
+.PHONY : src/SAT_const.obj
+
+# target to build an object file
+src/SAT_const.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/SAT_const.cpp.obj
+.PHONY : src/SAT_const.cpp.obj
+
+src/SAT_const.i: src/SAT_const.cpp.i
+.PHONY : src/SAT_const.i
+
+# target to preprocess a source file
+src/SAT_const.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/SAT_const.cpp.i
+.PHONY : src/SAT_const.cpp.i
+
+src/SAT_const.s: src/SAT_const.cpp.s
+.PHONY : src/SAT_const.s
+
+# target to generate assembly for a file
+src/SAT_const.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/SAT_const.cpp.s
+.PHONY : src/SAT_const.cpp.s
+
 src/sign_.obj: src/sign_.cpp.obj
 .PHONY : src/sign_.obj
 
@@ -470,6 +518,9 @@ help:
 	@echo ... src/Frac.obj
 	@echo ... src/Frac.i
 	@echo ... src/Frac.s
+	@echo ... src/Geodetic.obj
+	@echo ... src/Geodetic.i
+	@echo ... src/Geodetic.s
 	@echo ... src/Matrix.obj
 	@echo ... src/Matrix.i
 	@echo ... src/Matrix.s
@@ -482,6 +533,9 @@ help:
 	@echo ... src/R_z.obj
 	@echo ... src/R_z.i
 	@echo ... src/R_z.s
+	@echo ... src/SAT_const.obj
+	@echo ... src/SAT_const.i
+	@echo ... src/SAT_const.s
 	@echo ... src/sign_.obj
 	@echo ... src/sign_.i
 	@echo ... src/sign_.s

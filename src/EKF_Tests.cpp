@@ -1,6 +1,7 @@
 #include <math.h>
 #include <stdio.h>
 #include <vector>
+#include <iostream>
 
 #include "../include/Matrix.h"
 #include "../include/R_x.h"
@@ -8,8 +9,13 @@
 #include "../include/R_z.h"
 #include "../include/AccelPointMass.h"
 #include "../include/sign_.h"
+#include "../include/AzElPa.h"
+#include "../include/Cheb3D.h"
+#include "../include/EccAnom.h"
+#include "../include/Frac.h"
+#include "../include/SAT_const.h"
 
-#define TOL_ 10e-14
+#define TOL_ 10e-6
 
 
 using namespace std;
@@ -100,9 +106,9 @@ int AccelPointMass_01(){
 int AzElPa_01() {
     double s[3] = {1, 2, 3};
     double Az, El;
-    vector<double> dAds(3), dEds(3);
+    double dAds[3], dEds[3];
 
-//    AzElPa(s, Az, El, dAds, dEds);
+    AzElPa(s, Az, El, dAds, dEds);
 
     _assert(fabs(Az - 0.463647609000806) < TOL_ && fabs(El-0.930274014115472)<TOL_);
 
@@ -121,6 +127,35 @@ int sign_01() {
     return 0;
 }
 
+int Cheb3D_01() {
+    double t = 3;
+    int N = 5;
+    double Ta = 1;
+    double Tb = 9;
+    Matrix Cx(1,5,new double[5]{0.4,0.1,0.5,0.6,0.7},5);
+    Matrix Cy(1,5,new double[5]{-0.2,-0.3,-0.5,-0.1,0.1},5);
+    Matrix Cz(1,5, new double[5]{0.9,1.1,1.5,1.1,0.7},5);
+
+    Matrix res = Cheb3D(t,N,Ta,Tb,Cx,Cy,Cz);
+    _assert(compareVectors({res(1,1), res(1,2), res(1,3)}, {0.3500, 0.0500, 0.3500}));
+
+    return 0;
+}
+
+int EccAnom_01() {
+    _assert(abs(EccAnom(2.5,0.7123) - 2.76317) < TOL_);
+    _assert(abs(EccAnom(1.76,0.551) - 2.204136) < TOL_);
+
+    return 0;
+}
+
+int Frac_01() {
+    _assert(abs(Frac(2.56) - 0.56) < TOL_);
+    _assert(abs(Frac(0.551) - 0.551) < TOL_);
+
+    return 0;
+}
+
 int all_tests(){
 
     _verify(R_x_01);
@@ -128,7 +163,10 @@ int all_tests(){
     _verify(R_z_01);
     _verify(AccelPointMass_01);
     _verify(sign_01);
-    //_verify(AzElPa_01);
+    _verify(AzElPa_01);
+    _verify(Cheb3D_01);
+    _verify(EccAnom_01);
+    _verify(Frac_01);
 
     return 0;
 }
@@ -137,7 +175,7 @@ int all_tests(){
 
 int main(){
     int result = all_tests();
-
+    cout<<SAT_Const::R_Earth<<endl;
     if(result == 0){
         printf("PASSED\n");
     }

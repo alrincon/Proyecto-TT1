@@ -77,7 +77,7 @@ endif()
 
 
 
-set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++;C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32;C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/backward;C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include;C:/URApps/CLion_2022_2_2/MinGW/include;C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include-fixed;/MinGW/include")
+set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++;C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32;C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/backward;C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include;C:/URApps/CLion_2022_2_2/MinGW/include;C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include-fixed")
 set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;mingw32;gcc_s;gcc;moldname;mingwex;advapi32;shell32;user32;kernel32;mingw32;gcc_s;gcc;moldname;mingwex")
 set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0;C:/URApps/CLion_2022_2_2/MinGW/lib/gcc;C:/URApps/CLion_2022_2_2/MinGW/mingw32/lib;C:/URApps/CLion_2022_2_2/MinGW/lib")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
