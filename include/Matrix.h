@@ -11,6 +11,7 @@ class Matrix
 public:
     Matrix(int fil, int col);
     Matrix(int fil, int col, double v[], int n);
+    Matrix(int fil, int col, bool identity);
     Matrix(const Matrix& m);
     ~Matrix();
 
@@ -26,6 +27,14 @@ public:
     int getFilas();
     int getColumnas();
     double norm();
+    void assign(int i, int j, double v);
+
+    Matrix extractCol(int i);
+    Matrix extractRow(int i);
+    Matrix transpose();
+    static double dotProduct(Matrix* v1, Matrix* v2);
+    Matrix inverse();
+    Matrix clone();
 
 private:
     void initMatrix();

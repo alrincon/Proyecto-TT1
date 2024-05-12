@@ -1,5 +1,7 @@
 #ifndef SAT_CONST_H
 #define SAT_CONST_H
+#include <math.h>
+
 
 const double pi2 = 2 * M_PI;
 const double Rad = M_PI / 180;
@@ -15,7 +17,7 @@ const double AU = 149597870700.000000;
 // Physical parameters of the Earth, Sun and Moon
 const double R_Earth = 6378.1363e3;
 const double f_Earth = 1 / 298.257223563;
-const const double R_Sun = 696000e3;
+const double R_Sun = 696000e3;
 const double R_Moon = 1738e3;
 
 // Earth rotation

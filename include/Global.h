@@ -3,9 +3,12 @@
 
 #include "../include/Matrix.h"
 
-Matrix eopdata(13, 6);
-Matrix GEOS3data(13, 6);
+int nobs = 46;
+int infFile = 100;
 
+Matrix eopdata(infFile, 13);
+
+Matrix obs(nobs, 4);
 Matrix Cnm(181, 181);
 Matrix Snm(181, 181);
 

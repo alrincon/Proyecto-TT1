@@ -4,6 +4,6 @@
 #include "Matrix.h"
 #include <stdexcept>
 
-void Geodetic(double& lon, double& lat, double& h, Matrix& r);
+void Geodetic(double& lon, double& lat, double& h, Matrix* r);
 
 #endif //PROYECTO_GEODETIC_H
