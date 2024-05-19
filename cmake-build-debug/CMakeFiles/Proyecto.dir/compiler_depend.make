@@ -121,6 +121,374 @@ CMakeFiles/Proyecto.dir/main.cpp.obj: ../main.cpp \
   C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/istream \
   C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/istream.tcc
 
+CMakeFiles/Proyecto.dir/src/Accel.cpp.obj: ../src/Accel.cpp \
+  ../include/Accel.h \
+  ../include/Matrix.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iostream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++config.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/os_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/cpu_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ostream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ios \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iosfwd \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stringfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/memoryfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/postypes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cwchar \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wchar.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/_mingw.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/msvcrtver.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/w32api.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sdkddkver.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/features.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stddef.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stdarg.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdlib.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/direct.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/stat.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/conio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/io.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/time.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/process.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/exception \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception_ptr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/typeinfo \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/hash_bytes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/new \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/nested_exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/move.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/concept_check.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/type_traits \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/char_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_algobase.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/functexcept.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cpp_type_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/type_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/numeric_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_pair.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/debug/assertions.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ptr_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/debug/debug.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/predefined_ops.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdint \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/localefwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/clocale \
+  C:/URApps/CLion_2022_2_2/MinGW/include/locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cctype \
+  C:/URApps/CLion_2022_2_2/MinGW/include/ctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ios_base.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/atomicity.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/gthr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/gthr-default.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/errno.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/atomic_word.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_classes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/string \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/new_allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ostream_insert.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cxxabi_forced.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_function.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/backward/binders.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/range_access.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/initializer_list \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_string.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/alloc_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/alloc_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/string_view \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/limits \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/functional_hash.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/string_view.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/string_conversions.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdlib \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdlib.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/alloca.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/std_abs.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdio \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cerrno \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_string.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_classes.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/system_error \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/error_constants.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/stdexcept \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/streambuf \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/streambuf.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_ios.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cwctype \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/ctype_base.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/streambuf_iterator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/ctype_inline.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_ios.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ostream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/istream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/istream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iomanip \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/locale \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets_nonio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ctime \
+  C:/URApps/CLion_2022_2_2/MinGW/include/time.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/time_members.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/messages_members.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/codecvt.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets_nonio.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_conv.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stringfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/codecvt.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/unique_ptr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/utility \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_relops.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tuple \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/array \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/uses_allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/invoke.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/quoted_string.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/sstream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/sstream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cmath \
+  C:/URApps/CLion_2022_2_2/MinGW/include/math.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/specfun.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/gamma.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/special_function_util.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/bessel_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/special_function_util.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/beta_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/ell_integral.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/exp_integral.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/hypergeometric.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/legendre_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/modified_bessel_func.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_hermite.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_laguerre.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/riemann_zeta.tcc \
+  ../include/Global.h \
+  ../include/Matrix.h \
+  ../include/IERS.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/vector \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_construct.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_uninitialized.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_vector.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_bvector.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/vector.tcc \
+  ../include/SAT_const.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/math.h \
+  ../include/timediff.h \
+  ../include/PrecMatrix.h \
+  ../include/SAT_const.h \
+  ../include/R_x.h \
+  ../include/R_y.h \
+  ../include/R_z.h \
+  ../include/NutMatrix.h \
+  ../include/MeanObliquity.h \
+  ../include/NutAngles.h \
+  ../include/PoleMatrix.h \
+  ../include/GHAMatrix.h \
+  ../include/gast.h \
+  ../include/EqnEquinox.h \
+  ../include/NutAngles.h \
+  ../include/MeanObliquity.h \
+  ../include/gmst.h \
+  ../include/Frac.h \
+  ../include/R_z.h \
+  ../include/Mjday_TDB.h \
+  ../include/AccelHarmonic.h \
+  ../include/Legendre.h \
+  ../include/AccelPointMass.h \
+  ../include/JPL_Eph_DE430.h \
+  ../include/Cheb3D.h
+
+CMakeFiles/Proyecto.dir/src/AccelHarmonic.cpp.obj: ../src/AccelHarmonic.cpp \
+  ../include/AccelHarmonic.h \
+  ../include/Matrix.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iostream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++config.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/os_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/cpu_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ostream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ios \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iosfwd \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stringfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/memoryfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/postypes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cwchar \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wchar.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/_mingw.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/msvcrtver.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/w32api.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sdkddkver.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/features.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stddef.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stdarg.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdlib.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/direct.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/stat.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/conio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/io.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/time.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/process.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/exception \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception_ptr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/typeinfo \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/hash_bytes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/new \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/nested_exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/move.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/concept_check.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/type_traits \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/char_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_algobase.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/functexcept.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cpp_type_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/type_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/numeric_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_pair.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/debug/assertions.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ptr_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/debug/debug.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/predefined_ops.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdint \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/localefwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/clocale \
+  C:/URApps/CLion_2022_2_2/MinGW/include/locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cctype \
+  C:/URApps/CLion_2022_2_2/MinGW/include/ctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ios_base.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/atomicity.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/gthr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/gthr-default.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/errno.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/atomic_word.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_classes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/string \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/new_allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ostream_insert.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cxxabi_forced.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_function.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/backward/binders.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/range_access.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/initializer_list \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_string.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/alloc_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/alloc_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/string_view \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/limits \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/functional_hash.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/string_view.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/string_conversions.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdlib \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdlib.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/alloca.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/std_abs.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdio \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cerrno \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_string.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_classes.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/system_error \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/error_constants.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/stdexcept \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/streambuf \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/streambuf.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_ios.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cwctype \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/ctype_base.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/streambuf_iterator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/ctype_inline.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_ios.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ostream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/istream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/istream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iomanip \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/locale \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets_nonio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ctime \
+  C:/URApps/CLion_2022_2_2/MinGW/include/time.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/time_members.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/messages_members.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/codecvt.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets_nonio.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_conv.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stringfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/codecvt.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/unique_ptr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/utility \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_relops.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tuple \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/array \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/uses_allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/invoke.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/quoted_string.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/sstream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/sstream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cmath \
+  C:/URApps/CLion_2022_2_2/MinGW/include/math.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/specfun.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/gamma.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/special_function_util.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/bessel_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/special_function_util.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/beta_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/ell_integral.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/exp_integral.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/hypergeometric.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/legendre_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/modified_bessel_func.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_hermite.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_laguerre.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/riemann_zeta.tcc \
+  ../include/SAT_const.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/math.h \
+  ../include/Legendre.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/vector \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_construct.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_uninitialized.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_vector.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_bvector.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/vector.tcc \
+  ../include/Global.h \
+  ../include/Matrix.h
+
 CMakeFiles/Proyecto.dir/src/AccelPointMass.cpp.obj: ../src/AccelPointMass.cpp \
   ../include/AccelPointMass.h \
   ../include/Matrix.h \
@@ -656,7 +1024,50 @@ CMakeFiles/Proyecto.dir/src/EKF_GEOS3.cpp.obj: ../src/EKF_GEOS3.cpp \
   C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/math.h \
   C:/URApps/CLion_2022_2_2/MinGW/include/string.h \
   C:/URApps/CLion_2022_2_2/MinGW/include/strings.h \
-  C:/URApps/CLion_2022_2_2/MinGW/include/wchar.h
+  C:/URApps/CLion_2022_2_2/MinGW/include/wchar.h \
+  ../include/Mjday.h \
+  ../include/Position.h \
+  ../include/Matrix.h \
+  ../include/SAT_const.h \
+  ../include/anglesg.h \
+  ../include/Global.h \
+  ../include/Geodetic.h \
+  ../include/LTC.h \
+  ../include/R_y.h \
+  ../include/R_z.h \
+  ../include/IERS.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/vector \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_construct.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_uninitialized.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_vector.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_bvector.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/vector.tcc \
+  ../include/timediff.h \
+  ../include/PrecMatrix.h \
+  ../include/SAT_const.h \
+  ../include/R_x.h \
+  ../include/R_y.h \
+  ../include/R_z.h \
+  ../include/NutMatrix.h \
+  ../include/MeanObliquity.h \
+  ../include/NutAngles.h \
+  ../include/GHAMatrix.h \
+  ../include/gast.h \
+  ../include/EqnEquinox.h \
+  ../include/NutAngles.h \
+  ../include/MeanObliquity.h \
+  ../include/gmst.h \
+  ../include/Frac.h \
+  ../include/PoleMatrix.h \
+  ../include/dotProduct.h \
+  ../include/gibbs.h \
+  ../include/unit.h \
+  ../include/crossProduct.h \
+  ../include/angl.h \
+  ../include/sign_.h \
+  ../include/hgibbs.h \
+  ../include/elements.h \
+  ../include/largestRoot.h
 
 CMakeFiles/Proyecto.dir/src/EKF_Tests.cpp.obj: ../src/EKF_Tests.cpp \
   C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/math.h \
@@ -872,7 +1283,25 @@ CMakeFiles/Proyecto.dir/src/EKF_Tests.cpp.obj: ../src/EKF_Tests.cpp \
   C:/URApps/CLion_2022_2_2/MinGW/include/strings.h \
   C:/URApps/CLion_2022_2_2/MinGW/include/wchar.h \
   ../include/gmst.h \
-  ../include/Frac.h
+  ../include/Frac.h \
+  ../include/hgibbs.h \
+  ../include/G_AccelHarmonic.h \
+  ../include/AccelHarmonic.h \
+  ../include/Legendre.h \
+  ../include/Global.h \
+  ../include/AccelHarmonic.h \
+  ../include/elements.h \
+  ../include/EqnEquinox.h \
+  ../include/NutAngles.h \
+  ../include/MeanObliquity.h \
+  ../include/gast.h \
+  ../include/EqnEquinox.h \
+  ../include/gmst.h \
+  ../include/GHAMatrix.h \
+  ../include/gast.h \
+  ../include/R_z.h \
+  ../include/LTC.h \
+  ../include/R_y.h
 
 CMakeFiles/Proyecto.dir/src/EccAnom.cpp.obj: ../src/EccAnom.cpp \
   ../include/EccAnom.h \
@@ -990,6 +1419,155 @@ CMakeFiles/Proyecto.dir/src/EccAnom.cpp.obj: ../src/EccAnom.cpp \
   C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cerrno \
   C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_string.tcc
 
+CMakeFiles/Proyecto.dir/src/EqnEquinox.cpp.obj: ../src/EqnEquinox.cpp \
+  ../include/EqnEquinox.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cmath \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++config.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/os_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/cpu_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cpp_type_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/type_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/math.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/_mingw.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/msvcrtver.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/w32api.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sdkddkver.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/features.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/std_abs.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdlib.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stddef.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/alloca.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/specfun.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_algobase.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/functexcept.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/numeric_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_pair.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/move.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/concept_check.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/type_traits \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/debug/assertions.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ptr_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/debug/debug.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/predefined_ops.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/limits \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/gamma.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/special_function_util.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/bessel_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/special_function_util.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/beta_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/ell_integral.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/exp_integral.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/hypergeometric.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/legendre_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/modified_bessel_func.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_hermite.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_laguerre.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/riemann_zeta.tcc \
+  ../include/NutAngles.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iostream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ostream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ios \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iosfwd \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stringfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/memoryfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/postypes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cwchar \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wchar.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stdarg.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdlib.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/direct.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/stat.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/conio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/io.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/time.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/process.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/exception \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception_ptr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/typeinfo \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/hash_bytes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/new \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/nested_exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/char_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdint \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/localefwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/clocale \
+  C:/URApps/CLion_2022_2_2/MinGW/include/locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cctype \
+  C:/URApps/CLion_2022_2_2/MinGW/include/ctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ios_base.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/atomicity.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/gthr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/gthr-default.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/errno.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/atomic_word.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_classes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/string \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/new_allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ostream_insert.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cxxabi_forced.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_function.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/backward/binders.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/range_access.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/initializer_list \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_string.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/alloc_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/alloc_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/string_view \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/functional_hash.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/string_view.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/string_conversions.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdlib \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdio \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cerrno \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_string.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_classes.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/system_error \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/error_constants.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/stdexcept \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/streambuf \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/streambuf.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_ios.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cwctype \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/ctype_base.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/streambuf_iterator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/ctype_inline.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_ios.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ostream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/istream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/istream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/vector \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_construct.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_uninitialized.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/utility \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_relops.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_vector.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_bvector.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/vector.tcc \
+  ../include/SAT_const.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/math.h \
+  ../include/MeanObliquity.h
+
 CMakeFiles/Proyecto.dir/src/Frac.cpp.obj: ../src/Frac.cpp \
   ../include/Frac.h \
   C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cmath \
@@ -1038,6 +1616,355 @@ CMakeFiles/Proyecto.dir/src/Frac.cpp.obj: ../src/Frac.cpp \
   C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_hermite.tcc \
   C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_laguerre.tcc \
   C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/riemann_zeta.tcc
+
+CMakeFiles/Proyecto.dir/src/GHAMatrix.cpp.obj: ../src/GHAMatrix.cpp \
+  ../include/GHAMatrix.h \
+  ../include/gast.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cmath \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++config.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/os_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/cpu_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cpp_type_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/type_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/math.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/_mingw.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/msvcrtver.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/w32api.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sdkddkver.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/features.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/std_abs.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdlib.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stddef.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/alloca.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/specfun.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_algobase.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/functexcept.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/numeric_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_pair.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/move.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/concept_check.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/type_traits \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/debug/assertions.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ptr_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/debug/debug.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/predefined_ops.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/limits \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/gamma.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/special_function_util.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/bessel_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/special_function_util.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/beta_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/ell_integral.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/exp_integral.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/hypergeometric.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/legendre_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/modified_bessel_func.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_hermite.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_laguerre.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/riemann_zeta.tcc \
+  ../include/EqnEquinox.h \
+  ../include/NutAngles.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iostream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ostream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ios \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iosfwd \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stringfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/memoryfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/postypes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cwchar \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wchar.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stdarg.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdlib.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/direct.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/stat.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/conio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/io.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/time.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/process.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/exception \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception_ptr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/typeinfo \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/hash_bytes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/new \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/nested_exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/char_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdint \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/localefwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/clocale \
+  C:/URApps/CLion_2022_2_2/MinGW/include/locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cctype \
+  C:/URApps/CLion_2022_2_2/MinGW/include/ctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ios_base.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/atomicity.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/gthr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/gthr-default.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/errno.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/atomic_word.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_classes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/string \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/new_allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ostream_insert.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cxxabi_forced.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_function.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/backward/binders.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/range_access.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/initializer_list \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_string.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/alloc_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/alloc_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/string_view \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/functional_hash.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/string_view.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/string_conversions.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdlib \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdio \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cerrno \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_string.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_classes.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/system_error \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/error_constants.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/stdexcept \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/streambuf \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/streambuf.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_ios.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cwctype \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/ctype_base.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/streambuf_iterator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/ctype_inline.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_ios.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ostream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/istream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/istream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/vector \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_construct.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_uninitialized.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/utility \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_relops.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_vector.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_bvector.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/vector.tcc \
+  ../include/SAT_const.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/math.h \
+  ../include/MeanObliquity.h \
+  ../include/gmst.h \
+  ../include/Frac.h \
+  ../include/R_z.h \
+  ../include/Matrix.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iomanip \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/locale \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets_nonio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ctime \
+  C:/URApps/CLion_2022_2_2/MinGW/include/time.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/time_members.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/messages_members.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/codecvt.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets_nonio.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_conv.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stringfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/codecvt.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/unique_ptr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tuple \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/array \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/uses_allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/invoke.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/quoted_string.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/sstream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/sstream.tcc
+
+CMakeFiles/Proyecto.dir/src/G_AccelHarmonic.cpp.obj: ../src/G_AccelHarmonic.cpp \
+  ../include/G_AccelHarmonic.h \
+  ../include/Matrix.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iostream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++config.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/os_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/cpu_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ostream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ios \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iosfwd \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stringfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/memoryfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/postypes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cwchar \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wchar.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/_mingw.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/msvcrtver.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/w32api.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sdkddkver.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/features.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stddef.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stdarg.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdlib.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/direct.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/stat.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/conio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/io.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/time.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/process.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/exception \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception_ptr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/typeinfo \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/hash_bytes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/new \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/nested_exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/move.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/concept_check.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/type_traits \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/char_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_algobase.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/functexcept.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cpp_type_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/type_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/numeric_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_pair.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/debug/assertions.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ptr_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/debug/debug.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/predefined_ops.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdint \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/localefwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/clocale \
+  C:/URApps/CLion_2022_2_2/MinGW/include/locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cctype \
+  C:/URApps/CLion_2022_2_2/MinGW/include/ctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ios_base.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/atomicity.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/gthr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/gthr-default.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/errno.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/atomic_word.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_classes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/string \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/new_allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ostream_insert.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cxxabi_forced.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_function.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/backward/binders.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/range_access.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/initializer_list \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_string.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/alloc_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/alloc_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/string_view \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/limits \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/functional_hash.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/string_view.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/string_conversions.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdlib \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdlib.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/alloca.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/std_abs.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdio \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cerrno \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_string.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_classes.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/system_error \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/error_constants.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/stdexcept \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/streambuf \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/streambuf.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_ios.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cwctype \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/ctype_base.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/streambuf_iterator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/ctype_inline.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_ios.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ostream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/istream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/istream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iomanip \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/locale \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets_nonio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ctime \
+  C:/URApps/CLion_2022_2_2/MinGW/include/time.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/time_members.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/messages_members.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/codecvt.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets_nonio.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_conv.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stringfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/codecvt.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/unique_ptr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/utility \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_relops.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tuple \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/array \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/uses_allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/invoke.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/quoted_string.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/sstream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/sstream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cmath \
+  C:/URApps/CLion_2022_2_2/MinGW/include/math.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/specfun.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/gamma.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/special_function_util.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/bessel_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/special_function_util.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/beta_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/ell_integral.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/exp_integral.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/hypergeometric.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/legendre_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/modified_bessel_func.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_hermite.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_laguerre.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/riemann_zeta.tcc \
+  ../include/AccelHarmonic.h \
+  ../include/SAT_const.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/math.h \
+  ../include/Legendre.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/vector \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_construct.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_uninitialized.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_vector.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_bvector.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/vector.tcc \
+  ../include/Global.h \
+  ../include/Matrix.h
 
 CMakeFiles/Proyecto.dir/src/Geodetic.cpp.obj: ../src/Geodetic.cpp \
   ../include/Geodetic.h \
@@ -1201,6 +2128,167 @@ CMakeFiles/Proyecto.dir/src/Geodetic.cpp.obj: ../src/Geodetic.cpp \
   C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/riemann_zeta.tcc \
   ../include/SAT_const.h \
   C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/math.h
+
+CMakeFiles/Proyecto.dir/src/Global.cpp.obj: ../src/Global.cpp \
+  ../include/Global.h \
+  ../include/Matrix.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iostream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++config.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/os_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/cpu_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ostream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ios \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iosfwd \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stringfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/memoryfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/postypes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cwchar \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wchar.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/_mingw.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/msvcrtver.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/w32api.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sdkddkver.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/features.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stddef.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stdarg.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdlib.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/direct.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/stat.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/conio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/io.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/time.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/process.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/exception \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception_ptr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/typeinfo \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/hash_bytes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/new \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/nested_exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/move.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/concept_check.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/type_traits \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/char_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_algobase.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/functexcept.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cpp_type_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/type_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/numeric_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_pair.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/debug/assertions.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ptr_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/debug/debug.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/predefined_ops.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdint \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/localefwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/clocale \
+  C:/URApps/CLion_2022_2_2/MinGW/include/locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cctype \
+  C:/URApps/CLion_2022_2_2/MinGW/include/ctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ios_base.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/atomicity.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/gthr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/gthr-default.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/errno.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/atomic_word.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_classes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/string \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/new_allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ostream_insert.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cxxabi_forced.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_function.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/backward/binders.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/range_access.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/initializer_list \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_string.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/alloc_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/alloc_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/string_view \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/limits \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/functional_hash.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/string_view.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/string_conversions.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdlib \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdlib.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/alloca.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/std_abs.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdio \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cerrno \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_string.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_classes.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/system_error \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/error_constants.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/stdexcept \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/streambuf \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/streambuf.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_ios.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cwctype \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/ctype_base.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/streambuf_iterator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/ctype_inline.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_ios.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ostream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/istream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/istream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iomanip \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/locale \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets_nonio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ctime \
+  C:/URApps/CLion_2022_2_2/MinGW/include/time.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/time_members.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/messages_members.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/codecvt.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets_nonio.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_conv.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stringfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/codecvt.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/unique_ptr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/utility \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_relops.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tuple \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/array \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/uses_allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/invoke.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/quoted_string.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/sstream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/sstream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cmath \
+  C:/URApps/CLion_2022_2_2/MinGW/include/math.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/specfun.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/gamma.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/special_function_util.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/bessel_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/special_function_util.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/beta_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/ell_integral.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/exp_integral.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/hypergeometric.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/legendre_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/modified_bessel_func.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_hermite.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_laguerre.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/riemann_zeta.tcc
 
 CMakeFiles/Proyecto.dir/src/IERS.cpp.obj: ../src/IERS.cpp \
   ../include/IERS.h \
@@ -1370,6 +2458,333 @@ CMakeFiles/Proyecto.dir/src/IERS.cpp.obj: ../src/IERS.cpp \
   C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/riemann_zeta.tcc \
   ../include/SAT_const.h \
   C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/math.h
+
+CMakeFiles/Proyecto.dir/src/JPL_Eph_DE430.cpp.obj: ../src/JPL_Eph_DE430.cpp \
+  ../include/JPL_Eph_DE430.h \
+  ../include/Matrix.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iostream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++config.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/os_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/cpu_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ostream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ios \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iosfwd \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stringfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/memoryfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/postypes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cwchar \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wchar.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/_mingw.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/msvcrtver.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/w32api.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sdkddkver.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/features.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stddef.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stdarg.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdlib.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/direct.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/stat.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/conio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/io.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/time.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/process.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/exception \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception_ptr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/typeinfo \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/hash_bytes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/new \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/nested_exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/move.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/concept_check.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/type_traits \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/char_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_algobase.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/functexcept.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cpp_type_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/type_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/numeric_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_pair.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/debug/assertions.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ptr_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/debug/debug.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/predefined_ops.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdint \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/localefwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/clocale \
+  C:/URApps/CLion_2022_2_2/MinGW/include/locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cctype \
+  C:/URApps/CLion_2022_2_2/MinGW/include/ctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ios_base.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/atomicity.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/gthr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/gthr-default.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/errno.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/atomic_word.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_classes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/string \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/new_allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ostream_insert.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cxxabi_forced.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_function.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/backward/binders.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/range_access.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/initializer_list \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_string.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/alloc_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/alloc_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/string_view \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/limits \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/functional_hash.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/string_view.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/string_conversions.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdlib \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdlib.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/alloca.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/std_abs.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdio \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cerrno \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_string.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_classes.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/system_error \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/error_constants.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/stdexcept \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/streambuf \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/streambuf.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_ios.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cwctype \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/ctype_base.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/streambuf_iterator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/ctype_inline.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_ios.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ostream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/istream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/istream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iomanip \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/locale \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets_nonio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ctime \
+  C:/URApps/CLion_2022_2_2/MinGW/include/time.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/time_members.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/messages_members.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/codecvt.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets_nonio.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_conv.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stringfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/codecvt.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/unique_ptr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/utility \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_relops.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tuple \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/array \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/uses_allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/invoke.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/quoted_string.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/sstream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/sstream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cmath \
+  C:/URApps/CLion_2022_2_2/MinGW/include/math.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/specfun.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/gamma.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/special_function_util.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/bessel_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/special_function_util.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/beta_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/ell_integral.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/exp_integral.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/hypergeometric.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/legendre_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/modified_bessel_func.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_hermite.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_laguerre.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/riemann_zeta.tcc \
+  ../include/Global.h \
+  ../include/Matrix.h \
+  ../include/Cheb3D.h
+
+CMakeFiles/Proyecto.dir/src/LTC.cpp.obj: ../src/LTC.cpp \
+  ../include/LTC.h \
+  ../include/Matrix.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iostream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++config.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/os_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/cpu_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ostream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ios \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iosfwd \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stringfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/memoryfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/postypes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cwchar \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wchar.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/_mingw.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/msvcrtver.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/w32api.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sdkddkver.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/features.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stddef.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stdarg.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdlib.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/direct.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/stat.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/conio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/io.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/time.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/process.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/exception \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception_ptr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/typeinfo \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/hash_bytes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/new \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/nested_exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/move.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/concept_check.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/type_traits \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/char_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_algobase.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/functexcept.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cpp_type_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/type_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/numeric_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_pair.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/debug/assertions.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ptr_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/debug/debug.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/predefined_ops.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdint \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/localefwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/clocale \
+  C:/URApps/CLion_2022_2_2/MinGW/include/locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cctype \
+  C:/URApps/CLion_2022_2_2/MinGW/include/ctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ios_base.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/atomicity.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/gthr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/gthr-default.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/errno.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/atomic_word.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_classes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/string \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/new_allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ostream_insert.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cxxabi_forced.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_function.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/backward/binders.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/range_access.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/initializer_list \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_string.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/alloc_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/alloc_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/string_view \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/limits \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/functional_hash.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/string_view.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/string_conversions.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdlib \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdlib.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/alloca.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/std_abs.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdio \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cerrno \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_string.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_classes.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/system_error \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/error_constants.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/stdexcept \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/streambuf \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/streambuf.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_ios.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cwctype \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/ctype_base.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/streambuf_iterator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/ctype_inline.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_ios.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ostream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/istream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/istream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iomanip \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/locale \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets_nonio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ctime \
+  C:/URApps/CLion_2022_2_2/MinGW/include/time.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/time_members.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/messages_members.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/codecvt.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets_nonio.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_conv.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stringfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/codecvt.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/unique_ptr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/utility \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_relops.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tuple \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/array \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/uses_allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/invoke.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/quoted_string.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/sstream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/sstream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cmath \
+  C:/URApps/CLion_2022_2_2/MinGW/include/math.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/specfun.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/gamma.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/special_function_util.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/bessel_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/special_function_util.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/beta_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/ell_integral.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/exp_integral.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/hypergeometric.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/legendre_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/modified_bessel_func.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_hermite.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_laguerre.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/riemann_zeta.tcc \
+  ../include/R_y.h \
+  ../include/R_z.h
 
 CMakeFiles/Proyecto.dir/src/Legendre.cpp.obj: ../src/Legendre.cpp \
   ../include/Legendre.h \
@@ -3527,6 +4942,199 @@ CMakeFiles/Proyecto.dir/src/TimeUpdate.cpp.obj: ../src/TimeUpdate.cpp \
   C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_laguerre.tcc \
   C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/riemann_zeta.tcc
 
+CMakeFiles/Proyecto.dir/src/VarEqn.cpp.obj: ../src/VarEqn.cpp \
+  ../include/VarEqn.h \
+  ../include/Matrix.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iostream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++config.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/os_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/cpu_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ostream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ios \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iosfwd \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stringfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/memoryfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/postypes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cwchar \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wchar.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/_mingw.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/msvcrtver.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/w32api.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sdkddkver.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/features.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stddef.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stdarg.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdlib.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/direct.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/stat.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/conio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/io.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/time.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/process.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/exception \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception_ptr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/typeinfo \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/hash_bytes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/new \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/nested_exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/move.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/concept_check.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/type_traits \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/char_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_algobase.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/functexcept.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cpp_type_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/type_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/numeric_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_pair.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/debug/assertions.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ptr_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/debug/debug.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/predefined_ops.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdint \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/localefwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/clocale \
+  C:/URApps/CLion_2022_2_2/MinGW/include/locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cctype \
+  C:/URApps/CLion_2022_2_2/MinGW/include/ctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ios_base.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/atomicity.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/gthr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/gthr-default.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/errno.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/atomic_word.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_classes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/string \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/new_allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ostream_insert.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cxxabi_forced.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_function.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/backward/binders.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/range_access.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/initializer_list \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_string.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/alloc_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/alloc_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/string_view \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/limits \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/functional_hash.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/string_view.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/string_conversions.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdlib \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdlib.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/alloca.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/std_abs.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdio \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cerrno \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_string.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_classes.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/system_error \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/error_constants.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/stdexcept \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/streambuf \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/streambuf.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_ios.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cwctype \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/ctype_base.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/streambuf_iterator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/ctype_inline.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_ios.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ostream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/istream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/istream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iomanip \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/locale \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets_nonio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ctime \
+  C:/URApps/CLion_2022_2_2/MinGW/include/time.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/time_members.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/messages_members.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/codecvt.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets_nonio.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_conv.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stringfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/codecvt.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/unique_ptr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/utility \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_relops.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tuple \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/array \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/uses_allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/invoke.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/quoted_string.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/sstream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/sstream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cmath \
+  C:/URApps/CLion_2022_2_2/MinGW/include/math.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/specfun.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/gamma.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/special_function_util.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/bessel_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/special_function_util.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/beta_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/ell_integral.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/exp_integral.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/hypergeometric.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/legendre_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/modified_bessel_func.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_hermite.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_laguerre.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/riemann_zeta.tcc \
+  ../include/SAT_const.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/math.h \
+  ../include/IERS.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/vector \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_construct.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_uninitialized.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_vector.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_bvector.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/vector.tcc \
+  ../include/timediff.h \
+  ../include/PrecMatrix.h \
+  ../include/Matrix.h \
+  ../include/SAT_const.h \
+  ../include/R_x.h \
+  ../include/R_y.h \
+  ../include/R_z.h \
+  ../include/PoleMatrix.h \
+  ../include/NutMatrix.h \
+  ../include/MeanObliquity.h \
+  ../include/NutAngles.h \
+  ../include/GHAMatrix.h \
+  ../include/gast.h \
+  ../include/EqnEquinox.h \
+  ../include/NutAngles.h \
+  ../include/MeanObliquity.h \
+  ../include/gmst.h \
+  ../include/Frac.h \
+  ../include/R_z.h \
+  ../include/AccelHarmonic.h \
+  ../include/Legendre.h \
+  ../include/Global.h \
+  ../include/G_AccelHarmonic.h
+
 CMakeFiles/Proyecto.dir/src/angl.cpp.obj: ../src/angl.cpp \
   ../include/angl.h \
   ../include/Matrix.h \
@@ -3690,6 +5298,410 @@ CMakeFiles/Proyecto.dir/src/angl.cpp.obj: ../src/angl.cpp \
   ../include/sign_.h \
   ../include/dotProduct.h \
   ../include/Matrix.h
+
+CMakeFiles/Proyecto.dir/src/anglesdr.cpp.obj: ../src/anglesdr.cpp \
+  ../include/anglesdr.h \
+  ../include/Matrix.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iostream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++config.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/os_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/cpu_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ostream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ios \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iosfwd \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stringfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/memoryfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/postypes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cwchar \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wchar.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/_mingw.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/msvcrtver.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/w32api.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sdkddkver.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/features.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stddef.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stdarg.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdlib.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/direct.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/stat.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/conio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/io.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/time.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/process.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/exception \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception_ptr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/typeinfo \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/hash_bytes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/new \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/nested_exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/move.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/concept_check.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/type_traits \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/char_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_algobase.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/functexcept.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cpp_type_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/type_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/numeric_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_pair.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/debug/assertions.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ptr_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/debug/debug.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/predefined_ops.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdint \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/localefwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/clocale \
+  C:/URApps/CLion_2022_2_2/MinGW/include/locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cctype \
+  C:/URApps/CLion_2022_2_2/MinGW/include/ctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ios_base.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/atomicity.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/gthr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/gthr-default.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/errno.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/atomic_word.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_classes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/string \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/new_allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ostream_insert.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cxxabi_forced.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_function.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/backward/binders.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/range_access.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/initializer_list \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_string.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/alloc_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/alloc_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/string_view \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/limits \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/functional_hash.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/string_view.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/string_conversions.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdlib \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdlib.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/alloca.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/std_abs.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdio \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cerrno \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_string.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_classes.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/system_error \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/error_constants.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/stdexcept \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/streambuf \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/streambuf.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_ios.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cwctype \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/ctype_base.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/streambuf_iterator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/ctype_inline.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_ios.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ostream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/istream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/istream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iomanip \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/locale \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets_nonio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ctime \
+  C:/URApps/CLion_2022_2_2/MinGW/include/time.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/time_members.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/messages_members.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/codecvt.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets_nonio.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_conv.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stringfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/codecvt.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/unique_ptr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/utility \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_relops.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tuple \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/array \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/uses_allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/invoke.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/quoted_string.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/sstream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/sstream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cmath \
+  C:/URApps/CLion_2022_2_2/MinGW/include/math.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/specfun.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/gamma.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/special_function_util.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/bessel_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/special_function_util.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/beta_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/ell_integral.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/exp_integral.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/hypergeometric.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/legendre_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/modified_bessel_func.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_hermite.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_laguerre.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/riemann_zeta.tcc \
+  ../include/SAT_const.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/math.h \
+  ../include/Global.h \
+  ../include/Matrix.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/string.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/strings.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wchar.h \
+  ../include/Geodetic.h \
+  ../include/LTC.h \
+  ../include/R_y.h \
+  ../include/R_z.h \
+  ../include/IERS.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/vector \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_construct.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_uninitialized.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_vector.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_bvector.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/vector.tcc \
+  ../include/timediff.h \
+  ../include/PrecMatrix.h \
+  ../include/SAT_const.h \
+  ../include/R_x.h \
+  ../include/R_y.h \
+  ../include/R_z.h \
+  ../include/NutMatrix.h \
+  ../include/MeanObliquity.h \
+  ../include/NutAngles.h \
+  ../include/PoleMatrix.h \
+  ../include/GHAMatrix.h \
+  ../include/gast.h \
+  ../include/EqnEquinox.h \
+  ../include/NutAngles.h \
+  ../include/MeanObliquity.h \
+  ../include/gmst.h \
+  ../include/Frac.h \
+  ../include/dotProduct.h \
+  ../include/doubler.h \
+  ../include/crossProduct.h
+
+CMakeFiles/Proyecto.dir/src/anglesg.cpp.obj: ../src/anglesg.cpp \
+  ../include/anglesg.h \
+  ../include/Matrix.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iostream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++config.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/os_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/cpu_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ostream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ios \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iosfwd \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stringfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/memoryfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/postypes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cwchar \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wchar.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/_mingw.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/msvcrtver.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/w32api.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sdkddkver.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/features.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stddef.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stdarg.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdlib.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/direct.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/stat.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/conio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/io.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/time.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/process.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/exception \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception_ptr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/typeinfo \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/hash_bytes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/new \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/nested_exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/move.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/concept_check.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/type_traits \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/char_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_algobase.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/functexcept.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cpp_type_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/type_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/numeric_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_pair.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/debug/assertions.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ptr_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/debug/debug.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/predefined_ops.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdint \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/localefwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/clocale \
+  C:/URApps/CLion_2022_2_2/MinGW/include/locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cctype \
+  C:/URApps/CLion_2022_2_2/MinGW/include/ctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ios_base.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/atomicity.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/gthr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/gthr-default.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/errno.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/atomic_word.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_classes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/string \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/new_allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ostream_insert.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cxxabi_forced.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_function.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/backward/binders.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/range_access.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/initializer_list \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_string.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/alloc_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/alloc_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/string_view \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/limits \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/functional_hash.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/string_view.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/string_conversions.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdlib \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdlib.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/alloca.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/std_abs.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdio \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cerrno \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_string.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_classes.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/system_error \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/error_constants.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/stdexcept \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/streambuf \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/streambuf.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_ios.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cwctype \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/ctype_base.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/streambuf_iterator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/ctype_inline.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_ios.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ostream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/istream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/istream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iomanip \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/locale \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets_nonio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ctime \
+  C:/URApps/CLion_2022_2_2/MinGW/include/time.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/time_members.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/messages_members.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/codecvt.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets_nonio.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_conv.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stringfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/codecvt.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/unique_ptr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/utility \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_relops.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tuple \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/array \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/uses_allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/invoke.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/quoted_string.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/sstream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/sstream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cmath \
+  C:/URApps/CLion_2022_2_2/MinGW/include/math.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/specfun.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/gamma.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/special_function_util.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/bessel_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/special_function_util.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/beta_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/ell_integral.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/exp_integral.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/hypergeometric.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/legendre_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/modified_bessel_func.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_hermite.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_laguerre.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/riemann_zeta.tcc \
+  ../include/Global.h \
+  ../include/Matrix.h \
+  ../include/Geodetic.h \
+  ../include/LTC.h \
+  ../include/R_y.h \
+  ../include/R_z.h \
+  ../include/IERS.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/vector \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_construct.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_uninitialized.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_vector.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_bvector.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/vector.tcc \
+  ../include/SAT_const.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/math.h \
+  ../include/timediff.h \
+  ../include/PrecMatrix.h \
+  ../include/SAT_const.h \
+  ../include/R_x.h \
+  ../include/R_y.h \
+  ../include/R_z.h \
+  ../include/NutMatrix.h \
+  ../include/MeanObliquity.h \
+  ../include/NutAngles.h \
+  ../include/GHAMatrix.h \
+  ../include/gast.h \
+  ../include/EqnEquinox.h \
+  ../include/NutAngles.h \
+  ../include/MeanObliquity.h \
+  ../include/gmst.h \
+  ../include/Frac.h \
+  ../include/PoleMatrix.h \
+  ../include/dotProduct.h \
+  ../include/gibbs.h \
+  ../include/unit.h \
+  ../include/crossProduct.h \
+  ../include/angl.h \
+  ../include/sign_.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/string.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/strings.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wchar.h \
+  ../include/hgibbs.h \
+  ../include/elements.h \
+  ../include/largestRoot.h
 
 CMakeFiles/Proyecto.dir/src/crossProduct.cpp.obj: ../src/crossProduct.cpp \
   ../include/crossProduct.h \
@@ -4178,6 +6190,323 @@ CMakeFiles/Proyecto.dir/src/doubler.cpp.obj: ../src/doubler.cpp \
   ../include/dotProduct.h \
   ../include/crossProduct.h
 
+CMakeFiles/Proyecto.dir/src/elements.cpp.obj: ../src/elements.cpp \
+  ../include/elements.h \
+  ../include/SAT_const.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/math.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cmath \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++config.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/os_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/cpu_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cpp_type_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/type_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/math.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/_mingw.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/msvcrtver.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/w32api.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sdkddkver.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/features.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/std_abs.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdlib.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stddef.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/alloca.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/specfun.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_algobase.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/functexcept.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/numeric_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_pair.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/move.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/concept_check.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/type_traits \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/debug/assertions.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ptr_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/debug/debug.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/predefined_ops.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/limits \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/gamma.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/special_function_util.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/bessel_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/special_function_util.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/beta_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/ell_integral.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/exp_integral.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/hypergeometric.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/legendre_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/modified_bessel_func.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_hermite.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_laguerre.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/riemann_zeta.tcc \
+  ../include/Matrix.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iostream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ostream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ios \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iosfwd \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stringfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/memoryfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/postypes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cwchar \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wchar.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stdarg.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdlib.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/direct.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/stat.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/conio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/io.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/time.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/process.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/exception \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception_ptr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/typeinfo \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/hash_bytes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/new \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/nested_exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/char_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdint \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/localefwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/clocale \
+  C:/URApps/CLion_2022_2_2/MinGW/include/locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cctype \
+  C:/URApps/CLion_2022_2_2/MinGW/include/ctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ios_base.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/atomicity.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/gthr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/gthr-default.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/errno.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/atomic_word.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_classes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/string \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/new_allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ostream_insert.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cxxabi_forced.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_function.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/backward/binders.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/range_access.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/initializer_list \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_string.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/alloc_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/alloc_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/string_view \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/functional_hash.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/string_view.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/string_conversions.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdlib \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdio \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cerrno \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_string.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_classes.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/system_error \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/error_constants.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/stdexcept \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/streambuf \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/streambuf.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_ios.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cwctype \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/ctype_base.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/streambuf_iterator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/ctype_inline.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_ios.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ostream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/istream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/istream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iomanip \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/locale \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets_nonio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ctime \
+  C:/URApps/CLion_2022_2_2/MinGW/include/time.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/time_members.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/messages_members.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/codecvt.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets_nonio.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_conv.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stringfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/codecvt.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/unique_ptr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/utility \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_relops.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tuple \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/array \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/uses_allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/invoke.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/quoted_string.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/sstream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/sstream.tcc \
+  ../include/crossProduct.h \
+  ../include/dotProduct.h
+
+CMakeFiles/Proyecto.dir/src/gast.cpp.obj: ../src/gast.cpp \
+  ../include/gast.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cmath \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++config.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/os_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/cpu_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cpp_type_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/type_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/math.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/_mingw.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/msvcrtver.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/w32api.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sdkddkver.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/features.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/std_abs.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdlib.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stddef.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/alloca.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/specfun.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_algobase.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/functexcept.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/numeric_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_pair.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/move.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/concept_check.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/type_traits \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/debug/assertions.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ptr_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/debug/debug.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/predefined_ops.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/limits \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/gamma.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/special_function_util.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/bessel_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/special_function_util.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/beta_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/ell_integral.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/exp_integral.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/hypergeometric.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/legendre_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/modified_bessel_func.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_hermite.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_laguerre.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/riemann_zeta.tcc \
+  ../include/EqnEquinox.h \
+  ../include/NutAngles.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iostream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ostream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ios \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iosfwd \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stringfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/memoryfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/postypes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cwchar \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wchar.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stdarg.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdlib.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/direct.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/stat.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/conio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/io.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/time.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/process.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/exception \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception_ptr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/typeinfo \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/hash_bytes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/new \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/nested_exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/char_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdint \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/localefwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/clocale \
+  C:/URApps/CLion_2022_2_2/MinGW/include/locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cctype \
+  C:/URApps/CLion_2022_2_2/MinGW/include/ctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ios_base.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/atomicity.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/gthr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/gthr-default.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/errno.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/atomic_word.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_classes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/string \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/new_allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ostream_insert.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cxxabi_forced.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_function.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/backward/binders.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/range_access.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/initializer_list \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_string.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/alloc_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/alloc_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/string_view \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/functional_hash.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/string_view.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/string_conversions.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdlib \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdio \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cerrno \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_string.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_classes.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/system_error \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/error_constants.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/stdexcept \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/streambuf \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/streambuf.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_ios.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cwctype \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/ctype_base.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/streambuf_iterator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/ctype_inline.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_ios.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ostream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/istream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/istream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/vector \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_construct.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_uninitialized.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/utility \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_relops.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_vector.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_bvector.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/vector.tcc \
+  ../include/SAT_const.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/math.h \
+  ../include/MeanObliquity.h \
+  ../include/gmst.h \
+  ../include/Frac.h
+
 CMakeFiles/Proyecto.dir/src/gibbs.cpp.obj: ../src/gibbs.cpp \
   ../include/gibbs.h \
   ../include/Matrix.h \
@@ -4399,6 +6728,326 @@ CMakeFiles/Proyecto.dir/src/gmst.cpp.obj: ../src/gmst.cpp \
   C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_laguerre.tcc \
   C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/riemann_zeta.tcc \
   ../include/Frac.h
+
+CMakeFiles/Proyecto.dir/src/hgibbs.cpp.obj: ../src/hgibbs.cpp \
+  ../include/hgibbs.h \
+  ../include/Matrix.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iostream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++config.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/os_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/cpu_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ostream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ios \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iosfwd \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stringfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/memoryfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/postypes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cwchar \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wchar.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/_mingw.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/msvcrtver.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/w32api.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sdkddkver.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/features.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stddef.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stdarg.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdlib.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/direct.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/stat.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/conio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/io.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/time.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/process.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/exception \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception_ptr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/typeinfo \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/hash_bytes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/new \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/nested_exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/move.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/concept_check.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/type_traits \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/char_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_algobase.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/functexcept.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cpp_type_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/type_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/numeric_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_pair.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/debug/assertions.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ptr_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/debug/debug.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/predefined_ops.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdint \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/localefwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/clocale \
+  C:/URApps/CLion_2022_2_2/MinGW/include/locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cctype \
+  C:/URApps/CLion_2022_2_2/MinGW/include/ctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ios_base.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/atomicity.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/gthr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/gthr-default.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/errno.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/atomic_word.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_classes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/string \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/new_allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ostream_insert.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cxxabi_forced.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_function.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/backward/binders.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/range_access.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/initializer_list \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_string.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/alloc_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/alloc_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/string_view \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/limits \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/functional_hash.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/string_view.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/string_conversions.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdlib \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdlib.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/alloca.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/std_abs.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdio \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cerrno \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_string.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_classes.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/system_error \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/error_constants.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/stdexcept \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/streambuf \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/streambuf.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_ios.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cwctype \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/ctype_base.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/streambuf_iterator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/ctype_inline.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_ios.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ostream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/istream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/istream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iomanip \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/locale \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets_nonio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ctime \
+  C:/URApps/CLion_2022_2_2/MinGW/include/time.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/time_members.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/messages_members.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/codecvt.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets_nonio.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_conv.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stringfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/codecvt.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/unique_ptr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/utility \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_relops.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tuple \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/array \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/uses_allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/invoke.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/quoted_string.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/sstream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/sstream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cmath \
+  C:/URApps/CLion_2022_2_2/MinGW/include/math.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/specfun.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/gamma.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/special_function_util.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/bessel_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/special_function_util.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/beta_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/ell_integral.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/exp_integral.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/hypergeometric.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/legendre_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/modified_bessel_func.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_hermite.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_laguerre.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/riemann_zeta.tcc \
+  ../include/SAT_const.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/math.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/string.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/strings.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wchar.h \
+  ../include/crossProduct.h \
+  ../include/dotProduct.h \
+  ../include/unit.h \
+  ../include/angl.h \
+  ../include/Matrix.h \
+  ../include/sign_.h
+
+CMakeFiles/Proyecto.dir/src/largestRoot.cpp.obj: ../src/largestRoot.cpp \
+  ../include/largestRoot.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iostream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++config.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/os_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/cpu_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ostream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ios \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iosfwd \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stringfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/memoryfwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/postypes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cwchar \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wchar.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/_mingw.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/msvcrtver.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/w32api.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sdkddkver.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/features.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stddef.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stdarg.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdlib.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/direct.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sys/stat.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/conio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/io.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/time.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/process.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/exception \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception_ptr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/typeinfo \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/hash_bytes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/new \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/nested_exception.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/move.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/concept_check.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/type_traits \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/char_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_algobase.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/functexcept.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cpp_type_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/type_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/numeric_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_pair.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/debug/assertions.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ptr_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/debug/debug.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/predefined_ops.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdint \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdint.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/localefwd.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/clocale \
+  C:/URApps/CLion_2022_2_2/MinGW/include/locale.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cctype \
+  C:/URApps/CLion_2022_2_2/MinGW/include/ctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/wctype.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ios_base.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/atomicity.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/gthr.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/gthr-default.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/errno.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/atomic_word.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_classes.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/string \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/new_allocator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ostream_insert.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cxxabi_forced.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_function.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/backward/binders.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/range_access.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/initializer_list \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_string.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/alloc_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/alloc_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/string_view \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/limits \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/functional_hash.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/string_view.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/string_conversions.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdlib \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdlib.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/alloca.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/std_abs.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cstdio \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdio.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cerrno \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_string.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_classes.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/system_error \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/error_constants.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/stdexcept \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/streambuf \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/streambuf.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_ios.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cwctype \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/ctype_base.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/streambuf_iterator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/ctype_inline.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/basic_ios.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ostream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/istream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/istream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/complex \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cmath \
+  C:/URApps/CLion_2022_2_2/MinGW/include/math.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/specfun.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/gamma.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/special_function_util.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/bessel_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/special_function_util.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/beta_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/ell_integral.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/exp_integral.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/hypergeometric.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/legendre_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/modified_bessel_func.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_hermite.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_laguerre.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/riemann_zeta.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/sstream \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/sstream.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/vector \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_construct.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_uninitialized.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/utility \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_relops.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_vector.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_bvector.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/vector.tcc
 
 CMakeFiles/Proyecto.dir/src/sign_.cpp.obj: ../src/sign_.cpp \
   ../include/sign_.h \
@@ -4929,7 +7578,11 @@ C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/nested_exc
 
 C:/URApps/CLion_2022_2_2/MinGW/include/wchar.h:
 
+../src/elements.cpp:
+
 C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++config.h:
+
+../src/AccelHarmonic.cpp:
 
 C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iostream:
 
@@ -5067,6 +7720,8 @@ C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cctype:
 
 C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/localefwd.h:
 
+../src/EqnEquinox.cpp:
+
 C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++locale.h:
 
 C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/hypergeometric.tcc:
@@ -5079,6 +7734,8 @@ C:/URApps/CLion_2022_2_2/MinGW/include/ctype.h:
 
 C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/atomicity.h:
 
+../include/largestRoot.h:
+
 C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/gthr.h:
 
 C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/gthr-default.h:
@@ -5088,6 +7745,8 @@ C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/gt
 C:/URApps/CLion_2022_2_2/MinGW/include/errno.h:
 
 C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/atomic_word.h:
+
+../include/Accel.h:
 
 C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_classes.h:
 
@@ -5147,6 +7806,8 @@ C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_cla
 
 C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/error_constants.h:
 
+../src/VarEqn.cpp:
+
 C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/stdexcept:
 
 ../include/NutMatrix.h:
@@ -5175,9 +7836,7 @@ C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ostream.tc
 
 C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/istream.tcc:
 
-../src/AccelPointMass.cpp:
-
-../include/AccelPointMass.h:
+../src/Accel.cpp:
 
 ../include/Matrix.h:
 
@@ -5186,6 +7845,8 @@ C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iomanip:
 C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/locale:
 
 C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_facets_nonio.h:
+
+../src/gast.cpp:
 
 C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/exp_integral.tcc:
 
@@ -5203,9 +7864,13 @@ C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/locale_con
 
 C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/unique_ptr.h:
 
+../src/LTC.cpp:
+
 C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/utility:
 
 C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_relops.h:
+
+../include/anglesdr.h:
 
 C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tuple:
 
@@ -5247,23 +7912,9 @@ C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_laguer
 
 C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/riemann_zeta.tcc:
 
-../src/MeanObliquity.cpp:
-
-../src/AzElPa.cpp:
-
-../src/Cheb3D.cpp:
-
-../include/Cheb3D.h:
-
 ../include/Global.h:
 
-C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/math.h:
-
-C:/URApps/CLion_2022_2_2/MinGW/include/string.h:
-
-C:/URApps/CLion_2022_2_2/MinGW/include/strings.h:
-
-../src/EKF_Tests.cpp:
+../include/IERS.h:
 
 C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/vector:
 
@@ -5273,47 +7924,101 @@ C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_bvecto
 
 C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/vector.tcc:
 
-../include/sign_.h:
-
-../include/EccAnom.h:
-
-../include/Position.h:
-
-../include/Legendre.h:
-
-../include/IERS.h:
-
-../include/Geodetic.h:
-
-../include/TimeUpdate.h:
-
-../include/PoleMatrix.h:
+C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/math.h:
 
 ../include/MeasUpdate.h:
 
 ../include/PrecMatrix.h:
 
+../include/PoleMatrix.h:
+
+../include/GHAMatrix.h:
+
+../include/gast.h:
+
+../include/EqnEquinox.h:
+
+../include/gmst.h:
+
+../include/AccelHarmonic.h:
+
+../include/Legendre.h:
+
+../include/AccelPointMass.h:
+
+../include/JPL_Eph_DE430.h:
+
+../include/Cheb3D.h:
+
+../src/AccelPointMass.cpp:
+
+../src/MeanObliquity.cpp:
+
+../src/AzElPa.cpp:
+
+../src/Cheb3D.cpp:
+
+C:/URApps/CLion_2022_2_2/MinGW/include/string.h:
+
+C:/URApps/CLion_2022_2_2/MinGW/include/strings.h:
+
+../include/Position.h:
+
+../include/anglesg.h:
+
+../include/Geodetic.h:
+
+../src/NutMatrix.cpp:
+
+../include/G_AccelHarmonic.h:
+
+../include/LTC.h:
+
 ../include/dotProduct.h:
-
-../include/angl.h:
-
-../include/crossProduct.h:
-
-../include/doubler.h:
 
 ../include/gibbs.h:
 
-../include/gmst.h:
+../include/crossProduct.h:
+
+../include/angl.h:
+
+../include/sign_.h:
+
+../include/hgibbs.h:
+
+../src/unit.cpp:
+
+../src/largestRoot.cpp:
+
+../include/elements.h:
+
+../src/EKF_Tests.cpp:
+
+../include/EccAnom.h:
+
+../include/TimeUpdate.h:
+
+../include/doubler.h:
 
 ../src/EccAnom.cpp:
 
 ../src/Frac.cpp:
 
+../src/GHAMatrix.cpp:
+
+../src/G_AccelHarmonic.cpp:
+
 ../src/Geodetic.cpp:
+
+../src/Global.cpp:
+
+../src/JPL_Eph_DE430.cpp:
 
 ../src/Legendre.cpp:
 
 ../src/Matrix.cpp:
+
+../src/anglesdr.cpp:
 
 C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/algorithmfwd.h:
 
@@ -5331,8 +8036,6 @@ C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/uniform_in
 
 ../src/NutAngles.cpp:
 
-../src/NutMatrix.cpp:
-
 ../src/PoleMatrix.cpp:
 
 ../src/Position.cpp:
@@ -5345,7 +8048,11 @@ C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/uniform_in
 
 ../src/TimeUpdate.cpp:
 
+../include/VarEqn.h:
+
 ../src/angl.cpp:
+
+../src/anglesg.cpp:
 
 ../src/crossProduct.cpp:
 
@@ -5355,8 +8062,10 @@ C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/uniform_in
 
 ../src/gmst.cpp:
 
+../src/hgibbs.cpp:
+
+C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/complex:
+
 ../src/sign_.cpp:
 
 ../src/tests.cpp:
-
-../src/unit.cpp:

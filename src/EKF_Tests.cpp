@@ -35,6 +35,17 @@
 #include "../include/doubler.h"
 #include "../include/gibbs.h"
 #include "../include/gmst.h"
+#include "../include/hgibbs.h"
+#include "../include/G_AccelHarmonic.h"
+#include "../include/AccelHarmonic.h"
+
+#include "../include/elements.h"
+#include "../include/EqnEquinox.h"
+#include "../include/G_AccelHarmonic.h"
+#include "../include/gast.h"
+#include "../include/GHAMatrix.h"
+#include "../include/hgibbs.h"
+#include "../include/LTC.h"
 
 #define TOL_ 10e-6
 
@@ -157,7 +168,7 @@ int Cheb3D_01() {
     Matrix Cy(1,5,new double[5]{-0.2,-0.3,-0.5,-0.1,0.1},5);
     Matrix Cz(1,5, new double[5]{0.9,1.1,1.5,1.1,0.7},5);
 
-    Matrix res = Cheb3D(t,N,Ta,Tb,Cx,Cy,Cz);
+    Matrix res = Cheb3D(t,N,Ta,Tb,&Cx,&Cy,&Cz);
     _assert(compareVectors({res(1,1), res(1,2), res(1,3)}, {0.3500, 0.0500, 0.3500}));
 
     return 0;
@@ -653,6 +664,116 @@ int gmst_01(){
     return 0;
 }
 
+//checkear si los valores son correctos
+int hgibbs_01(){
+    //IN
+    Matrix r1(1,3);
+    r1(1,1) = 1;
+    r1(1,2) = 2.5;
+    r1(1,3) = 3.6;
+
+    Matrix r2(1,3);
+    r2(1,1) = 1.5;
+    r2(1,2) = 3;
+    r2(1,3) = 3.9;
+
+    Matrix r3(1,3);
+    r3(1,1) = 2;
+    r3(1,2) = 3.3;
+    r3(1,3) = 5;
+
+    double Mjd1 = 1.4;
+    double Mjd2 = 1.7;
+    double Mjd3 = 1.9;
+
+    //OUT
+    Matrix v2(1,3);
+    double theta;
+    double theta1;
+    double copa;
+    char* error;
+
+    hgibbs(&r1, &r2, &r3, Mjd1, Mjd2, Mjd3, v2, theta, theta1, copa, error);
+
+    _assert(compareVectors({v2(1,1), v2(1,2), v2(1,3)}, {-2645622754722265, -10842213878151156, -13879679200981824}));
+
+    _assert(abs(theta - 0.08566810351896) < TOL_);
+    _assert(abs(theta1 - 0.07374308868996) < TOL_);
+    _assert(abs(copa + 0.08373604123886) < TOL_);
+    _assert(strcmp (error, "angl > 1ø") == 0);
+
+    return 0;
+}
+
+int EqnEquinox_01(){
+    double Mjd_TT = 12.5;
+
+    double res  = EqnEquinox (Mjd_TT);
+    cout << res << endl;
+
+    return 0;
+}
+
+int GHAMatrix_01(){
+    double Mjd_UT1 = 12.5;
+
+    Matrix res = GHAMatrix (Mjd_UT1);
+    res.print();
+
+    return 0;
+}
+
+int LTC_01(){
+    double lon = 11.2;
+    double lat = 1.6;
+
+    Matrix res = LTC(lon, lat);
+    res.print();
+
+    return 0;
+}
+
+int elements_01(){
+    //IN
+    Matrix y(1,6);
+    y(1,1) = 1.5;
+    y(1,2) = 1.1;
+    y(1,3) = 7.2;
+    y(1,4) = -1.8;
+    y(1,5) = -0.4;
+    y(1,6) = 3;
+
+    //OUT
+    double p;
+    double a;
+    double e;
+    double i;
+    double Omega;
+    double omega;
+    double M;
+
+    elements (&y, p, a, e, i, Omega, omega, M);
+
+    cout << p << endl;
+    cout << a << endl;
+    cout << i << endl;
+    cout << Omega << endl;
+    cout << omega << endl;
+    cout << M << endl;
+
+    return 0;
+}
+
+int gast_01(){
+    double Mjd_UT1 = 12.5;
+
+    double res  = gast (Mjd_UT1);
+    cout << res << endl;
+
+    return 0;
+}
+
+
 int all_tests(){
 
     _verify(R_x_01);
@@ -685,13 +806,17 @@ int all_tests(){
     _verify(doubler_01);
     _verify(gibbs_01);
     _verify(gmst_01);
+    _verify(hgibbs_01);
+    _verify(EqnEquinox_01);
+    _verify(GHAMatrix_01);
+    _verify(LTC_01);
+    _verify(elements_01);
+    _verify(gast_01);
 
     return 0;
 }
 
-
-
-int main(){
+/*int main(){
     int result = all_tests();
     if(result == 0){
         printf("PASSED\n");
@@ -700,4 +825,4 @@ int main(){
     printf("Tests run: %d\n", tests_run);
 
     return result != 0;
-}
+}*/

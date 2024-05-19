@@ -152,6 +152,54 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/Accel.obj: src/Accel.cpp.obj
+.PHONY : src/Accel.obj
+
+# target to build an object file
+src/Accel.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/Accel.cpp.obj
+.PHONY : src/Accel.cpp.obj
+
+src/Accel.i: src/Accel.cpp.i
+.PHONY : src/Accel.i
+
+# target to preprocess a source file
+src/Accel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/Accel.cpp.i
+.PHONY : src/Accel.cpp.i
+
+src/Accel.s: src/Accel.cpp.s
+.PHONY : src/Accel.s
+
+# target to generate assembly for a file
+src/Accel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/Accel.cpp.s
+.PHONY : src/Accel.cpp.s
+
+src/AccelHarmonic.obj: src/AccelHarmonic.cpp.obj
+.PHONY : src/AccelHarmonic.obj
+
+# target to build an object file
+src/AccelHarmonic.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/AccelHarmonic.cpp.obj
+.PHONY : src/AccelHarmonic.cpp.obj
+
+src/AccelHarmonic.i: src/AccelHarmonic.cpp.i
+.PHONY : src/AccelHarmonic.i
+
+# target to preprocess a source file
+src/AccelHarmonic.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/AccelHarmonic.cpp.i
+.PHONY : src/AccelHarmonic.cpp.i
+
+src/AccelHarmonic.s: src/AccelHarmonic.cpp.s
+.PHONY : src/AccelHarmonic.s
+
+# target to generate assembly for a file
+src/AccelHarmonic.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/AccelHarmonic.cpp.s
+.PHONY : src/AccelHarmonic.cpp.s
+
 src/AccelPointMass.obj: src/AccelPointMass.cpp.obj
 .PHONY : src/AccelPointMass.obj
 
@@ -296,6 +344,30 @@ src/EccAnom.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/EccAnom.cpp.s
 .PHONY : src/EccAnom.cpp.s
 
+src/EqnEquinox.obj: src/EqnEquinox.cpp.obj
+.PHONY : src/EqnEquinox.obj
+
+# target to build an object file
+src/EqnEquinox.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/EqnEquinox.cpp.obj
+.PHONY : src/EqnEquinox.cpp.obj
+
+src/EqnEquinox.i: src/EqnEquinox.cpp.i
+.PHONY : src/EqnEquinox.i
+
+# target to preprocess a source file
+src/EqnEquinox.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/EqnEquinox.cpp.i
+.PHONY : src/EqnEquinox.cpp.i
+
+src/EqnEquinox.s: src/EqnEquinox.cpp.s
+.PHONY : src/EqnEquinox.s
+
+# target to generate assembly for a file
+src/EqnEquinox.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/EqnEquinox.cpp.s
+.PHONY : src/EqnEquinox.cpp.s
+
 src/Frac.obj: src/Frac.cpp.obj
 .PHONY : src/Frac.obj
 
@@ -319,6 +391,54 @@ src/Frac.s: src/Frac.cpp.s
 src/Frac.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/Frac.cpp.s
 .PHONY : src/Frac.cpp.s
+
+src/GHAMatrix.obj: src/GHAMatrix.cpp.obj
+.PHONY : src/GHAMatrix.obj
+
+# target to build an object file
+src/GHAMatrix.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/GHAMatrix.cpp.obj
+.PHONY : src/GHAMatrix.cpp.obj
+
+src/GHAMatrix.i: src/GHAMatrix.cpp.i
+.PHONY : src/GHAMatrix.i
+
+# target to preprocess a source file
+src/GHAMatrix.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/GHAMatrix.cpp.i
+.PHONY : src/GHAMatrix.cpp.i
+
+src/GHAMatrix.s: src/GHAMatrix.cpp.s
+.PHONY : src/GHAMatrix.s
+
+# target to generate assembly for a file
+src/GHAMatrix.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/GHAMatrix.cpp.s
+.PHONY : src/GHAMatrix.cpp.s
+
+src/G_AccelHarmonic.obj: src/G_AccelHarmonic.cpp.obj
+.PHONY : src/G_AccelHarmonic.obj
+
+# target to build an object file
+src/G_AccelHarmonic.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/G_AccelHarmonic.cpp.obj
+.PHONY : src/G_AccelHarmonic.cpp.obj
+
+src/G_AccelHarmonic.i: src/G_AccelHarmonic.cpp.i
+.PHONY : src/G_AccelHarmonic.i
+
+# target to preprocess a source file
+src/G_AccelHarmonic.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/G_AccelHarmonic.cpp.i
+.PHONY : src/G_AccelHarmonic.cpp.i
+
+src/G_AccelHarmonic.s: src/G_AccelHarmonic.cpp.s
+.PHONY : src/G_AccelHarmonic.s
+
+# target to generate assembly for a file
+src/G_AccelHarmonic.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/G_AccelHarmonic.cpp.s
+.PHONY : src/G_AccelHarmonic.cpp.s
 
 src/Geodetic.obj: src/Geodetic.cpp.obj
 .PHONY : src/Geodetic.obj
@@ -344,6 +464,30 @@ src/Geodetic.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/Geodetic.cpp.s
 .PHONY : src/Geodetic.cpp.s
 
+src/Global.obj: src/Global.cpp.obj
+.PHONY : src/Global.obj
+
+# target to build an object file
+src/Global.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/Global.cpp.obj
+.PHONY : src/Global.cpp.obj
+
+src/Global.i: src/Global.cpp.i
+.PHONY : src/Global.i
+
+# target to preprocess a source file
+src/Global.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/Global.cpp.i
+.PHONY : src/Global.cpp.i
+
+src/Global.s: src/Global.cpp.s
+.PHONY : src/Global.s
+
+# target to generate assembly for a file
+src/Global.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/Global.cpp.s
+.PHONY : src/Global.cpp.s
+
 src/IERS.obj: src/IERS.cpp.obj
 .PHONY : src/IERS.obj
 
@@ -367,6 +511,54 @@ src/IERS.s: src/IERS.cpp.s
 src/IERS.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/IERS.cpp.s
 .PHONY : src/IERS.cpp.s
+
+src/JPL_Eph_DE430.obj: src/JPL_Eph_DE430.cpp.obj
+.PHONY : src/JPL_Eph_DE430.obj
+
+# target to build an object file
+src/JPL_Eph_DE430.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/JPL_Eph_DE430.cpp.obj
+.PHONY : src/JPL_Eph_DE430.cpp.obj
+
+src/JPL_Eph_DE430.i: src/JPL_Eph_DE430.cpp.i
+.PHONY : src/JPL_Eph_DE430.i
+
+# target to preprocess a source file
+src/JPL_Eph_DE430.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/JPL_Eph_DE430.cpp.i
+.PHONY : src/JPL_Eph_DE430.cpp.i
+
+src/JPL_Eph_DE430.s: src/JPL_Eph_DE430.cpp.s
+.PHONY : src/JPL_Eph_DE430.s
+
+# target to generate assembly for a file
+src/JPL_Eph_DE430.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/JPL_Eph_DE430.cpp.s
+.PHONY : src/JPL_Eph_DE430.cpp.s
+
+src/LTC.obj: src/LTC.cpp.obj
+.PHONY : src/LTC.obj
+
+# target to build an object file
+src/LTC.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/LTC.cpp.obj
+.PHONY : src/LTC.cpp.obj
+
+src/LTC.i: src/LTC.cpp.i
+.PHONY : src/LTC.i
+
+# target to preprocess a source file
+src/LTC.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/LTC.cpp.i
+.PHONY : src/LTC.cpp.i
+
+src/LTC.s: src/LTC.cpp.s
+.PHONY : src/LTC.s
+
+# target to generate assembly for a file
+src/LTC.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/LTC.cpp.s
+.PHONY : src/LTC.cpp.s
 
 src/Legendre.obj: src/Legendre.cpp.obj
 .PHONY : src/Legendre.obj
@@ -752,6 +944,30 @@ src/TimeUpdate.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/TimeUpdate.cpp.s
 .PHONY : src/TimeUpdate.cpp.s
 
+src/VarEqn.obj: src/VarEqn.cpp.obj
+.PHONY : src/VarEqn.obj
+
+# target to build an object file
+src/VarEqn.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/VarEqn.cpp.obj
+.PHONY : src/VarEqn.cpp.obj
+
+src/VarEqn.i: src/VarEqn.cpp.i
+.PHONY : src/VarEqn.i
+
+# target to preprocess a source file
+src/VarEqn.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/VarEqn.cpp.i
+.PHONY : src/VarEqn.cpp.i
+
+src/VarEqn.s: src/VarEqn.cpp.s
+.PHONY : src/VarEqn.s
+
+# target to generate assembly for a file
+src/VarEqn.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/VarEqn.cpp.s
+.PHONY : src/VarEqn.cpp.s
+
 src/angl.obj: src/angl.cpp.obj
 .PHONY : src/angl.obj
 
@@ -775,6 +991,54 @@ src/angl.s: src/angl.cpp.s
 src/angl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/angl.cpp.s
 .PHONY : src/angl.cpp.s
+
+src/anglesdr.obj: src/anglesdr.cpp.obj
+.PHONY : src/anglesdr.obj
+
+# target to build an object file
+src/anglesdr.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/anglesdr.cpp.obj
+.PHONY : src/anglesdr.cpp.obj
+
+src/anglesdr.i: src/anglesdr.cpp.i
+.PHONY : src/anglesdr.i
+
+# target to preprocess a source file
+src/anglesdr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/anglesdr.cpp.i
+.PHONY : src/anglesdr.cpp.i
+
+src/anglesdr.s: src/anglesdr.cpp.s
+.PHONY : src/anglesdr.s
+
+# target to generate assembly for a file
+src/anglesdr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/anglesdr.cpp.s
+.PHONY : src/anglesdr.cpp.s
+
+src/anglesg.obj: src/anglesg.cpp.obj
+.PHONY : src/anglesg.obj
+
+# target to build an object file
+src/anglesg.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/anglesg.cpp.obj
+.PHONY : src/anglesg.cpp.obj
+
+src/anglesg.i: src/anglesg.cpp.i
+.PHONY : src/anglesg.i
+
+# target to preprocess a source file
+src/anglesg.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/anglesg.cpp.i
+.PHONY : src/anglesg.cpp.i
+
+src/anglesg.s: src/anglesg.cpp.s
+.PHONY : src/anglesg.s
+
+# target to generate assembly for a file
+src/anglesg.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/anglesg.cpp.s
+.PHONY : src/anglesg.cpp.s
 
 src/crossProduct.obj: src/crossProduct.cpp.obj
 .PHONY : src/crossProduct.obj
@@ -848,6 +1112,54 @@ src/doubler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/doubler.cpp.s
 .PHONY : src/doubler.cpp.s
 
+src/elements.obj: src/elements.cpp.obj
+.PHONY : src/elements.obj
+
+# target to build an object file
+src/elements.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/elements.cpp.obj
+.PHONY : src/elements.cpp.obj
+
+src/elements.i: src/elements.cpp.i
+.PHONY : src/elements.i
+
+# target to preprocess a source file
+src/elements.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/elements.cpp.i
+.PHONY : src/elements.cpp.i
+
+src/elements.s: src/elements.cpp.s
+.PHONY : src/elements.s
+
+# target to generate assembly for a file
+src/elements.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/elements.cpp.s
+.PHONY : src/elements.cpp.s
+
+src/gast.obj: src/gast.cpp.obj
+.PHONY : src/gast.obj
+
+# target to build an object file
+src/gast.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/gast.cpp.obj
+.PHONY : src/gast.cpp.obj
+
+src/gast.i: src/gast.cpp.i
+.PHONY : src/gast.i
+
+# target to preprocess a source file
+src/gast.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/gast.cpp.i
+.PHONY : src/gast.cpp.i
+
+src/gast.s: src/gast.cpp.s
+.PHONY : src/gast.s
+
+# target to generate assembly for a file
+src/gast.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/gast.cpp.s
+.PHONY : src/gast.cpp.s
+
 src/gibbs.obj: src/gibbs.cpp.obj
 .PHONY : src/gibbs.obj
 
@@ -895,6 +1207,54 @@ src/gmst.s: src/gmst.cpp.s
 src/gmst.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/gmst.cpp.s
 .PHONY : src/gmst.cpp.s
+
+src/hgibbs.obj: src/hgibbs.cpp.obj
+.PHONY : src/hgibbs.obj
+
+# target to build an object file
+src/hgibbs.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/hgibbs.cpp.obj
+.PHONY : src/hgibbs.cpp.obj
+
+src/hgibbs.i: src/hgibbs.cpp.i
+.PHONY : src/hgibbs.i
+
+# target to preprocess a source file
+src/hgibbs.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/hgibbs.cpp.i
+.PHONY : src/hgibbs.cpp.i
+
+src/hgibbs.s: src/hgibbs.cpp.s
+.PHONY : src/hgibbs.s
+
+# target to generate assembly for a file
+src/hgibbs.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/hgibbs.cpp.s
+.PHONY : src/hgibbs.cpp.s
+
+src/largestRoot.obj: src/largestRoot.cpp.obj
+.PHONY : src/largestRoot.obj
+
+# target to build an object file
+src/largestRoot.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/largestRoot.cpp.obj
+.PHONY : src/largestRoot.cpp.obj
+
+src/largestRoot.i: src/largestRoot.cpp.i
+.PHONY : src/largestRoot.i
+
+# target to preprocess a source file
+src/largestRoot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/largestRoot.cpp.i
+.PHONY : src/largestRoot.cpp.i
+
+src/largestRoot.s: src/largestRoot.cpp.s
+.PHONY : src/largestRoot.s
+
+# target to generate assembly for a file
+src/largestRoot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/largestRoot.cpp.s
+.PHONY : src/largestRoot.cpp.s
 
 src/sign_.obj: src/sign_.cpp.obj
 .PHONY : src/sign_.obj
@@ -1004,6 +1364,12 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/Accel.obj
+	@echo ... src/Accel.i
+	@echo ... src/Accel.s
+	@echo ... src/AccelHarmonic.obj
+	@echo ... src/AccelHarmonic.i
+	@echo ... src/AccelHarmonic.s
 	@echo ... src/AccelPointMass.obj
 	@echo ... src/AccelPointMass.i
 	@echo ... src/AccelPointMass.s
@@ -1022,15 +1388,33 @@ help:
 	@echo ... src/EccAnom.obj
 	@echo ... src/EccAnom.i
 	@echo ... src/EccAnom.s
+	@echo ... src/EqnEquinox.obj
+	@echo ... src/EqnEquinox.i
+	@echo ... src/EqnEquinox.s
 	@echo ... src/Frac.obj
 	@echo ... src/Frac.i
 	@echo ... src/Frac.s
+	@echo ... src/GHAMatrix.obj
+	@echo ... src/GHAMatrix.i
+	@echo ... src/GHAMatrix.s
+	@echo ... src/G_AccelHarmonic.obj
+	@echo ... src/G_AccelHarmonic.i
+	@echo ... src/G_AccelHarmonic.s
 	@echo ... src/Geodetic.obj
 	@echo ... src/Geodetic.i
 	@echo ... src/Geodetic.s
+	@echo ... src/Global.obj
+	@echo ... src/Global.i
+	@echo ... src/Global.s
 	@echo ... src/IERS.obj
 	@echo ... src/IERS.i
 	@echo ... src/IERS.s
+	@echo ... src/JPL_Eph_DE430.obj
+	@echo ... src/JPL_Eph_DE430.i
+	@echo ... src/JPL_Eph_DE430.s
+	@echo ... src/LTC.obj
+	@echo ... src/LTC.i
+	@echo ... src/LTC.s
 	@echo ... src/Legendre.obj
 	@echo ... src/Legendre.i
 	@echo ... src/Legendre.s
@@ -1079,9 +1463,18 @@ help:
 	@echo ... src/TimeUpdate.obj
 	@echo ... src/TimeUpdate.i
 	@echo ... src/TimeUpdate.s
+	@echo ... src/VarEqn.obj
+	@echo ... src/VarEqn.i
+	@echo ... src/VarEqn.s
 	@echo ... src/angl.obj
 	@echo ... src/angl.i
 	@echo ... src/angl.s
+	@echo ... src/anglesdr.obj
+	@echo ... src/anglesdr.i
+	@echo ... src/anglesdr.s
+	@echo ... src/anglesg.obj
+	@echo ... src/anglesg.i
+	@echo ... src/anglesg.s
 	@echo ... src/crossProduct.obj
 	@echo ... src/crossProduct.i
 	@echo ... src/crossProduct.s
@@ -1091,12 +1484,24 @@ help:
 	@echo ... src/doubler.obj
 	@echo ... src/doubler.i
 	@echo ... src/doubler.s
+	@echo ... src/elements.obj
+	@echo ... src/elements.i
+	@echo ... src/elements.s
+	@echo ... src/gast.obj
+	@echo ... src/gast.i
+	@echo ... src/gast.s
 	@echo ... src/gibbs.obj
 	@echo ... src/gibbs.i
 	@echo ... src/gibbs.s
 	@echo ... src/gmst.obj
 	@echo ... src/gmst.i
 	@echo ... src/gmst.s
+	@echo ... src/hgibbs.obj
+	@echo ... src/hgibbs.i
+	@echo ... src/hgibbs.s
+	@echo ... src/largestRoot.obj
+	@echo ... src/largestRoot.i
+	@echo ... src/largestRoot.s
 	@echo ... src/sign_.obj
 	@echo ... src/sign_.i
 	@echo ... src/sign_.s

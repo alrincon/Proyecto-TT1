@@ -572,6 +572,216 @@ CMakeFiles/Proyecto.dir/src/gmst.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto.dir/src/gmst.cpp.s"
 	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\alons\CLionProjects\Proyecto-TT1\src\gmst.cpp -o CMakeFiles\Proyecto.dir\src\gmst.cpp.s
 
+CMakeFiles/Proyecto.dir/src/elements.cpp.obj: CMakeFiles/Proyecto.dir/flags.make
+CMakeFiles/Proyecto.dir/src/elements.cpp.obj: ../src/elements.cpp
+CMakeFiles/Proyecto.dir/src/elements.cpp.obj: CMakeFiles/Proyecto.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\alons\CLionProjects\Proyecto-TT1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/Proyecto.dir/src/elements.cpp.obj"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Proyecto.dir/src/elements.cpp.obj -MF CMakeFiles\Proyecto.dir\src\elements.cpp.obj.d -o CMakeFiles\Proyecto.dir\src\elements.cpp.obj -c C:\Users\alons\CLionProjects\Proyecto-TT1\src\elements.cpp
+
+CMakeFiles/Proyecto.dir/src/elements.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto.dir/src/elements.cpp.i"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\alons\CLionProjects\Proyecto-TT1\src\elements.cpp > CMakeFiles\Proyecto.dir\src\elements.cpp.i
+
+CMakeFiles/Proyecto.dir/src/elements.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto.dir/src/elements.cpp.s"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\alons\CLionProjects\Proyecto-TT1\src\elements.cpp -o CMakeFiles\Proyecto.dir\src\elements.cpp.s
+
+CMakeFiles/Proyecto.dir/src/EqnEquinox.cpp.obj: CMakeFiles/Proyecto.dir/flags.make
+CMakeFiles/Proyecto.dir/src/EqnEquinox.cpp.obj: ../src/EqnEquinox.cpp
+CMakeFiles/Proyecto.dir/src/EqnEquinox.cpp.obj: CMakeFiles/Proyecto.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\alons\CLionProjects\Proyecto-TT1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/Proyecto.dir/src/EqnEquinox.cpp.obj"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Proyecto.dir/src/EqnEquinox.cpp.obj -MF CMakeFiles\Proyecto.dir\src\EqnEquinox.cpp.obj.d -o CMakeFiles\Proyecto.dir\src\EqnEquinox.cpp.obj -c C:\Users\alons\CLionProjects\Proyecto-TT1\src\EqnEquinox.cpp
+
+CMakeFiles/Proyecto.dir/src/EqnEquinox.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto.dir/src/EqnEquinox.cpp.i"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\alons\CLionProjects\Proyecto-TT1\src\EqnEquinox.cpp > CMakeFiles\Proyecto.dir\src\EqnEquinox.cpp.i
+
+CMakeFiles/Proyecto.dir/src/EqnEquinox.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto.dir/src/EqnEquinox.cpp.s"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\alons\CLionProjects\Proyecto-TT1\src\EqnEquinox.cpp -o CMakeFiles\Proyecto.dir\src\EqnEquinox.cpp.s
+
+CMakeFiles/Proyecto.dir/src/G_AccelHarmonic.cpp.obj: CMakeFiles/Proyecto.dir/flags.make
+CMakeFiles/Proyecto.dir/src/G_AccelHarmonic.cpp.obj: ../src/G_AccelHarmonic.cpp
+CMakeFiles/Proyecto.dir/src/G_AccelHarmonic.cpp.obj: CMakeFiles/Proyecto.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\alons\CLionProjects\Proyecto-TT1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/Proyecto.dir/src/G_AccelHarmonic.cpp.obj"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Proyecto.dir/src/G_AccelHarmonic.cpp.obj -MF CMakeFiles\Proyecto.dir\src\G_AccelHarmonic.cpp.obj.d -o CMakeFiles\Proyecto.dir\src\G_AccelHarmonic.cpp.obj -c C:\Users\alons\CLionProjects\Proyecto-TT1\src\G_AccelHarmonic.cpp
+
+CMakeFiles/Proyecto.dir/src/G_AccelHarmonic.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto.dir/src/G_AccelHarmonic.cpp.i"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\alons\CLionProjects\Proyecto-TT1\src\G_AccelHarmonic.cpp > CMakeFiles\Proyecto.dir\src\G_AccelHarmonic.cpp.i
+
+CMakeFiles/Proyecto.dir/src/G_AccelHarmonic.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto.dir/src/G_AccelHarmonic.cpp.s"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\alons\CLionProjects\Proyecto-TT1\src\G_AccelHarmonic.cpp -o CMakeFiles\Proyecto.dir\src\G_AccelHarmonic.cpp.s
+
+CMakeFiles/Proyecto.dir/src/gast.cpp.obj: CMakeFiles/Proyecto.dir/flags.make
+CMakeFiles/Proyecto.dir/src/gast.cpp.obj: ../src/gast.cpp
+CMakeFiles/Proyecto.dir/src/gast.cpp.obj: CMakeFiles/Proyecto.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\alons\CLionProjects\Proyecto-TT1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/Proyecto.dir/src/gast.cpp.obj"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Proyecto.dir/src/gast.cpp.obj -MF CMakeFiles\Proyecto.dir\src\gast.cpp.obj.d -o CMakeFiles\Proyecto.dir\src\gast.cpp.obj -c C:\Users\alons\CLionProjects\Proyecto-TT1\src\gast.cpp
+
+CMakeFiles/Proyecto.dir/src/gast.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto.dir/src/gast.cpp.i"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\alons\CLionProjects\Proyecto-TT1\src\gast.cpp > CMakeFiles\Proyecto.dir\src\gast.cpp.i
+
+CMakeFiles/Proyecto.dir/src/gast.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto.dir/src/gast.cpp.s"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\alons\CLionProjects\Proyecto-TT1\src\gast.cpp -o CMakeFiles\Proyecto.dir\src\gast.cpp.s
+
+CMakeFiles/Proyecto.dir/src/GHAMatrix.cpp.obj: CMakeFiles/Proyecto.dir/flags.make
+CMakeFiles/Proyecto.dir/src/GHAMatrix.cpp.obj: ../src/GHAMatrix.cpp
+CMakeFiles/Proyecto.dir/src/GHAMatrix.cpp.obj: CMakeFiles/Proyecto.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\alons\CLionProjects\Proyecto-TT1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/Proyecto.dir/src/GHAMatrix.cpp.obj"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Proyecto.dir/src/GHAMatrix.cpp.obj -MF CMakeFiles\Proyecto.dir\src\GHAMatrix.cpp.obj.d -o CMakeFiles\Proyecto.dir\src\GHAMatrix.cpp.obj -c C:\Users\alons\CLionProjects\Proyecto-TT1\src\GHAMatrix.cpp
+
+CMakeFiles/Proyecto.dir/src/GHAMatrix.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto.dir/src/GHAMatrix.cpp.i"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\alons\CLionProjects\Proyecto-TT1\src\GHAMatrix.cpp > CMakeFiles\Proyecto.dir\src\GHAMatrix.cpp.i
+
+CMakeFiles/Proyecto.dir/src/GHAMatrix.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto.dir/src/GHAMatrix.cpp.s"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\alons\CLionProjects\Proyecto-TT1\src\GHAMatrix.cpp -o CMakeFiles\Proyecto.dir\src\GHAMatrix.cpp.s
+
+CMakeFiles/Proyecto.dir/src/hgibbs.cpp.obj: CMakeFiles/Proyecto.dir/flags.make
+CMakeFiles/Proyecto.dir/src/hgibbs.cpp.obj: ../src/hgibbs.cpp
+CMakeFiles/Proyecto.dir/src/hgibbs.cpp.obj: CMakeFiles/Proyecto.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\alons\CLionProjects\Proyecto-TT1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/Proyecto.dir/src/hgibbs.cpp.obj"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Proyecto.dir/src/hgibbs.cpp.obj -MF CMakeFiles\Proyecto.dir\src\hgibbs.cpp.obj.d -o CMakeFiles\Proyecto.dir\src\hgibbs.cpp.obj -c C:\Users\alons\CLionProjects\Proyecto-TT1\src\hgibbs.cpp
+
+CMakeFiles/Proyecto.dir/src/hgibbs.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto.dir/src/hgibbs.cpp.i"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\alons\CLionProjects\Proyecto-TT1\src\hgibbs.cpp > CMakeFiles\Proyecto.dir\src\hgibbs.cpp.i
+
+CMakeFiles/Proyecto.dir/src/hgibbs.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto.dir/src/hgibbs.cpp.s"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\alons\CLionProjects\Proyecto-TT1\src\hgibbs.cpp -o CMakeFiles\Proyecto.dir\src\hgibbs.cpp.s
+
+CMakeFiles/Proyecto.dir/src/LTC.cpp.obj: CMakeFiles/Proyecto.dir/flags.make
+CMakeFiles/Proyecto.dir/src/LTC.cpp.obj: ../src/LTC.cpp
+CMakeFiles/Proyecto.dir/src/LTC.cpp.obj: CMakeFiles/Proyecto.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\alons\CLionProjects\Proyecto-TT1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/Proyecto.dir/src/LTC.cpp.obj"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Proyecto.dir/src/LTC.cpp.obj -MF CMakeFiles\Proyecto.dir\src\LTC.cpp.obj.d -o CMakeFiles\Proyecto.dir\src\LTC.cpp.obj -c C:\Users\alons\CLionProjects\Proyecto-TT1\src\LTC.cpp
+
+CMakeFiles/Proyecto.dir/src/LTC.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto.dir/src/LTC.cpp.i"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\alons\CLionProjects\Proyecto-TT1\src\LTC.cpp > CMakeFiles\Proyecto.dir\src\LTC.cpp.i
+
+CMakeFiles/Proyecto.dir/src/LTC.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto.dir/src/LTC.cpp.s"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\alons\CLionProjects\Proyecto-TT1\src\LTC.cpp -o CMakeFiles\Proyecto.dir\src\LTC.cpp.s
+
+CMakeFiles/Proyecto.dir/src/VarEqn.cpp.obj: CMakeFiles/Proyecto.dir/flags.make
+CMakeFiles/Proyecto.dir/src/VarEqn.cpp.obj: ../src/VarEqn.cpp
+CMakeFiles/Proyecto.dir/src/VarEqn.cpp.obj: CMakeFiles/Proyecto.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\alons\CLionProjects\Proyecto-TT1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/Proyecto.dir/src/VarEqn.cpp.obj"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Proyecto.dir/src/VarEqn.cpp.obj -MF CMakeFiles\Proyecto.dir\src\VarEqn.cpp.obj.d -o CMakeFiles\Proyecto.dir\src\VarEqn.cpp.obj -c C:\Users\alons\CLionProjects\Proyecto-TT1\src\VarEqn.cpp
+
+CMakeFiles/Proyecto.dir/src/VarEqn.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto.dir/src/VarEqn.cpp.i"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\alons\CLionProjects\Proyecto-TT1\src\VarEqn.cpp > CMakeFiles\Proyecto.dir\src\VarEqn.cpp.i
+
+CMakeFiles/Proyecto.dir/src/VarEqn.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto.dir/src/VarEqn.cpp.s"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\alons\CLionProjects\Proyecto-TT1\src\VarEqn.cpp -o CMakeFiles\Proyecto.dir\src\VarEqn.cpp.s
+
+CMakeFiles/Proyecto.dir/src/AccelHarmonic.cpp.obj: CMakeFiles/Proyecto.dir/flags.make
+CMakeFiles/Proyecto.dir/src/AccelHarmonic.cpp.obj: ../src/AccelHarmonic.cpp
+CMakeFiles/Proyecto.dir/src/AccelHarmonic.cpp.obj: CMakeFiles/Proyecto.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\alons\CLionProjects\Proyecto-TT1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/Proyecto.dir/src/AccelHarmonic.cpp.obj"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Proyecto.dir/src/AccelHarmonic.cpp.obj -MF CMakeFiles\Proyecto.dir\src\AccelHarmonic.cpp.obj.d -o CMakeFiles\Proyecto.dir\src\AccelHarmonic.cpp.obj -c C:\Users\alons\CLionProjects\Proyecto-TT1\src\AccelHarmonic.cpp
+
+CMakeFiles/Proyecto.dir/src/AccelHarmonic.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto.dir/src/AccelHarmonic.cpp.i"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\alons\CLionProjects\Proyecto-TT1\src\AccelHarmonic.cpp > CMakeFiles\Proyecto.dir\src\AccelHarmonic.cpp.i
+
+CMakeFiles/Proyecto.dir/src/AccelHarmonic.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto.dir/src/AccelHarmonic.cpp.s"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\alons\CLionProjects\Proyecto-TT1\src\AccelHarmonic.cpp -o CMakeFiles\Proyecto.dir\src\AccelHarmonic.cpp.s
+
+CMakeFiles/Proyecto.dir/src/Accel.cpp.obj: CMakeFiles/Proyecto.dir/flags.make
+CMakeFiles/Proyecto.dir/src/Accel.cpp.obj: ../src/Accel.cpp
+CMakeFiles/Proyecto.dir/src/Accel.cpp.obj: CMakeFiles/Proyecto.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\alons\CLionProjects\Proyecto-TT1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/Proyecto.dir/src/Accel.cpp.obj"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Proyecto.dir/src/Accel.cpp.obj -MF CMakeFiles\Proyecto.dir\src\Accel.cpp.obj.d -o CMakeFiles\Proyecto.dir\src\Accel.cpp.obj -c C:\Users\alons\CLionProjects\Proyecto-TT1\src\Accel.cpp
+
+CMakeFiles/Proyecto.dir/src/Accel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto.dir/src/Accel.cpp.i"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\alons\CLionProjects\Proyecto-TT1\src\Accel.cpp > CMakeFiles\Proyecto.dir\src\Accel.cpp.i
+
+CMakeFiles/Proyecto.dir/src/Accel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto.dir/src/Accel.cpp.s"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\alons\CLionProjects\Proyecto-TT1\src\Accel.cpp -o CMakeFiles\Proyecto.dir\src\Accel.cpp.s
+
+CMakeFiles/Proyecto.dir/src/JPL_Eph_DE430.cpp.obj: CMakeFiles/Proyecto.dir/flags.make
+CMakeFiles/Proyecto.dir/src/JPL_Eph_DE430.cpp.obj: ../src/JPL_Eph_DE430.cpp
+CMakeFiles/Proyecto.dir/src/JPL_Eph_DE430.cpp.obj: CMakeFiles/Proyecto.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\alons\CLionProjects\Proyecto-TT1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/Proyecto.dir/src/JPL_Eph_DE430.cpp.obj"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Proyecto.dir/src/JPL_Eph_DE430.cpp.obj -MF CMakeFiles\Proyecto.dir\src\JPL_Eph_DE430.cpp.obj.d -o CMakeFiles\Proyecto.dir\src\JPL_Eph_DE430.cpp.obj -c C:\Users\alons\CLionProjects\Proyecto-TT1\src\JPL_Eph_DE430.cpp
+
+CMakeFiles/Proyecto.dir/src/JPL_Eph_DE430.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto.dir/src/JPL_Eph_DE430.cpp.i"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\alons\CLionProjects\Proyecto-TT1\src\JPL_Eph_DE430.cpp > CMakeFiles\Proyecto.dir\src\JPL_Eph_DE430.cpp.i
+
+CMakeFiles/Proyecto.dir/src/JPL_Eph_DE430.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto.dir/src/JPL_Eph_DE430.cpp.s"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\alons\CLionProjects\Proyecto-TT1\src\JPL_Eph_DE430.cpp -o CMakeFiles\Proyecto.dir\src\JPL_Eph_DE430.cpp.s
+
+CMakeFiles/Proyecto.dir/src/anglesdr.cpp.obj: CMakeFiles/Proyecto.dir/flags.make
+CMakeFiles/Proyecto.dir/src/anglesdr.cpp.obj: ../src/anglesdr.cpp
+CMakeFiles/Proyecto.dir/src/anglesdr.cpp.obj: CMakeFiles/Proyecto.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\alons\CLionProjects\Proyecto-TT1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/Proyecto.dir/src/anglesdr.cpp.obj"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Proyecto.dir/src/anglesdr.cpp.obj -MF CMakeFiles\Proyecto.dir\src\anglesdr.cpp.obj.d -o CMakeFiles\Proyecto.dir\src\anglesdr.cpp.obj -c C:\Users\alons\CLionProjects\Proyecto-TT1\src\anglesdr.cpp
+
+CMakeFiles/Proyecto.dir/src/anglesdr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto.dir/src/anglesdr.cpp.i"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\alons\CLionProjects\Proyecto-TT1\src\anglesdr.cpp > CMakeFiles\Proyecto.dir\src\anglesdr.cpp.i
+
+CMakeFiles/Proyecto.dir/src/anglesdr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto.dir/src/anglesdr.cpp.s"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\alons\CLionProjects\Proyecto-TT1\src\anglesdr.cpp -o CMakeFiles\Proyecto.dir\src\anglesdr.cpp.s
+
+CMakeFiles/Proyecto.dir/src/anglesg.cpp.obj: CMakeFiles/Proyecto.dir/flags.make
+CMakeFiles/Proyecto.dir/src/anglesg.cpp.obj: ../src/anglesg.cpp
+CMakeFiles/Proyecto.dir/src/anglesg.cpp.obj: CMakeFiles/Proyecto.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\alons\CLionProjects\Proyecto-TT1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/Proyecto.dir/src/anglesg.cpp.obj"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Proyecto.dir/src/anglesg.cpp.obj -MF CMakeFiles\Proyecto.dir\src\anglesg.cpp.obj.d -o CMakeFiles\Proyecto.dir\src\anglesg.cpp.obj -c C:\Users\alons\CLionProjects\Proyecto-TT1\src\anglesg.cpp
+
+CMakeFiles/Proyecto.dir/src/anglesg.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto.dir/src/anglesg.cpp.i"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\alons\CLionProjects\Proyecto-TT1\src\anglesg.cpp > CMakeFiles\Proyecto.dir\src\anglesg.cpp.i
+
+CMakeFiles/Proyecto.dir/src/anglesg.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto.dir/src/anglesg.cpp.s"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\alons\CLionProjects\Proyecto-TT1\src\anglesg.cpp -o CMakeFiles\Proyecto.dir\src\anglesg.cpp.s
+
+CMakeFiles/Proyecto.dir/src/largestRoot.cpp.obj: CMakeFiles/Proyecto.dir/flags.make
+CMakeFiles/Proyecto.dir/src/largestRoot.cpp.obj: ../src/largestRoot.cpp
+CMakeFiles/Proyecto.dir/src/largestRoot.cpp.obj: CMakeFiles/Proyecto.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\alons\CLionProjects\Proyecto-TT1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/Proyecto.dir/src/largestRoot.cpp.obj"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Proyecto.dir/src/largestRoot.cpp.obj -MF CMakeFiles\Proyecto.dir\src\largestRoot.cpp.obj.d -o CMakeFiles\Proyecto.dir\src\largestRoot.cpp.obj -c C:\Users\alons\CLionProjects\Proyecto-TT1\src\largestRoot.cpp
+
+CMakeFiles/Proyecto.dir/src/largestRoot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto.dir/src/largestRoot.cpp.i"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\alons\CLionProjects\Proyecto-TT1\src\largestRoot.cpp > CMakeFiles\Proyecto.dir\src\largestRoot.cpp.i
+
+CMakeFiles/Proyecto.dir/src/largestRoot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto.dir/src/largestRoot.cpp.s"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\alons\CLionProjects\Proyecto-TT1\src\largestRoot.cpp -o CMakeFiles\Proyecto.dir\src\largestRoot.cpp.s
+
+CMakeFiles/Proyecto.dir/src/Global.cpp.obj: CMakeFiles/Proyecto.dir/flags.make
+CMakeFiles/Proyecto.dir/src/Global.cpp.obj: ../src/Global.cpp
+CMakeFiles/Proyecto.dir/src/Global.cpp.obj: CMakeFiles/Proyecto.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\alons\CLionProjects\Proyecto-TT1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/Proyecto.dir/src/Global.cpp.obj"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Proyecto.dir/src/Global.cpp.obj -MF CMakeFiles\Proyecto.dir\src\Global.cpp.obj.d -o CMakeFiles\Proyecto.dir\src\Global.cpp.obj -c C:\Users\alons\CLionProjects\Proyecto-TT1\src\Global.cpp
+
+CMakeFiles/Proyecto.dir/src/Global.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto.dir/src/Global.cpp.i"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\alons\CLionProjects\Proyecto-TT1\src\Global.cpp > CMakeFiles\Proyecto.dir\src\Global.cpp.i
+
+CMakeFiles/Proyecto.dir/src/Global.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto.dir/src/Global.cpp.s"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\alons\CLionProjects\Proyecto-TT1\src\Global.cpp -o CMakeFiles\Proyecto.dir\src\Global.cpp.s
+
 # Object files for target Proyecto
 Proyecto_OBJECTS = \
 "CMakeFiles/Proyecto.dir/main.cpp.obj" \
@@ -609,7 +819,22 @@ Proyecto_OBJECTS = \
 "CMakeFiles/Proyecto.dir/src/doubler.cpp.obj" \
 "CMakeFiles/Proyecto.dir/src/crossProduct.cpp.obj" \
 "CMakeFiles/Proyecto.dir/src/gibbs.cpp.obj" \
-"CMakeFiles/Proyecto.dir/src/gmst.cpp.obj"
+"CMakeFiles/Proyecto.dir/src/gmst.cpp.obj" \
+"CMakeFiles/Proyecto.dir/src/elements.cpp.obj" \
+"CMakeFiles/Proyecto.dir/src/EqnEquinox.cpp.obj" \
+"CMakeFiles/Proyecto.dir/src/G_AccelHarmonic.cpp.obj" \
+"CMakeFiles/Proyecto.dir/src/gast.cpp.obj" \
+"CMakeFiles/Proyecto.dir/src/GHAMatrix.cpp.obj" \
+"CMakeFiles/Proyecto.dir/src/hgibbs.cpp.obj" \
+"CMakeFiles/Proyecto.dir/src/LTC.cpp.obj" \
+"CMakeFiles/Proyecto.dir/src/VarEqn.cpp.obj" \
+"CMakeFiles/Proyecto.dir/src/AccelHarmonic.cpp.obj" \
+"CMakeFiles/Proyecto.dir/src/Accel.cpp.obj" \
+"CMakeFiles/Proyecto.dir/src/JPL_Eph_DE430.cpp.obj" \
+"CMakeFiles/Proyecto.dir/src/anglesdr.cpp.obj" \
+"CMakeFiles/Proyecto.dir/src/anglesg.cpp.obj" \
+"CMakeFiles/Proyecto.dir/src/largestRoot.cpp.obj" \
+"CMakeFiles/Proyecto.dir/src/Global.cpp.obj"
 
 # External object files for target Proyecto
 Proyecto_EXTERNAL_OBJECTS =
@@ -650,11 +875,26 @@ Proyecto.exe: CMakeFiles/Proyecto.dir/src/doubler.cpp.obj
 Proyecto.exe: CMakeFiles/Proyecto.dir/src/crossProduct.cpp.obj
 Proyecto.exe: CMakeFiles/Proyecto.dir/src/gibbs.cpp.obj
 Proyecto.exe: CMakeFiles/Proyecto.dir/src/gmst.cpp.obj
+Proyecto.exe: CMakeFiles/Proyecto.dir/src/elements.cpp.obj
+Proyecto.exe: CMakeFiles/Proyecto.dir/src/EqnEquinox.cpp.obj
+Proyecto.exe: CMakeFiles/Proyecto.dir/src/G_AccelHarmonic.cpp.obj
+Proyecto.exe: CMakeFiles/Proyecto.dir/src/gast.cpp.obj
+Proyecto.exe: CMakeFiles/Proyecto.dir/src/GHAMatrix.cpp.obj
+Proyecto.exe: CMakeFiles/Proyecto.dir/src/hgibbs.cpp.obj
+Proyecto.exe: CMakeFiles/Proyecto.dir/src/LTC.cpp.obj
+Proyecto.exe: CMakeFiles/Proyecto.dir/src/VarEqn.cpp.obj
+Proyecto.exe: CMakeFiles/Proyecto.dir/src/AccelHarmonic.cpp.obj
+Proyecto.exe: CMakeFiles/Proyecto.dir/src/Accel.cpp.obj
+Proyecto.exe: CMakeFiles/Proyecto.dir/src/JPL_Eph_DE430.cpp.obj
+Proyecto.exe: CMakeFiles/Proyecto.dir/src/anglesdr.cpp.obj
+Proyecto.exe: CMakeFiles/Proyecto.dir/src/anglesg.cpp.obj
+Proyecto.exe: CMakeFiles/Proyecto.dir/src/largestRoot.cpp.obj
+Proyecto.exe: CMakeFiles/Proyecto.dir/src/Global.cpp.obj
 Proyecto.exe: CMakeFiles/Proyecto.dir/build.make
 Proyecto.exe: CMakeFiles/Proyecto.dir/linklibs.rsp
 Proyecto.exe: CMakeFiles/Proyecto.dir/objects1.rsp
 Proyecto.exe: CMakeFiles/Proyecto.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\alons\CLionProjects\Proyecto-TT1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Linking CXX executable Proyecto.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\alons\CLionProjects\Proyecto-TT1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Linking CXX executable Proyecto.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Proyecto.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

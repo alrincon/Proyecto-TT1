@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/Accel.h">
+			<Option target="Proyecto"/>
+		</Unit>
+		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/AccelHarmonic.h">
+			<Option target="Proyecto"/>
+		</Unit>
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/AccelPointMass.h">
 			<Option target="Proyecto"/>
 		</Unit>
@@ -94,7 +100,16 @@
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/EccAnom.h">
 			<Option target="Proyecto"/>
 		</Unit>
+		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/EqnEquinox.h">
+			<Option target="Proyecto"/>
+		</Unit>
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/Frac.h">
+			<Option target="Proyecto"/>
+		</Unit>
+		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/GHAMatrix.h">
+			<Option target="Proyecto"/>
+		</Unit>
+		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/G_AccelHarmonic.h">
 			<Option target="Proyecto"/>
 		</Unit>
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/Geodetic.h">
@@ -104,6 +119,12 @@
 			<Option target="Proyecto"/>
 		</Unit>
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/IERS.h">
+			<Option target="Proyecto"/>
+		</Unit>
+		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/JPL_Eph_DE430.h">
+			<Option target="Proyecto"/>
+		</Unit>
+		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/LTC.h">
 			<Option target="Proyecto"/>
 		</Unit>
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/Legendre.h">
@@ -154,7 +175,16 @@
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/TimeUpdate.h">
 			<Option target="Proyecto"/>
 		</Unit>
+		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/VarEqn.h">
+			<Option target="Proyecto"/>
+		</Unit>
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/angl.h">
+			<Option target="Proyecto"/>
+		</Unit>
+		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/anglesdr.h">
+			<Option target="Proyecto"/>
+		</Unit>
+		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/anglesg.h">
 			<Option target="Proyecto"/>
 		</Unit>
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/crossProduct.h">
@@ -166,10 +196,22 @@
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/doubler.h">
 			<Option target="Proyecto"/>
 		</Unit>
+		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/elements.h">
+			<Option target="Proyecto"/>
+		</Unit>
+		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/gast.h">
+			<Option target="Proyecto"/>
+		</Unit>
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/gibbs.h">
 			<Option target="Proyecto"/>
 		</Unit>
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/gmst.h">
+			<Option target="Proyecto"/>
+		</Unit>
+		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/hgibbs.h">
+			<Option target="Proyecto"/>
+		</Unit>
+		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/largestRoot.h">
 			<Option target="Proyecto"/>
 		</Unit>
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/sign_.h">
@@ -182,6 +224,12 @@
 			<Option target="Proyecto"/>
 		</Unit>
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/main.cpp">
+			<Option target="Proyecto"/>
+		</Unit>
+		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/Accel.cpp">
+			<Option target="Proyecto"/>
+		</Unit>
+		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/AccelHarmonic.cpp">
 			<Option target="Proyecto"/>
 		</Unit>
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/AccelPointMass.cpp">
@@ -202,13 +250,31 @@
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/EccAnom.cpp">
 			<Option target="Proyecto"/>
 		</Unit>
+		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/EqnEquinox.cpp">
+			<Option target="Proyecto"/>
+		</Unit>
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/Frac.cpp">
+			<Option target="Proyecto"/>
+		</Unit>
+		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/GHAMatrix.cpp">
+			<Option target="Proyecto"/>
+		</Unit>
+		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/G_AccelHarmonic.cpp">
 			<Option target="Proyecto"/>
 		</Unit>
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/Geodetic.cpp">
 			<Option target="Proyecto"/>
 		</Unit>
+		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/Global.cpp">
+			<Option target="Proyecto"/>
+		</Unit>
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/IERS.cpp">
+			<Option target="Proyecto"/>
+		</Unit>
+		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/JPL_Eph_DE430.cpp">
+			<Option target="Proyecto"/>
+		</Unit>
+		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/LTC.cpp">
 			<Option target="Proyecto"/>
 		</Unit>
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/Legendre.cpp">
@@ -259,7 +325,16 @@
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/TimeUpdate.cpp">
 			<Option target="Proyecto"/>
 		</Unit>
+		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/VarEqn.cpp">
+			<Option target="Proyecto"/>
+		</Unit>
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/angl.cpp">
+			<Option target="Proyecto"/>
+		</Unit>
+		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/anglesdr.cpp">
+			<Option target="Proyecto"/>
+		</Unit>
+		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/anglesg.cpp">
 			<Option target="Proyecto"/>
 		</Unit>
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/crossProduct.cpp">
@@ -271,10 +346,22 @@
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/doubler.cpp">
 			<Option target="Proyecto"/>
 		</Unit>
+		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/elements.cpp">
+			<Option target="Proyecto"/>
+		</Unit>
+		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/gast.cpp">
+			<Option target="Proyecto"/>
+		</Unit>
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/gibbs.cpp">
 			<Option target="Proyecto"/>
 		</Unit>
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/gmst.cpp">
+			<Option target="Proyecto"/>
+		</Unit>
+		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/hgibbs.cpp">
+			<Option target="Proyecto"/>
+		</Unit>
+		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/largestRoot.cpp">
 			<Option target="Proyecto"/>
 		</Unit>
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/sign_.cpp">
