@@ -1,8 +1,11 @@
 #include "../include/JPL_Eph_DE430.h"
 
+
+extern Matrix PC;
+
 int findPC(double JD){
-    for(int i = 1; i <= Global::PC->getFilas(); i++){
-        if((*Global::PC)(i,1) <= JD && JD <= (*Global::PC)(i,2)){
+    for(int i = 1; i <= PC.getFilas(); i++){
+        if(PC(i,1) <= JD && JD <= PC(i,2)){
             return i;
         }
     }
@@ -69,7 +72,7 @@ Matrix concatenateVector(Matrix *v1, Matrix *v2){
 void JPL_Eph_DE430(double Mjd_TDB, Matrix &r_Mercury, Matrix &r_Venus, Matrix &r_Earth, Matrix &r_Mars, Matrix &r_Jupiter, Matrix &r_Saturn, Matrix &r_Uranus, Matrix &r_Neptune, Matrix &r_Pluto, Matrix &r_Moon, Matrix &r_Sun) {
     double JD = Mjd_TDB + 2400000.5;
     int i = findPC(JD);
-    Matrix PCtemp = extractRow(Global::PC, i);
+    Matrix PCtemp = extractRow(&PC, i);
 
     double t1 = PCtemp(1, 1) - 2400000.5; // MJD at start of interval
 

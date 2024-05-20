@@ -16,13 +16,17 @@ void Geodetic(double& lon, double& lat, double& h, Matrix* r){
     double Z = (*r)(1,3);
     double rho2 = X*X + Y*Y;           // Square of distance from z-axis
 
+
+    cout << "previo eu" << endl;
                                                             // Check validity of input data
-    if ((*r).norm() == 0.0) {
+    if ((*r).norm() < 10e-6) {
         cout << "error" << endl;
         lon = 0.0;
         lat = 0.0;
         h = -R_Earth;
     }
+
+    cout << "eueu" << endl;
 
     // Iteration
     double dZ = e2*Z;

@@ -709,7 +709,7 @@ int EqnEquinox_01(){
     double Mjd_TT = 12.5;
 
     double res  = EqnEquinox (Mjd_TT);
-    cout << res << endl;
+    _assert(abs(res - 4.41062e-313) < TOL_);
 
     return 0;
 }
@@ -718,7 +718,13 @@ int GHAMatrix_01(){
     double Mjd_UT1 = 12.5;
 
     Matrix res = GHAMatrix (Mjd_UT1);
-    res.print();
+
+    _assert(compareVectors({res(1,1), res(1,2), res(1,3), res(2,1), res(2,2), res(2,3), res(3,1), res(3,2), res(3,3)},
+                           {
+                                   -0.37328827895454, -0.92771539859763, 0.00000000000000,
+                                   0.92771539859763, -0.37328827895454, 0.00000000000000,
+                                   0.00000000000000, 0.00000000000000, 1.00000000000000
+                           }));
 
     return 0;
 }
@@ -728,7 +734,13 @@ int LTC_01(){
     double lat = 1.6;
 
     Matrix res = LTC(lon, lat);
-    res.print();
+
+    _assert(compareVectors({res(1,1), res(1,2), res(1,3), res(2,1), res(2,2), res(2,3), res(3,1), res(3,2), res(3,3)},
+                           {
+                                   0.97917772915132, 0.20300486381875, 0.00000000000000,
+                                   -0.20291830316226, 0.97876021074578, -0.02919952230129,
+                                   -0.00592764504835, 0.02859152193928, 0.99957360304151
+                           }));
 
     return 0;
 }
@@ -754,12 +766,12 @@ int elements_01(){
 
     elements (&y, p, a, e, i, Omega, omega, M);
 
-    cout << p << endl;
-    cout << a << endl;
-    cout << i << endl;
-    cout << Omega << endl;
-    cout << omega << endl;
-    cout << M << endl;
+    _assert(abs(p - 8.65399e-013) < TOL_);
+    _assert(abs(a - 3.7182) < TOL_);
+    _assert(abs(i - 1.49643) < TOL_);
+    _assert(abs(Omega - 0.340191) < TOL_);
+    _assert(abs(omega + 1.81265) < TOL_);
+    _assert(abs(M - 3.14159) < TOL_);
 
     return 0;
 }
@@ -768,8 +780,8 @@ int gast_01(){
     double Mjd_UT1 = 12.5;
 
     double res  = gast (Mjd_UT1);
-    cout << res << endl;
 
+    _assert(abs(res - 4.32984) < TOL_);
     return 0;
 }
 

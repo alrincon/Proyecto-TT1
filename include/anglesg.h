@@ -2,7 +2,6 @@
 #define PROYECTO_ANGLESG_H
 
 #include "Matrix.h"
-#include "Global.h"
 #include "Geodetic.h"
 #include "LTC.h"
 #include "IERS.h"

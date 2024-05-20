@@ -156,7 +156,13 @@ double Matrix::norm(){
             suma += pow(matrix[0][i],2);
         }
     }else{
-        throw runtime_error("An error occurred");
+        if(col == 1){
+            for(int i = 0; i < fil; i++){
+                suma += pow(matrix[i][0],2);
+            }
+        }else{
+            throw runtime_error("An error occurred");
+        }
     }
 
     return sqrt(suma);

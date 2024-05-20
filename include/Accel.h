@@ -2,7 +2,6 @@
 #define PROYECTO_ACCEL_H
 
 #include "Matrix.h"
-#include "Global.h"
 #include "IERS.h"
 #include "timediff.h"
 #include "SAT_const.h"
@@ -14,6 +13,7 @@
 #include "AccelHarmonic.h"
 #include "AccelPointMass.h"
 #include "JPL_Eph_DE430.h"
+#include "types.h"
 
 
 Matrix Accel(double x, Matrix* Y);

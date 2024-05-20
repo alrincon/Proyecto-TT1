@@ -1,5 +1,8 @@
 #include "../include/Accel.h"
 
+extern Matrix eopdata;
+extern aux AuxParam;
+
 Matrix Accel(double x, Matrix* Y){
     double x_pole;
     double y_pole;
@@ -11,7 +14,7 @@ Matrix Accel(double x, Matrix* Y){
     double dy_pole;
     double TAI_UTC;
 
-    IERS(Global::eopdata, Global::AuxParam.Mjd_UTC + x/86400,'l', x_pole,y_pole,UT1_UTC,LOD,dpsi,deps,dx_pole,dy_pole,TAI_UTC);
+    IERS(&eopdata, AuxParam.Mjd_UTC + x/86400,'l', x_pole,y_pole,UT1_UTC,LOD,dpsi,deps,dx_pole,dy_pole,TAI_UTC);
 
     double UT1_TAI;
     double UTC_GPS;
@@ -21,8 +24,8 @@ Matrix Accel(double x, Matrix* Y){
 
     timediff(UT1_UTC,TAI_UTC,UT1_TAI,UTC_GPS,UT1_GPS,TT_UTC,GPS_UTC);
 
-    double Mjd_UT1 = Global::AuxParam.Mjd_UTC + x/86400 + UT1_UTC/86400;
-    double Mjd_TT = Global::AuxParam.Mjd_UTC + x/86400 + TT_UTC/86400;
+    double Mjd_UT1 = AuxParam.Mjd_UTC + x/86400 + UT1_UTC/86400;
+    double Mjd_TT = AuxParam.Mjd_UTC + x/86400 + TT_UTC/86400;
 
     Matrix P = PrecMatrix(MJD_J2000,Mjd_TT);
     Matrix N = NutMatrix(Mjd_TT);
@@ -51,19 +54,19 @@ Matrix Accel(double x, Matrix* Y){
     Y1(1,1) = (*Y)(1,1);
     Y1(1,2) = (*Y)(1,2);
     Y1(1,3) = (*Y)(1,3);
-    Matrix a = AccelHarmonic(&Y1, &E, Global::AuxParam.n, Global::AuxParam.m);
+    Matrix a = AccelHarmonic(&Y1, &E, AuxParam.n, AuxParam.m);
 
     // Luni-solar perturbations
-    if (Global::AuxParam.sun > 0){
+    if (AuxParam.sun > 0){
         a = a + AccelPointMass(Y1,r_Sun,GM_Sun);
     }
 
-    if (Global::AuxParam.moon > 0) {
+    if (AuxParam.moon > 0) {
         a = a + AccelPointMass(Y1,r_Moon,GM_Moon);
     }
 
     // Planetary perturbations
-    if (Global::AuxParam.planets > 0) {
+    if (AuxParam.planets > 0) {
         a = a + AccelPointMass(Y1,r_Mercury,GM_Mercury);
         a = a + AccelPointMass(Y1,r_Venus,GM_Venus);
         a = a + AccelPointMass(Y1,r_Mars,GM_Mars);

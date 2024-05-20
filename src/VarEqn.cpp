@@ -1,5 +1,8 @@
 #include "../include/VarEqn.h"
 
+extern Matrix eopdata;
+extern aux AuxParam;
+
 Matrix VarEqn(double x, Matrix* yPhi){
     double x_pole;
     double y_pole;
@@ -11,7 +14,7 @@ Matrix VarEqn(double x, Matrix* yPhi){
     double dy_pole;
     double TAI_UTC;
 
-    IERS(Global::eopdata, Global::AuxParam.Mjd_UTC, 'l', x_pole, y_pole, UT1_UTC, LOD, dpsi, deps, dx_pole, dy_pole, TAI_UTC);
+    IERS(&eopdata, AuxParam.Mjd_UTC, 'l', x_pole, y_pole, UT1_UTC, LOD, dpsi, deps, dx_pole, dy_pole, TAI_UTC);
 
     double UT1_TAI;
     double UTC_GPS;
@@ -21,11 +24,11 @@ Matrix VarEqn(double x, Matrix* yPhi){
 
     timediff(UT1_UTC,TAI_UTC, UT1_TAI,UTC_GPS,UT1_GPS,TT_UTC,GPS_UTC);
 
-    double Mjd_UT1 = Global::AuxParam.Mjd_TT + (UT1_UTC-TT_UTC)/86400;
+    double Mjd_UT1 = AuxParam.Mjd_TT + (UT1_UTC-TT_UTC)/86400;
 
     // Transformation matrix
-    Matrix P = PrecMatrix(MJD_J2000,Global::AuxParam.Mjd_TT + x/86400);
-    Matrix N = NutMatrix(Global::AuxParam.Mjd_TT + x/86400);
+    Matrix P = PrecMatrix(MJD_J2000,AuxParam.Mjd_TT + x/86400);
+    Matrix N = NutMatrix(AuxParam.Mjd_TT + x/86400);
     Matrix T = N * P;
     Matrix E = PoleMatrix(x_pole,y_pole) * GHAMatrix(Mjd_UT1) * T;
 
@@ -52,8 +55,8 @@ Matrix VarEqn(double x, Matrix* yPhi){
     }
 
     // Acceleration and gradient
-    Matrix a = AccelHarmonic ( &r, &E, Global::AuxParam.n, Global::AuxParam.m);
-    Matrix G = G_AccelHarmonic ( &r, &E, Global::AuxParam.n, Global::AuxParam.m );
+    Matrix a = AccelHarmonic ( &r, &E, AuxParam.n, AuxParam.m);
+    Matrix G = G_AccelHarmonic ( &r, &E, AuxParam.n, AuxParam.m );
 
     // Time derivative of state transition matrix
     Matrix yPhip(42,1);

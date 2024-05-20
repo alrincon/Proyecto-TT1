@@ -1,20 +1,25 @@
 #include "../include/anglesg.h"
 
+
+extern Matrix eopdata;
+
 void anglesg (double az1, double az2, double az3, double el1, double el2, double el3, double Mjd1, double Mjd2, double Mjd3, Matrix *Rs1, Matrix *Rs2, Matrix *Rs3, Matrix &r2, Matrix &v2){
-    Matrix L1(1,3);
+    Matrix L1(3,1);
     L1(1,1) = cos(el1)*sin(az1);
-    L1(1,2) = cos(el1)*cos(az1);
-    L1(1,3) = sin(el1);
+    L1(2,1) = cos(el1)*cos(az1);
+    L1(3,1) = sin(el1);
 
-    Matrix L2(1,3);
+
+    Matrix L2(3,1);
     L2(1,1) = cos(el2)*sin(az2);
-    L2(1,2) = cos(el2)*cos(az2);
-    L2(1,3) = sin(el2);
+    L2(2,1) = cos(el2)*cos(az2);
+    L2(3,1) = sin(el2);
 
-    Matrix L3(1,3);
+    Matrix L3(3,1);
     L3(1,1) = cos(el3)*sin(az3);
-    L3(1,2) = cos(el3)*cos(az3);
-    L3(1,3) = sin(el3);
+    L3(2,1) = cos(el3)*cos(az3);
+    L3(3,1) = sin(el3);
+
 
     double lon1, lat1, h1;
     Geodetic(lon1, lat1, h1,Rs1);
@@ -37,7 +42,7 @@ void anglesg (double az1, double az2, double az3, double el1, double el2, double
     //mean of date system (J2000)
     double Mjd_UTC = Mjd1;
     double x_pole,y_pole,UT1_UTC,LOD,dpsi,deps,dx_pole,dy_pole,TAI_UTC;
-    IERS(Global::eopdata,Mjd_UTC,'l', x_pole,y_pole,UT1_UTC,LOD,dpsi,deps,dx_pole,dy_pole,TAI_UTC);
+    IERS(&eopdata,Mjd_UTC,'l', x_pole,y_pole,UT1_UTC,LOD,dpsi,deps,dx_pole,dy_pole,TAI_UTC);
 
     double UT1_TAI,UTC_GPS,UT1_GPS,TT_UTC,GPS_UTC;
     timediff(UT1_UTC,TAI_UTC, UT1_TAI,UTC_GPS,UT1_GPS,TT_UTC,GPS_UTC);
@@ -56,7 +61,7 @@ void anglesg (double az1, double az2, double az3, double el1, double el2, double
 
     Mjd_UTC = Mjd2;
 
-    IERS(Global::eopdata,Mjd_UTC,'l', x_pole,y_pole,UT1_UTC,LOD,dpsi,deps,dx_pole,dy_pole,TAI_UTC);
+    IERS(&eopdata,Mjd_UTC,'l', x_pole,y_pole,UT1_UTC,LOD,dpsi,deps,dx_pole,dy_pole,TAI_UTC);
 
     timediff(UT1_UTC,TAI_UTC, UT1_TAI,UTC_GPS,UT1_GPS,TT_UTC,GPS_UTC);
 
@@ -72,8 +77,9 @@ void anglesg (double az1, double az2, double az3, double el1, double el2, double
     t = E.transpose()*(*Rs2);
     Rs2 = &t;
 
+
     Mjd_UTC = Mjd3;
-    IERS(Global::eopdata,Mjd_UTC,'l', x_pole,y_pole,UT1_UTC,LOD,dpsi,deps,dx_pole,dy_pole,TAI_UTC);
+    IERS(&eopdata,Mjd_UTC,'l', x_pole,y_pole,UT1_UTC,LOD,dpsi,deps,dx_pole,dy_pole,TAI_UTC);
     timediff(UT1_UTC,TAI_UTC, UT1_TAI,UTC_GPS,UT1_GPS,TT_UTC,GPS_UTC);
 
     Mjd_TT = Mjd_UTC + TT_UTC/86400;
@@ -117,7 +123,7 @@ void anglesg (double az1, double az2, double az3, double el1, double el2, double
 
     double c1 =  1.0;  // R2^8... polynomial
     double c2 =  0.0;
-    double c3 =  -(pow(d1s,2) + d1s*Ccye + pow((Rs2->norm()),2));
+    double c3 =  -(pow(d1s,2) + d1s*Ccye + pow((Rs2->norm()),2)); //ERRORACO
     double c4 =  0.0;
     double c5 =  0.0;
     double c6 =  -GM_Earth*(d2s*Ccye + 2*d1s*d2s);

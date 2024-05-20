@@ -1,5 +1,8 @@
 #include "../include/AccelHarmonic.h"
 
+extern Matrix Snm;
+extern Matrix Cnm;
+
 Matrix AccelHarmonic(Matrix* r, Matrix* E, int n_max, int  m_max) {
     double r_ref = 6378.1363e3;   // Earths radius [m]; GGM03S
     double gm = 398600.4415e9; // [m^3/s^2]; GGM03S
@@ -31,9 +34,9 @@ Matrix AccelHarmonic(Matrix* r, Matrix* E, int n_max, int  m_max) {
         double b3 = (gm / d) * pow((r_ref / d), n);
 
         for (int m = 0; m < m_max; m++) {
-            q1 = q1 + pnm(n + 1, m + 1) * ((*Global::Cnm)(n + 1, m + 1) * cos(m * lon) + (*Global::Snm)(n + 1, m + 1) * sin(m * lon));
-            q2 = q2 + dpnm(n + 1, m + 1) * ((*Global::Cnm)(n + 1, m + 1) * cos(m * lon) + (*Global::Snm)(n + 1, m + 1) * sin(m * lon));
-            q3 = q3 + m * pnm(n + 1, m + 1) * ((*Global::Snm)(n + 1, m + 1) * cos(m * lon) - (*Global::Cnm)(n + 1, m + 1) * sin(m * lon));
+            q1 = q1 + pnm(n + 1, m + 1) * (Cnm(n + 1, m + 1) * cos(m * lon) + Snm(n + 1, m + 1) * sin(m * lon));
+            q2 = q2 + dpnm(n + 1, m + 1) * (Cnm(n + 1, m + 1) * cos(m * lon) + Snm(n + 1, m + 1) * sin(m * lon));
+            q3 = q3 + m * pnm(n + 1, m + 1) * (Snm(n + 1, m + 1) * cos(m * lon) - Cnm(n + 1, m + 1) * sin(m * lon));
         }
 
         dUdr = dUdr + q1 * b1;

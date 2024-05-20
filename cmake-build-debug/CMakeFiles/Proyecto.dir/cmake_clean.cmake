@@ -27,8 +27,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Proyecto.dir/src/G_AccelHarmonic.cpp.obj.d"
   "CMakeFiles/Proyecto.dir/src/Geodetic.cpp.obj"
   "CMakeFiles/Proyecto.dir/src/Geodetic.cpp.obj.d"
-  "CMakeFiles/Proyecto.dir/src/Global.cpp.obj"
-  "CMakeFiles/Proyecto.dir/src/Global.cpp.obj.d"
   "CMakeFiles/Proyecto.dir/src/IERS.cpp.obj"
   "CMakeFiles/Proyecto.dir/src/IERS.cpp.obj.d"
   "CMakeFiles/Proyecto.dir/src/JPL_Eph_DE430.cpp.obj"

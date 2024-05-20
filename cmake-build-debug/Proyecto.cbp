@@ -220,6 +220,9 @@
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/timediff.h">
 			<Option target="Proyecto"/>
 		</Unit>
+		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/types.h">
+			<Option target="Proyecto"/>
+		</Unit>
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/unit.h">
 			<Option target="Proyecto"/>
 		</Unit>
@@ -263,9 +266,6 @@
 			<Option target="Proyecto"/>
 		</Unit>
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/Geodetic.cpp">
-			<Option target="Proyecto"/>
-		</Unit>
-		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/Global.cpp">
 			<Option target="Proyecto"/>
 		</Unit>
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/IERS.cpp">

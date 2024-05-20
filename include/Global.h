@@ -2,28 +2,26 @@
 #define PROYECTO_GLOBAL_H
 
 #include "../include/Matrix.h"
-
-typedef struct{
-    double Mjd_UTC;
-    double Mjd_TT;
-    int n;
-    int m;
-    int sun;
-    int moon;
-    int planets;
-} aux;
-
+#include "types.h"
+/*
 class Global{
 public:
-    static aux AuxParam;
 
-    static Matrix *eopdata;
-    static Matrix *Cnm;
-    static Matrix *Snm;
-    static Matrix *PC;
-    static Matrix *obs;
 
     static void initialize();
 };
+*/
+
+aux AuxParam;
+
+int nobs = 46;
+int infFile = 100;
+
+Matrix eopdata(infFile, 13);
+Matrix Cnm(181, 181);
+Matrix Snm(181, 181);
+Matrix PC(1,1);
+Matrix obs(nobs, 4);
+
 
 #endif

@@ -3,7 +3,6 @@
 
 #include "Matrix.h"
 #include "SAT_const.h"
-#include "Global.h"
 #include <stdio.h>
 #include <string.h>
 #include "Geodetic.h"

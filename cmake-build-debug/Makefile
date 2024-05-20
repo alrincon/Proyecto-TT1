@@ -464,30 +464,6 @@ src/Geodetic.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/Geodetic.cpp.s
 .PHONY : src/Geodetic.cpp.s
 
-src/Global.obj: src/Global.cpp.obj
-.PHONY : src/Global.obj
-
-# target to build an object file
-src/Global.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/Global.cpp.obj
-.PHONY : src/Global.cpp.obj
-
-src/Global.i: src/Global.cpp.i
-.PHONY : src/Global.i
-
-# target to preprocess a source file
-src/Global.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/Global.cpp.i
-.PHONY : src/Global.cpp.i
-
-src/Global.s: src/Global.cpp.s
-.PHONY : src/Global.s
-
-# target to generate assembly for a file
-src/Global.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/Global.cpp.s
-.PHONY : src/Global.cpp.s
-
 src/IERS.obj: src/IERS.cpp.obj
 .PHONY : src/IERS.obj
 
@@ -1403,9 +1379,6 @@ help:
 	@echo ... src/Geodetic.obj
 	@echo ... src/Geodetic.i
 	@echo ... src/Geodetic.s
-	@echo ... src/Global.obj
-	@echo ... src/Global.i
-	@echo ... src/Global.s
 	@echo ... src/IERS.obj
 	@echo ... src/IERS.i
 	@echo ... src/IERS.s

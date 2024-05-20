@@ -11,7 +11,7 @@
 #include "GHAMatrix.h"
 #include "AccelHarmonic.h"
 #include "G_AccelHarmonic.h"
-#include "Global.h"
+#include "types.h"
 
 Matrix VarEqn(double x, Matrix* yPhi);
 

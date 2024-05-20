@@ -22,7 +22,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/alons/CLionProjects/Proyecto-TT1/src/GHAMatrix.cpp" "CMakeFiles/Proyecto.dir/src/GHAMatrix.cpp.obj" "gcc" "CMakeFiles/Proyecto.dir/src/GHAMatrix.cpp.obj.d"
   "C:/Users/alons/CLionProjects/Proyecto-TT1/src/G_AccelHarmonic.cpp" "CMakeFiles/Proyecto.dir/src/G_AccelHarmonic.cpp.obj" "gcc" "CMakeFiles/Proyecto.dir/src/G_AccelHarmonic.cpp.obj.d"
   "C:/Users/alons/CLionProjects/Proyecto-TT1/src/Geodetic.cpp" "CMakeFiles/Proyecto.dir/src/Geodetic.cpp.obj" "gcc" "CMakeFiles/Proyecto.dir/src/Geodetic.cpp.obj.d"
-  "C:/Users/alons/CLionProjects/Proyecto-TT1/src/Global.cpp" "CMakeFiles/Proyecto.dir/src/Global.cpp.obj" "gcc" "CMakeFiles/Proyecto.dir/src/Global.cpp.obj.d"
   "C:/Users/alons/CLionProjects/Proyecto-TT1/src/IERS.cpp" "CMakeFiles/Proyecto.dir/src/IERS.cpp.obj" "gcc" "CMakeFiles/Proyecto.dir/src/IERS.cpp.obj.d"
   "C:/Users/alons/CLionProjects/Proyecto-TT1/src/JPL_Eph_DE430.cpp" "CMakeFiles/Proyecto.dir/src/JPL_Eph_DE430.cpp.obj" "gcc" "CMakeFiles/Proyecto.dir/src/JPL_Eph_DE430.cpp.obj.d"
   "C:/Users/alons/CLionProjects/Proyecto-TT1/src/LTC.cpp" "CMakeFiles/Proyecto.dir/src/LTC.cpp.obj" "gcc" "CMakeFiles/Proyecto.dir/src/LTC.cpp.obj.d"

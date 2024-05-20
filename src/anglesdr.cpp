@@ -1,6 +1,8 @@
 #include "../include/anglesdr.h"
 
 
+extern Matrix eopdata;
+
 void anglesdr (double az1, double az2, double az3, double el1, double el2, double el3, double Mjd1, double Mjd2, double Mjd3, Matrix *rsite1, Matrix *rsite2, Matrix *rsite3, Matrix &r2, Matrix &v2){
     double magr1in = 1.1*R_Earth;
     double magr2in = 1.11*R_Earth;
@@ -51,7 +53,7 @@ void anglesdr (double az1, double az2, double az3, double el1, double el2, doubl
     //mean of date system (J2000)
     double Mjd_UTC = Mjd1;
     double x_pole,y_pole,UT1_UTC,LOD,dpsi,deps,dx_pole,dy_pole,TAI_UTC;
-    IERS(Global::eopdata,Mjd_UTC,'l', x_pole,y_pole,UT1_UTC,LOD,dpsi,deps,dx_pole,dy_pole,TAI_UTC);
+    IERS(&eopdata,Mjd_UTC,'l', x_pole,y_pole,UT1_UTC,LOD,dpsi,deps,dx_pole,dy_pole,TAI_UTC);
 
     double UT1_TAI,UTC_GPS,UT1_GPS,TT_UTC,GPS_UTC;
     timediff(UT1_UTC,TAI_UTC, UT1_TAI,UTC_GPS,UT1_GPS,TT_UTC,GPS_UTC);
@@ -71,7 +73,7 @@ void anglesdr (double az1, double az2, double az3, double el1, double el2, doubl
     //2
 
     Mjd_UTC = Mjd2;
-    IERS(Global::eopdata,Mjd_UTC,'l', x_pole,y_pole,UT1_UTC,LOD,dpsi,deps,dx_pole,dy_pole,TAI_UTC);
+    IERS(&eopdata,Mjd_UTC,'l', x_pole,y_pole,UT1_UTC,LOD,dpsi,deps,dx_pole,dy_pole,TAI_UTC);
 
     timediff(UT1_UTC,TAI_UTC, UT1_TAI,UTC_GPS,UT1_GPS,TT_UTC,GPS_UTC);
 
@@ -90,7 +92,7 @@ void anglesdr (double az1, double az2, double az3, double el1, double el2, doubl
     //3
 
     Mjd_UTC = Mjd3;
-    IERS(Global::eopdata,Mjd_UTC,'l', x_pole,y_pole,UT1_UTC,LOD,dpsi,deps,dx_pole,dy_pole,TAI_UTC);
+    IERS(&eopdata,Mjd_UTC,'l', x_pole,y_pole,UT1_UTC,LOD,dpsi,deps,dx_pole,dy_pole,TAI_UTC);
 
     timediff(UT1_UTC,TAI_UTC, UT1_TAI,UTC_GPS,UT1_GPS,TT_UTC,GPS_UTC);
 
