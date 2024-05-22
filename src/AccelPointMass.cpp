@@ -26,3 +26,13 @@ Matrix AccelPointMass(Matrix& r, Matrix& s, double GM){
     //Acceleration
     return (d*(1.0/(pow(d.norm(),3))) + s*(1.0/(pow(s.norm(),3))))*(-GM);
 }
+
+Matrix AccelPointMassT(Matrix& r, Matrix& s, double GM){
+    Matrix sT(r.getFilas(),1);
+
+    for(int i = 1; i < r.getFilas(); i++){
+        sT(i,1) = s(1,i);
+    }
+
+    return AccelPointMass(r, sT, GM);
+}

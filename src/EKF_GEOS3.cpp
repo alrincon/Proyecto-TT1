@@ -175,7 +175,22 @@ int main(){
     cout << Mjd0 << endl;
     cout << -(obs(9,1)-Mjd0)*86400.0 << endl;
 
-    Y = DEInteg(&Accel,0.0,-(obs(9,1)-Mjd0)*86400.0,1e-13,1e-6,6,&Y0_apr);
+    Y0_apr.print();
+
+    cout << "tamaño Y: " << endl;
+    cout << "filas: " << Y.getFilas() << endl;
+    cout << "columnas: " << Y.getColumnas() << endl;
+
+
+    cout << "tamaño Y0_apr: " << endl;
+    cout << "filas: " << Y0_apr.getFilas() << endl;
+    cout << "columnas: " << Y0_apr.getColumnas() << endl;
+
+    cout << "__________________________" << endl;
+
+    Matrix aux(1,6);
+    aux = DEInteg(Accel,0.0,-(obs(9,1)-Mjd0)*86400.0,1e-13,1e-6,6,&Y0_apr);
+    Y.redefine(&aux);
 
     cout << "llego" << endl;
     Matrix P(6,6);
@@ -243,7 +258,7 @@ int main(){
             }
         }
 
-        Y = DEInteg(Accel, 0, t - t_old, 1e-13, 1e-6, 6, &Y_old);
+        Y = DEInteg(&AccelT, 0, t - t_old, 1e-13, 1e-6, 6, &Y_old);
 
         // Topocentric coordinates
         double theta = gmst(Mjd_UT1);                    // Earth rotation
@@ -351,7 +366,7 @@ int main(){
 
     Matrix Y0(2,3);
 
-    Y0 = DEInteg (Accel,0,-(obs(46,1)-obs(1,1))*86400.0,1e-13,1e-6,6,&Y);
+    Y0 = DEInteg (&AccelT,0,-(obs(46,1)-obs(1,1))*86400.0,1e-13,1e-6,6,&Y);
 
     Matrix Y_true(6,1);
     Y_true(1,1) =5753.173e3;

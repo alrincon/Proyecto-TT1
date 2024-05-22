@@ -178,6 +178,25 @@ void Matrix::assign(int i, int j, double v){
     matrix[i][j] = v;
 }
 
+void Matrix::setTam(int nfil, int ncol){
+    fil = nfil;
+    col = ncol;
+    initMatrix();
+}
+
+void Matrix::redefine(Matrix* mat){
+    fil = mat->getFilas();
+    col = mat->getColumnas();
+
+    initMatrix();
+
+    for(int i = 1; i <= fil; i++){
+        for(int j = 1; j <= col; j++){
+            matrix[i-1][j-1] = (*mat)(i,j);
+        }
+    }
+}
+
 Matrix Matrix::extractCol(int i){
     Matrix res(fil, 1);
 

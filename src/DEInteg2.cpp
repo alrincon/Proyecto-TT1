@@ -19,7 +19,7 @@ struct DE_STATE {
 };
 
 //y = (1,6)
-//return (1,6)
+
 
 Matrix DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double relerr, double abserr, int n_eqn, Matrix *y) {
     cout << "entra" << endl;
@@ -245,23 +245,8 @@ Matrix DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double re
 
         cout << "checkpoint 8" << endl;
         if (start) {
-            cout << "entra en start" << endl;
             // Initialize. Compute appropriate step size for first step.
-
-            cout << "tamaño y: " << endl;
-            cout << "filas: " << y->getFilas() << endl;
-            cout << "columnas: " << y->getColumnas() << endl;
-
-
-            cout << "tamaño yp: " << endl;
-            cout << "filas: " << yp.getFilas() << endl;
-            cout << "columnas: " << yp.getColumnas() << endl;
-
-            cout << "tamaño result: " << endl;
-            cout << "filas: " << func(x, y).getFilas() << endl;
-            cout << "columnas: " << func(x, y).getColumnas() << endl;
-
-            yp = func(x, y).transpose();
+            yp = func(x, y);
             double sum = 0.0;
 
             cout << "checkpoint 81" << endl;
@@ -475,7 +460,7 @@ Matrix DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double re
             double xold = x;
             x = x + h;
             absh = abs(h);
-            yp = func(x, &p).transpose();
+            yp = func(x, &p);
 
             // Estimate errors at orders k, k-1, k-2
             erkm2 = 0.0;
@@ -624,7 +609,7 @@ Matrix DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double re
             }
         }
 
-        yp = func(x,y).transpose();
+        yp = func(x,y);
 
         // Update differences for next step
         for (int l = 1; l <= n_eqn; l++) {
@@ -739,28 +724,4 @@ Matrix DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double re
             stiff = true;
         }
     }
-}
-
-//y = (1,n_eqn);
-Matrix DEIntegT(Matrix (*func)(double, Matrix*), double t, double tout, double relerr, double abserr, int n_eqn, Matrix *y){
-    Matrix yT(n_eqn,1);
-
-    for(int i = 1; i <= n_eqn; i++){
-        yT(i,1) = (*y)(1,i);
-    }
-
-    yT.print();
-
-    Matrix resT(n_eqn,1);
-    resT = DEInteg(func, t, tout, relerr, abserr, n_eqn, &yT);
-
-    Matrix res(1,n_eqn);
-
-    for(int i = 1; i <= n_eqn; i++){
-        res(1,i) = resT(i,1);
-    }
-
-    res.print();
-
-    return res;
 }

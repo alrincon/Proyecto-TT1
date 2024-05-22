@@ -6,5 +6,6 @@
 using namespace std;
 
 Matrix AccelPointMass(Matrix& r, Matrix& s, double GM);
+Matrix AccelPointMassT(Matrix& r, Matrix& s, double GM);
 
 #endif

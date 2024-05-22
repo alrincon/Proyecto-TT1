@@ -32,7 +32,7 @@ Matrix extractColumn(Matrix* input, int row){
 }
 
 Matrix extractVector(Matrix* input, int start, int finish){
-    int n = start - finish;
+    int n = finish-start;
     Matrix res(1, n+1);
 
     for(int i = 0; i <= n; i++){
@@ -72,10 +72,11 @@ Matrix concatenateVector(Matrix *v1, Matrix *v2){
 void JPL_Eph_DE430(double Mjd_TDB, Matrix &r_Mercury, Matrix &r_Venus, Matrix &r_Earth, Matrix &r_Mars, Matrix &r_Jupiter, Matrix &r_Saturn, Matrix &r_Uranus, Matrix &r_Neptune, Matrix &r_Pluto, Matrix &r_Moon, Matrix &r_Sun) {
     double JD = Mjd_TDB + 2400000.5;
     int i = findPC(JD);
-    Matrix PCtemp = extractRow(&PC, i);
+    cout << "valor matriz " << (PC)(516,1) << endl;
+    Matrix PCtemp = extractColumn(&PC, i);
 
     double t1 = PCtemp(1, 1) - 2400000.5; // MJD at start of interval
-
+cout << "valor t1 " << t1 << endl;
     double dt = Mjd_TDB - t1;
 
     Matrix temp = rowSequence(231, 270, 13);
@@ -93,11 +94,16 @@ void JPL_Eph_DE430(double Mjd_TDB, Matrix &r_Mercury, Matrix &r_Venus, Matrix &r
     Matrix Cy = extractVector(&PCtemp, temp(1, 2), temp(1, 3) - 1);
     Matrix Cz = extractVector(&PCtemp, temp(1, 3), temp(1, 4) - 1);
 
-    Cx_Earth = concatenateVector(&Cx_Earth, &Cx);
-    Cy_Earth = concatenateVector(&Cy_Earth, &Cy);
-    Cz_Earth = concatenateVector(&Cz_Earth, &Cz);
+    Matrix aux1 = concatenateVector(&Cx_Earth, &Cx);
+    Cx_Earth.redefine(&aux1);
 
-    int j;
+    Matrix aux2 = concatenateVector(&Cy_Earth, &Cy);
+    Cy_Earth.redefine(&aux2);
+
+    Matrix aux3 = concatenateVector(&Cz_Earth, &Cz);
+    Cz_Earth.redefine(&aux3);
+
+    int j = 0;
     double Mjd0;
 
     if (0 <= dt && dt <= 16) {
@@ -131,9 +137,14 @@ void JPL_Eph_DE430(double Mjd_TDB, Matrix &r_Mercury, Matrix &r_Venus, Matrix &r
         Cy = extractVector(&PCtemp, temp(1, 2), temp(1, 3) - 1);
         Cz = extractVector(&PCtemp, temp(1, 3), temp(1, 4) - 1);
 
-        Cx_Moon = concatenateVector(&Cx_Moon, &Cx);
-        Cy_Moon = concatenateVector(&Cy_Moon, &Cy);
-        Cz_Moon = concatenateVector(&Cz_Moon, &Cz);
+        Matrix aux1 = concatenateVector(&Cx_Moon, &Cx);
+        Cx_Moon.redefine(&aux1);
+
+        Matrix aux2 = concatenateVector(&Cy_Moon, &Cy);
+        Cy_Moon.redefine(&aux2);
+
+        Matrix aux3 = concatenateVector(&Cz_Moon, &Cz);
+        Cz_Moon.redefine(&aux3);
     }
 
     if (0 <= dt && dt <= 4) {
@@ -182,9 +193,14 @@ void JPL_Eph_DE430(double Mjd_TDB, Matrix &r_Mercury, Matrix &r_Venus, Matrix &r
     Cy = extractVector(&PCtemp, temp(1, 2), temp(1, 3) - 1);
     Cz = extractVector(&PCtemp, temp(1, 3), temp(1, 4) - 1);
 
-    Cx_Sun = concatenateVector(&Cx_Sun, &Cx);
-    Cy_Sun = concatenateVector(&Cy_Sun, &Cy);
-    Cz_Sun = concatenateVector(&Cz_Sun, &Cz);
+    Matrix aux21 = concatenateVector(&Cx_Sun, &Cx);
+    Cx_Sun.redefine(&aux21);
+
+    Matrix aux22 = concatenateVector(&Cy_Sun, &Cy);
+    Cy_Sun.redefine(&aux22);
+
+    Matrix aux23 = concatenateVector(&Cz_Sun, &Cz);
+    Cz_Sun.redefine(&aux23);
 
     if (0 <= dt && dt <= 16) {
         j = 0;
@@ -216,9 +232,14 @@ void JPL_Eph_DE430(double Mjd_TDB, Matrix &r_Mercury, Matrix &r_Venus, Matrix &r
         Cy = extractVector(&PCtemp, temp(1, 2), temp(1, 3) - 1);
         Cz = extractVector(&PCtemp, temp(1, 3), temp(1, 4) - 1);
 
-        Cx_Mercury = concatenateVector(&Cx_Mercury, &Cx);
-        Cy_Mercury = concatenateVector(&Cy_Mercury, &Cy);
-        Cz_Mercury = concatenateVector(&Cz_Mercury, &Cz);
+        Matrix aux21 = concatenateVector(&Cx_Mercury, &Cx);
+        Cx_Mercury.redefine(&aux21);
+
+        Matrix aux22 = concatenateVector(&Cy_Mercury, &Cy);
+        Cy_Mercury.redefine(&aux22);
+
+        Matrix aux23 = concatenateVector(&Cz_Mercury, &Cz);
+        Cz_Mercury.redefine(&aux23);
     }
 
     if (0 <= dt && dt <= 8) {
@@ -255,9 +276,14 @@ void JPL_Eph_DE430(double Mjd_TDB, Matrix &r_Mercury, Matrix &r_Venus, Matrix &r
     Cy = extractVector(&PCtemp, temp(1, 2), temp(1, 3) - 1);
     Cz = extractVector(&PCtemp, temp(1, 3), temp(1, 4) - 1);
 
-    Cx_Venus = concatenateVector(&Cx_Venus, &Cx);
-    Cy_Venus = concatenateVector(&Cy_Venus, &Cy);
-    Cz_Venus = concatenateVector(&Cz_Venus, &Cz);
+    Matrix aux31 = concatenateVector(&Cx_Venus, &Cx);
+    Cx_Venus.redefine(&aux31);
+
+    Matrix aux32 = concatenateVector(&Cy_Venus, &Cy);
+    Cy_Venus.redefine(&aux32);
+
+    Matrix aux33 = concatenateVector(&Cz_Venus, &Cz);
+    Cz_Venus.redefine(&aux33);
 
     if (0 <= dt && dt <= 16) {
         j = 0;

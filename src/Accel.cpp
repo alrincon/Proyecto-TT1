@@ -3,6 +3,8 @@
 extern Matrix eopdata;
 extern aux AuxParam;
 
+//Y = (1,6)
+//return (1,6)
 Matrix Accel(double x, Matrix* Y){
     double x_pole;
     double y_pole;
@@ -50,31 +52,32 @@ Matrix Accel(double x, Matrix* Y){
 
     // Acceleration due to harmonic gravity field
 
-    Matrix Y1(1,3);
+    Matrix Y1(3,1);
     Y1(1,1) = (*Y)(1,1);
-    Y1(1,2) = (*Y)(1,2);
-    Y1(1,3) = (*Y)(1,3);
-    Matrix a = AccelHarmonic(&Y1, &E, AuxParam.n, AuxParam.m);
+    Y1(2,1) = (*Y)(1,2);
+    Y1(3,1) = (*Y)(1,3);
+    Matrix a(3,1);
+    a = AccelHarmonic(&Y1, &E, AuxParam.n, AuxParam.m);
 
     // Luni-solar perturbations
     if (AuxParam.sun > 0){
-        a = a + AccelPointMass(Y1,r_Sun,GM_Sun);
+        a = a + AccelPointMassT(Y1,r_Sun,GM_Sun);
     }
 
     if (AuxParam.moon > 0) {
-        a = a + AccelPointMass(Y1,r_Moon,GM_Moon);
+        a = a + AccelPointMassT(Y1,r_Moon,GM_Moon);
     }
 
     // Planetary perturbations
     if (AuxParam.planets > 0) {
-        a = a + AccelPointMass(Y1,r_Mercury,GM_Mercury);
-        a = a + AccelPointMass(Y1,r_Venus,GM_Venus);
-        a = a + AccelPointMass(Y1,r_Mars,GM_Mars);
-        a = a + AccelPointMass(Y1,r_Jupiter,GM_Jupiter);
-        a = a + AccelPointMass(Y1,r_Saturn,GM_Saturn);
-        a = a + AccelPointMass(Y1,r_Uranus,GM_Uranus);
-        a = a + AccelPointMass(Y1,r_Neptune,GM_Neptune);
-        a = a + AccelPointMass(Y1,r_Pluto,GM_Pluto);
+        a = a + AccelPointMassT(Y1,r_Mercury,GM_Mercury);
+        a = a + AccelPointMassT(Y1,r_Venus,GM_Venus);
+        a = a + AccelPointMassT(Y1,r_Mars,GM_Mars);
+        a = a + AccelPointMassT(Y1,r_Jupiter,GM_Jupiter);
+        a = a + AccelPointMassT(Y1,r_Saturn,GM_Saturn);
+        a = a + AccelPointMassT(Y1,r_Uranus,GM_Uranus);
+        a = a + AccelPointMassT(Y1,r_Neptune,GM_Neptune);
+        a = a + AccelPointMassT(Y1,r_Pluto,GM_Pluto);
     }
 
     Matrix dY(1,6);
@@ -90,6 +93,8 @@ Matrix Accel(double x, Matrix* Y){
     return dY;
 }
 
+//Y(6, 1)
+//return (6,1)
 Matrix AccelT(double x, Matrix* Y){
     Matrix YT(1,6);
     YT(1,1) = (*Y)(1,1);
@@ -110,5 +115,5 @@ Matrix AccelT(double x, Matrix* Y){
     res(5,1) = resT(1,5);
     res(6,1) = resT(1,6);
 
-    return resT;
+    return res;
 }

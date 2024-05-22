@@ -22,6 +22,10 @@ public:
     Matrix  operator*(const double scalar);
     double& operator()(const int i, const int j) const;
 
+    void setTam(int nfil, int ncol);
+
+    void redefine(Matrix* mat);
+
     void print();
 
     int getFilas();
