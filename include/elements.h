@@ -6,6 +6,7 @@
 #include "crossProduct.h"
 #include "dotProduct.h"
 #include <cmath>
+#include "realmod.h"
 
 void elements (Matrix* y, double &p, double &a, double &e, double &i, double &Omega, double &omega, double &M);
 

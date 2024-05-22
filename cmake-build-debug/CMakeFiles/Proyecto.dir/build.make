@@ -768,6 +768,34 @@ CMakeFiles/Proyecto.dir/src/largestRoot.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto.dir/src/largestRoot.cpp.s"
 	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\alons\CLionProjects\Proyecto-TT1\src\largestRoot.cpp -o CMakeFiles\Proyecto.dir\src\largestRoot.cpp.s
 
+CMakeFiles/Proyecto.dir/src/DEInteg.cpp.obj: CMakeFiles/Proyecto.dir/flags.make
+CMakeFiles/Proyecto.dir/src/DEInteg.cpp.obj: ../src/DEInteg.cpp
+CMakeFiles/Proyecto.dir/src/DEInteg.cpp.obj: CMakeFiles/Proyecto.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\alons\CLionProjects\Proyecto-TT1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/Proyecto.dir/src/DEInteg.cpp.obj"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Proyecto.dir/src/DEInteg.cpp.obj -MF CMakeFiles\Proyecto.dir\src\DEInteg.cpp.obj.d -o CMakeFiles\Proyecto.dir\src\DEInteg.cpp.obj -c C:\Users\alons\CLionProjects\Proyecto-TT1\src\DEInteg.cpp
+
+CMakeFiles/Proyecto.dir/src/DEInteg.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto.dir/src/DEInteg.cpp.i"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\alons\CLionProjects\Proyecto-TT1\src\DEInteg.cpp > CMakeFiles\Proyecto.dir\src\DEInteg.cpp.i
+
+CMakeFiles/Proyecto.dir/src/DEInteg.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto.dir/src/DEInteg.cpp.s"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\alons\CLionProjects\Proyecto-TT1\src\DEInteg.cpp -o CMakeFiles\Proyecto.dir\src\DEInteg.cpp.s
+
+CMakeFiles/Proyecto.dir/src/realmod.cpp.obj: CMakeFiles/Proyecto.dir/flags.make
+CMakeFiles/Proyecto.dir/src/realmod.cpp.obj: ../src/realmod.cpp
+CMakeFiles/Proyecto.dir/src/realmod.cpp.obj: CMakeFiles/Proyecto.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\alons\CLionProjects\Proyecto-TT1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/Proyecto.dir/src/realmod.cpp.obj"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Proyecto.dir/src/realmod.cpp.obj -MF CMakeFiles\Proyecto.dir\src\realmod.cpp.obj.d -o CMakeFiles\Proyecto.dir\src\realmod.cpp.obj -c C:\Users\alons\CLionProjects\Proyecto-TT1\src\realmod.cpp
+
+CMakeFiles/Proyecto.dir/src/realmod.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto.dir/src/realmod.cpp.i"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\alons\CLionProjects\Proyecto-TT1\src\realmod.cpp > CMakeFiles\Proyecto.dir\src\realmod.cpp.i
+
+CMakeFiles/Proyecto.dir/src/realmod.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto.dir/src/realmod.cpp.s"
+	C:\URApps\CLion_2022_2_2\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\alons\CLionProjects\Proyecto-TT1\src\realmod.cpp -o CMakeFiles\Proyecto.dir\src\realmod.cpp.s
+
 # Object files for target Proyecto
 Proyecto_OBJECTS = \
 "CMakeFiles/Proyecto.dir/main.cpp.obj" \
@@ -819,7 +847,9 @@ Proyecto_OBJECTS = \
 "CMakeFiles/Proyecto.dir/src/JPL_Eph_DE430.cpp.obj" \
 "CMakeFiles/Proyecto.dir/src/anglesdr.cpp.obj" \
 "CMakeFiles/Proyecto.dir/src/anglesg.cpp.obj" \
-"CMakeFiles/Proyecto.dir/src/largestRoot.cpp.obj"
+"CMakeFiles/Proyecto.dir/src/largestRoot.cpp.obj" \
+"CMakeFiles/Proyecto.dir/src/DEInteg.cpp.obj" \
+"CMakeFiles/Proyecto.dir/src/realmod.cpp.obj"
 
 # External object files for target Proyecto
 Proyecto_EXTERNAL_OBJECTS =
@@ -874,11 +904,13 @@ Proyecto.exe: CMakeFiles/Proyecto.dir/src/JPL_Eph_DE430.cpp.obj
 Proyecto.exe: CMakeFiles/Proyecto.dir/src/anglesdr.cpp.obj
 Proyecto.exe: CMakeFiles/Proyecto.dir/src/anglesg.cpp.obj
 Proyecto.exe: CMakeFiles/Proyecto.dir/src/largestRoot.cpp.obj
+Proyecto.exe: CMakeFiles/Proyecto.dir/src/DEInteg.cpp.obj
+Proyecto.exe: CMakeFiles/Proyecto.dir/src/realmod.cpp.obj
 Proyecto.exe: CMakeFiles/Proyecto.dir/build.make
 Proyecto.exe: CMakeFiles/Proyecto.dir/linklibs.rsp
 Proyecto.exe: CMakeFiles/Proyecto.dir/objects1.rsp
 Proyecto.exe: CMakeFiles/Proyecto.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\alons\CLionProjects\Proyecto-TT1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Linking CXX executable Proyecto.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\alons\CLionProjects\Proyecto-TT1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Linking CXX executable Proyecto.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Proyecto.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

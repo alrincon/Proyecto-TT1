@@ -4,7 +4,7 @@
 void gibbs(Matrix *r1, Matrix *r2, Matrix *r3, Matrix &v2, double &theta, double &theta1, double &copa, char* &error){
     double small= 0.00000001;
     theta= 0.0;
-    //strcpy(error, "ok");
+
     error = static_cast<char *>(malloc(100));
 
     strcpy(error,"ok");
@@ -15,15 +15,21 @@ void gibbs(Matrix *r1, Matrix *r2, Matrix *r3, Matrix &v2, double &theta, double
     double magr3 = (*r3).norm();
 
     v2(1,1)= 0.0;
-    v2(1,2)= 0.0;
+    v2(1,3)= 0.0;
     v2(1,3)= 0.0;
 
-    Matrix p = crossProduct( r2,r3 );
-    Matrix q = crossProduct( r3,r1 );
-    Matrix w = crossProduct( r1,r2 );
+    Matrix p(1, 3);
+    p = crossProduct( r2,r3 );
+    Matrix q(1, 3);
+    q = crossProduct( r3,r1 );
+    Matrix w(1, 3);
+    w = crossProduct( r1,r2 );
 
-    Matrix pn = unit( &p );
-    Matrix r1n = unit( r1 );
+    Matrix pn(1, 3);
+    pn = unit( &p );
+    Matrix r1n(1, 3);
+    r1n = unit( r1 );
+
     copa = asin( dotProduct(&pn,&r1n));
 
     if (abs(dotProduct(&r1n,&pn) ) > 0.017452406 ) {

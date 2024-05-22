@@ -18,28 +18,28 @@
 //
 //--------------------------------------------------------------------------
 
+//los vectores son n,1
+void AzElPa(Matrix* s, double& Az, double& El, Matrix& dAds, Matrix& dEds) {
+    double pi2 = 2.0 * M_PI;
 
-void AzElPa(const double s[3], double& Az, double& El, double dAds[3], double dEds[3]) {
-    const double pi2 = 2.0 * M_PI;
-
-    double rho = std::sqrt(s[0] * s[0] + s[1] * s[1]);
+    double rho = sqrt((*s)(1,1)*(*s)(1,1)+(*s)(2,1)*(*s)(2,1));
 
     // Angles
-    Az = std::atan2(s[0], s[1]);
-    if (Az < 0.0) {
-        Az += pi2;
+    Az = atan2((*s)(1,1),(*s)(2,1));
+
+    if (Az<0.0) {
+        Az = Az + pi2;
     }
 
-    El = std::atan(s[2] / rho);
+    El = atan ( (*s)(3,1) / rho );
 
     // Partials
-    dAds[0] = s[1] / (rho * rho);
-    dAds[1] = -s[0] / (rho * rho);
-    dAds[2] = 0.0;
+    dAds(1,1) = (*s)(2,1)/(rho*rho);
+    dAds(2,1) = -(*s)(1,1)/(rho*rho);
+    dAds(3,1) = 0;
 
-    double dot_s = s[0] * s[0] + s[1] * s[1] + s[2] * s[2];
-    dEds[0] = -s[0] * s[2] / rho;
-    dEds[1] = -s[1] * s[2] / rho;
-    dEds[2] = rho / dot_s;
+    dEds(1,1) = -(*s)(1,1)*(*s)(3,1)/(rho*dotProduct(s,s));
+    dEds(2,1) = -(*s)(2,1)*(*s)(3,1)/(rho*dotProduct(s,s));
+    dEds(3,1) = rho/dotProduct(s,s);
 }
 

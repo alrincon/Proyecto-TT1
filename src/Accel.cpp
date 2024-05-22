@@ -77,15 +77,38 @@ Matrix Accel(double x, Matrix* Y){
         a = a + AccelPointMass(Y1,r_Pluto,GM_Pluto);
     }
 
-    Matrix dY(2,3);
+    Matrix dY(1,6);
     dY(1,1) = (*Y)(1,4);
     dY(1,2) = (*Y)(1,5);
     dY(1,3) = (*Y)(1,6);
 
 
-    dY(2,1) = a(1,1);
-    dY(2,2) = a(1,2);
-    dY(2,3) = a(1,3);
+    dY(1,4) = a(1,1);
+    dY(1,5) = a(1,2);
+    dY(1,6) = a(1,3);
 
     return dY;
+}
+
+Matrix AccelT(double x, Matrix* Y){
+    Matrix YT(1,6);
+    YT(1,1) = (*Y)(1,1);
+    YT(1,2) = (*Y)(2,1);
+    YT(1,3) = (*Y)(3,1);
+    YT(1,4) = (*Y)(4,1);
+    YT(1,5) = (*Y)(5,1);
+    YT(1,6) = (*Y)(6,1);
+
+    Matrix resT(1,6);
+    resT = AccelT(x, &YT);
+
+    Matrix res(6,1);
+    res(1,1) = resT(1,1);
+    res(2,1) = resT(1,2);
+    res(3,1) = resT(1,3);
+    res(4,1) = resT(1,4);
+    res(5,1) = resT(1,5);
+    res(6,1) = resT(1,6);
+
+    return resT;
 }

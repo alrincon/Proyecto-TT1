@@ -18,4 +18,5 @@
 
 Matrix Accel(double x, Matrix* Y);
 
+Matrix AccelT(double x, Matrix* Y);
 #endif

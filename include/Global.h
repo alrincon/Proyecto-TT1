@@ -20,7 +20,7 @@ int infFile = 100;
 Matrix eopdata(infFile, 13);
 Matrix Cnm(181, 181);
 Matrix Snm(181, 181);
-Matrix PC(1,1);
+Matrix PC(2285,1020);
 Matrix obs(nobs, 4);
 
 

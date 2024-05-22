@@ -19,7 +19,7 @@ void elements (Matrix* y, double &p, double &a, double &e, double &i, double &Om
     double H = h.norm();
 
     Omega = atan2 ( h(1,1), -h(1,2) );                                                  // Long. ascend. node
-    Omega = fmod(Omega,pi2);
+    Omega = realmod(Omega,pi2);
     i = atan2 ( sqrt(h(1,1)*h(1,1)+h(1,2)*h(1,2)), h(1,3) );             // Inclination
     double u = atan2 ( r(1,3)*H, -r(1,1)*h(1,2)+r(1,2)*h(1,1) );         // Arg. of latitude
 
@@ -34,9 +34,9 @@ void elements (Matrix* y, double &p, double &a, double &e, double &i, double &Om
     e  = sqrt(e2);                                                          // Eccentricity
     double E  = atan2(eSinE,eCosE);                                         // Eccentric anomaly
 
-    M  = fmod(E-eSinE,pi2);                                                 // Mean anomaly
+    M  = realmod(E-eSinE,pi2);                                                 // Mean anomaly
 
     double nu = atan2(sqrt(1.0-e2)*eSinE, eCosE-e2);                        // True anomaly
 
-    omega = fmod(u-nu,pi2);                                                 // Arg. of perihelion
+    omega = realmod(u-nu,pi2);// Arg. of perihelion
 }

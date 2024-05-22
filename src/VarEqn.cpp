@@ -24,39 +24,44 @@ Matrix VarEqn(double x, Matrix* yPhi){
 
     timediff(UT1_UTC,TAI_UTC, UT1_TAI,UTC_GPS,UT1_GPS,TT_UTC,GPS_UTC);
 
-    double Mjd_UT1 = AuxParam.Mjd_TT + (UT1_UTC-TT_UTC)/86400;
+    double Mjd_UT1 = AuxParam.Mjd_TT + (UT1_UTC-TT_UTC)/86400.0;
 
     // Transformation matrix
-    Matrix P = PrecMatrix(MJD_J2000,AuxParam.Mjd_TT + x/86400);
-    Matrix N = NutMatrix(AuxParam.Mjd_TT + x/86400);
+    Matrix P = PrecMatrix(MJD_J2000,AuxParam.Mjd_TT + x/86400.0);
+    Matrix N = NutMatrix(AuxParam.Mjd_TT + x/86400.0);
     Matrix T = N * P;
+
     Matrix E = PoleMatrix(x_pole,y_pole) * GHAMatrix(Mjd_UT1) * T;
 
     // State vector components
-    Matrix r(1,3);
+    Matrix r(3,1);
     r(1,1) = (*yPhi)(1,1);
-    r(1,2) = (*yPhi)(1,2);
-    r(1,3) = (*yPhi)(1,3);
+    r(2,1) = (*yPhi)(2,1);
+    r(3,1) = (*yPhi)(3,1);
 
 
-    Matrix v(1,3);
-    v(1,1) = (*yPhi)(1,4);
-    v(1,2) = (*yPhi)(1,5);
-    v(1,3) = (*yPhi)(1,6);
+    Matrix v(3,1);
+    v(1,1) = (*yPhi)(4,1);
+    v(2,1) = (*yPhi)(5,1);
+    v(3,1) = (*yPhi)(6,1);
 
 
     Matrix Phi(6,6);
 
+
+
     // State transition matrix
     for(int j = 1; j <= 6; j++){
         for(int i = 1; i <= 6; i++){
-            Phi(i, j) = (*yPhi)(1,6*j+i);
+            Phi(i, j) = (*yPhi)(6*j+i,1);
         }
     }
 
     // Acceleration and gradient
-    Matrix a = AccelHarmonic ( &r, &E, AuxParam.n, AuxParam.m);
-    Matrix G = G_AccelHarmonic ( &r, &E, AuxParam.n, AuxParam.m );
+    Matrix a(3,1);
+    a = AccelHarmonic ( &r, &E, AuxParam.n, AuxParam.m);
+    Matrix G (3,1);
+    G = G_AccelHarmonic ( &r, &E, AuxParam.n, AuxParam.m );
 
     // Time derivative of state transition matrix
     Matrix yPhip(42,1);
@@ -77,12 +82,13 @@ Matrix VarEqn(double x, Matrix* yPhi){
         }
     }
 
-    Matrix Phip = dfdy*Phi;
+    Matrix Phip(6,6);
+    Phip = dfdy*Phi;
 
     // Derivative of combined state vector and state transition matrix
     for(int i = 1; i <= 3; i++) {
-        yPhip(i,1) = v(1,i);                 // dr/dt(i)
-        yPhip(i + 3, 1) = a(1,i);                 // dv/dt(i)
+        yPhip(i,1) = v(i,1);                 // dr/dt(i)
+        yPhip(i + 3,1) = a(i,1);                 // dv/dt(i)
     }
 
     for(int i = 1; i <= 6; i++) {

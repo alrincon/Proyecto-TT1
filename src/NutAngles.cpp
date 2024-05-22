@@ -133,10 +133,14 @@ void  NutAngles (double Mjd_TT, double& dpsi, double& deps){
 
     // Nutation in longitude and obliquity [rad]
 
+    double arg;
+    dpsi = 0;
+    deps = 0;
+
     for (int i = 0; i < N_coeff; i++) {
-        double arg = (C[i][1] * l + C[i][2] * lp + C[i][3] * F + C[i][4] * D + C[i][5]*Om) /Arcs;
-        double dpsi = dpsi + (C[i][6] + C[i][7] * T) * sin(arg);
-        double deps = deps + (C[i][8] + C[i][9] * T) * cos(arg);
+        arg = (C[i][0] * l + C[i][1] * lp + C[i][2] * F + C[i][3] * D + C[i][4]*Om) /Arcs;
+        dpsi = dpsi + (C[i][5] + C[i][6] * T) * sin(arg);
+        deps = deps + (C[i][7] + C[i][8] * T) * cos(arg);
     }
 
     dpsi = 1.0e-5 * dpsi/Arcs;

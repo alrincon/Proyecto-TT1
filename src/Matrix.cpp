@@ -155,17 +155,23 @@ double Matrix::norm(){
         for(int i = 0; i < col; i++){
             suma += pow(matrix[0][i],2);
         }
-    }else{
-        if(col == 1){
-            for(int i = 0; i < fil; i++){
-                suma += pow(matrix[i][0],2);
-            }
-        }else{
-            throw runtime_error("An error occurred");
-        }
+        return sqrt(suma);
     }
 
-    return sqrt(suma);
+    if(col == 1){
+        for(int i = 0; i < fil; i++){
+            suma += pow(matrix[i][0],2);
+        }
+        return sqrt(suma);
+    }
+
+    if(col != 1 && fil != 1){
+        cout << "Filas: " << fil << endl;
+        cout << "Columnas: " << col << endl;
+        throw runtime_error("An error occurred, fallo en las dimensiones de la norma");
+    }
+
+    return -1;
 }
 
 void Matrix::assign(int i, int j, double v){

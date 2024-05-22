@@ -54,7 +54,7 @@ void doubler(double cc1, double cc2, double magrsite1, double magrsite2, double 
 
     double esinv2;
 
-    if (abs(dv21 - M_PI) < 10e-6) {
+    if (abs(dv21 - M_PI) > 10e-6) {
         esinv2 = (-cosdv21 * ecosv2 + ecosv1) / sindv21;
     }else {
         esinv2 = (cosdv32 * ecosv2 - ecosv3) / sindv31;

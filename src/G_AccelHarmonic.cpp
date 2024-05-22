@@ -1,6 +1,6 @@
 #include "../include/G_AccelHarmonic.h"
 
-Matrix G_AccelHarmonic(Matrix* r, Matrix* U, double n_max, double m_max){
+Matrix G_AccelHarmonic(Matrix* r, Matrix* U, int n_max, int m_max){
     double d = 1.0;   // Position increment [m]
 
     Matrix G(3,3);
@@ -8,12 +8,21 @@ Matrix G_AccelHarmonic(Matrix* r, Matrix* U, double n_max, double m_max){
 
     // Gradient
     for(int i = 1; i <= 3; i++){
-            // Set offset in i-th component of the position vector
+        for(int j = 1; j <= 3; j++){
+            dr(j,1) = 0;
+        }
+
+        // Set offset in i-th component of the position vector
         dr(i,1) = d;
         // Acceleration difference
-        Matrix a = *r+dr*(1/2);
-        Matrix b = *r-dr*(1/2);
-        Matrix da = AccelHarmonic ( &a,U, n_max, m_max ) - AccelHarmonic ( &b,U, n_max, m_max );
+        Matrix a(3,1);
+        Matrix b(3,1);
+
+        a = *r+dr*0.5;
+        b = *r-dr*0.5;
+
+        Matrix da(3,1);
+        da = AccelHarmonic ( &a,U, n_max, m_max ) - AccelHarmonic ( &b,U, n_max, m_max );
 
         // Derivative with respect to i-th axis
         for(int j = 1; j <= 3; j++){
