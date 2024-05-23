@@ -14,7 +14,7 @@ Matrix Accel(double x, Matrix* Y){
     double dy_pole;
     double TAI_UTC;
 
-    IERS(&eopdata, AuxParam.Mjd_UTC + x/86400,'l', x_pole,y_pole,UT1_UTC,LOD,dpsi,deps,dx_pole,dy_pole,TAI_UTC);
+    IERS(&eopdata, AuxParam.Mjd_UTC + x/86400.0,'l', x_pole,y_pole,UT1_UTC,LOD,dpsi,deps,dx_pole,dy_pole,TAI_UTC);
 
     double UT1_TAI;
     double UTC_GPS;
@@ -24,8 +24,8 @@ Matrix Accel(double x, Matrix* Y){
 
     timediff(UT1_UTC,TAI_UTC,UT1_TAI,UTC_GPS,UT1_GPS,TT_UTC,GPS_UTC);
 
-    double Mjd_UT1 = AuxParam.Mjd_UTC + x/86400 + UT1_UTC/86400;
-    double Mjd_TT = AuxParam.Mjd_UTC + x/86400 + TT_UTC/86400;
+    double Mjd_UT1 = AuxParam.Mjd_UTC + x/86400.0 + UT1_UTC/86400.0;
+    double Mjd_TT = AuxParam.Mjd_UTC + x/86400.0 + TT_UTC/86400.0;
 
     Matrix P = PrecMatrix(MJD_J2000,Mjd_TT);
     Matrix N = NutMatrix(Mjd_TT);

@@ -1044,7 +1044,6 @@ int VarEqn_01(){
     yPhi(42, 1) = 2.7;
 
 
-    Matrix res = VarEqn(x, &yPhi);
     /*
      yPhi = [1;
        -9;

@@ -25,6 +25,7 @@ Matrix* DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double r
     double twou = 2 * 2.2204e-16;
     double fouru = 4 * 2.2204e-16;
 
+    int limitn = 100;
     int State_ = DE_STATE::DE_INIT;
     bool PermitTOUT = true; // Allow integration past tout by default
     bool OldPermit;
@@ -68,9 +69,10 @@ Matrix* DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double r
 
     if (t == tout) return y;
 
-    double epsilon = std::max(relerr, abserr);
+    double epsilon = fmax(relerr, abserr);
     if (relerr < 0.0 || abserr < 0.0 || epsilon <= 0.0 || State_ > DE_STATE::DE_INVPARAM || (State_ != DE_STATE::DE_INIT && t != told)) {
         State_ = DE_STATE::DE_INVPARAM;
+        cout << "SALIDA DE_INVPARAM" << endl;
         return y;
     }
 
@@ -81,6 +83,7 @@ Matrix* DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double r
     if (!PermitTOUT) tend = tout;
 
     int nostep = 0;
+    int nnostep = 0;
     int kle4 = 0;
     bool stiff = false;
     double releps = relerr / epsilon;
@@ -99,9 +102,8 @@ Matrix* DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double r
         x      = t;
         yy     = (*y);
         delsgn = sign(1.0, del);
-        h      = sign( max(fouru*abs(x), fabs(tout-x)), tout-x );
+        h      = sign( fmax(fouru*abs(x), fabs(tout-x)), tout-x );
     }
-
 
     while (true) {
         Matrix yout(n_eqn, 1);
@@ -109,6 +111,7 @@ Matrix* DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double r
         double hi;
         int ki;
         int kold = 0;
+        nnostep++;
 
         // If already past output point, interpolate solution and return
 
@@ -157,6 +160,7 @@ Matrix* DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double r
             t = tout;             // Set independent variable
             told = t;                // Store independent variable
             OldPermit = PermitTOUT;
+            cout << "SALIDA DE_DONE1" << endl;
             return y;                       // Normal exit
         }
 
@@ -172,11 +176,13 @@ Matrix* DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double r
             t = tout;             // Set independent variable
             told = t;                // Store independent variable
             OldPermit = PermitTOUT;
+            cout << "SALIDA DE_DONE2" << endl;
             return y;                       // Normal exit
         }
 
         // Limit step size, set weight vector and take a step
-        h = sign(min(fabs(h), fabs(tend - x)), h);
+        if(nnostep > limitn){return y;}
+        h = sign(fmin(fabs(h), fabs(tend - x)), h);
         for (int l = 1; l <= n_eqn; l++) {
             wt(l, 1) = releps * fabs(yy(l, 1)) + abseps;
         }
@@ -196,6 +202,7 @@ Matrix* DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double r
         if (fabs(h) < fouru * fabs(x)) {
             h = sign(fouru * fabs(x), h);
             crash = true;
+            cout << "SALIDA crash1" << endl;
             return y;           // Exit
         }
 
@@ -221,6 +228,7 @@ Matrix* DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double r
         if (p5eps < round) {
             epsilon = 2.0 * round * (1.0 + fouru);
             crash = true;
+            cout << "SALIDA crash2" << endl;
             return y;
         }
 
@@ -251,8 +259,7 @@ Matrix* DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double r
                 absh = 0.25 * sqrt(epsilon / sum);
             }
 
-            cout << max(absh, fouru * fabs(x)) << endl;
-            double ttt = sign(max(absh, fouru * fabs(x)), h);
+            double ttt = sign(fmax(absh, fouru * fabs(x)), h);
             h = ttt;
             hold = 0.0;
             hnew = 0.0;
@@ -483,7 +490,7 @@ Matrix* DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double r
 
             // Test if order should be lowered
             if (km2 > 0) {
-                if (max(erkm1, erkm2) <= erk) {
+                if (fmax(erkm1, erkm2) <= erk) {
                     knew = km1;
                 }
             }
@@ -557,6 +564,7 @@ Matrix* DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double r
                     crash = true;
                     h = sign(fouru * fabs(x), h);
                     epsilon = epsilon * 2.0;
+                    cout << "SALIDA crash3" << endl;
                     return y;                 // Exit
                 }
 
@@ -639,7 +647,7 @@ Matrix* DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double r
                     // appropriate order for next step
 
                     if (k>1){
-                        if ( erkm1<=min(erk,erkp1)) {
+                        if ( erkm1<=fmin(erk,erkp1)) {
                             // lower order
                             k = km1;
                             erk = erkm1;
@@ -669,8 +677,8 @@ Matrix* DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double r
             if (p5eps<erk) {
                 double temp2 = k + 1;
                 double r = p5eps / pow(erk,(1.0 / temp2)); //double r =  pow(p5eps/erk,(1.0 / temp2));
-                hnew = absh * max(0.5, min(0.9, r));
-                hnew = sign(max(hnew, fouru * fabs(x)), h);
+                hnew = absh * fmax(0.5, fmin(0.9, r));
+                hnew = sign(fmax(hnew, fouru * fabs(x)), h);
             }else {
                 hnew = h;
             }
@@ -691,6 +699,7 @@ Matrix* DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double r
             t = x;
             told = t;
             OldPermit = true;
+            cout << "SALIDA DE_BADACC" << endl;
             return y;                       // Weak failure exit
         }
 

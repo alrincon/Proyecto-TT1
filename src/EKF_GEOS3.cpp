@@ -171,11 +171,7 @@ int main(){
     Matrix Y(1,6);
     Matrix Y_old(1,6);
 
-    cout << "Primer integ entradas: " << endl;
-    Y0_apr.print();
     Y = *DEInteg(Accel,0.0,-(obs(9,1)-Mjd0)*86400.0,1e-13,1e-6,6,&Y0_apr);
-    cout << "Superado primer Integ salida " << endl;
-    Y.print();
 
 
     Matrix P(6,6);
@@ -201,8 +197,7 @@ int main(){
     double t = 0;
     double t_old;
 
-    cout << "1";
-    for (int i = 1; i <= 4; i++) {
+    for (int i = 1; i <= nobs; i++) {
         //Previous step
         t_old = t;
         Y_old = Y;
@@ -233,9 +228,7 @@ int main(){
             }
         }
 
-        cout << "Sgundo integ entradas: " << endl;
         yPhi = *DEInteg(VarEqn, 0.0, t - t_old, 1e-13, 1e-6, 42, &yPhi);
-        cout << "Superado segundo Integ salida " << endl;
 
         // Extract state transition matrices
         for (int j = 1; j <= 6; j++) {
@@ -248,9 +241,7 @@ int main(){
         Matrix tempMat(6,1);
         tempMat = Y_old.transpose();
 
-        cout << "Tercr integ entradas: " << endl;
         Y = *DEInteg(Accel, 0.0, t - t_old, 1e-13, 1e-6, 6, &tempMat);
-        cout << "Superado tercer Integ salida " << endl;
 
         // Topocentric coordinates
         double theta = gmst(Mjd_UT1);                    // Earth rotation
@@ -346,10 +337,11 @@ int main(){
         tobs = obs(i, 4);
         MeasUpdate(tobs, Dist, sigma_range, &dDdY, 6, K, Y, P);
 
-        cout << "buclon " << i << endl;
+        cout << "Ciclo " << i << endl;
+        tempMat.print();
     }
 
-    cout << "salio" << endl;
+    cout << "Fin ciclos" << endl;
 
     double x_pole,y_pole,UT1_UTC,LOD,dpsi,deps,dx_pole,dy_pole,TAI_UTC;
     IERS(&eopdata,obs(46,1),'l', x_pole,y_pole,UT1_UTC,LOD,dpsi,deps,dx_pole,dy_pole,TAI_UTC);
