@@ -109,7 +109,11 @@ Matrix Matrix::operator-(const Matrix& matrix2)
 
 Matrix Matrix::operator*(const Matrix& matrix2)
 {
-    Matrix result(fil, col);
+    if (col != matrix2.fil) {
+        throw std::invalid_argument("El número de columnas de A debe ser igual al número de filas de B");
+    }
+
+    Matrix result(fil, matrix2.col);
 
     for (int i = 0; i < this->fil ; i++){
         for (int j = 0; j < matrix2.col; j++){

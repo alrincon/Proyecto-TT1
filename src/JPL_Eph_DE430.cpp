@@ -72,11 +72,9 @@ Matrix concatenateVector(Matrix *v1, Matrix *v2){
 void JPL_Eph_DE430(double Mjd_TDB, Matrix &r_Mercury, Matrix &r_Venus, Matrix &r_Earth, Matrix &r_Mars, Matrix &r_Jupiter, Matrix &r_Saturn, Matrix &r_Uranus, Matrix &r_Neptune, Matrix &r_Pluto, Matrix &r_Moon, Matrix &r_Sun) {
     double JD = Mjd_TDB + 2400000.5;
     int i = findPC(JD);
-    cout << "valor matriz " << (PC)(516,1) << endl;
     Matrix PCtemp = extractColumn(&PC, i);
 
     double t1 = PCtemp(1, 1) - 2400000.5; // MJD at start of interval
-cout << "valor t1 " << t1 << endl;
     double dt = Mjd_TDB - t1;
 
     Matrix temp = rowSequence(231, 270, 13);

@@ -3,6 +3,9 @@
 extern Matrix eopdata;
 extern aux AuxParam;
 
+//(1,n)
+
+
 Matrix VarEqn(double x, Matrix* yPhi){
     double x_pole;
     double y_pole;

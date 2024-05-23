@@ -144,14 +144,14 @@ int main(){
 
     anglesg(obs(1,2),obs(9,2),obs(18,2),obs(1,3),obs(9,3),obs(18,3),Mjd1,Mjd2,Mjd3,&Rs,&Rs,&Rs, r2, v2);
 
-    Matrix Y0_apr(1,6); //OJO
+    Matrix Y0_apr(6,1); //OJO
 
     Y0_apr(1,1) = r2(1,1);
-    Y0_apr(1,2) = r2(1,2);
-    Y0_apr(1,3) = r2(1,3);
-    Y0_apr(1,4) = v2(1,1);
-    Y0_apr(1,5) = v2(1,2);
-    Y0_apr(1,6) = v2(1,3);
+    Y0_apr(2,1) = r2(1,2);
+    Y0_apr(3,1) = r2(1,3);
+    Y0_apr(4,1) = v2(1,1);
+    Y0_apr(5,1) = v2(1,2);
+    Y0_apr(6,1) = v2(1,3);
 
 
     double Mjd0 = Mjday(1995,1,29,02,38,0);
@@ -171,28 +171,13 @@ int main(){
     Matrix Y(1,6);
     Matrix Y_old(1,6);
 
-    cout << "llego" << endl;
-    cout << Mjd0 << endl;
-    cout << -(obs(9,1)-Mjd0)*86400.0 << endl;
-
+    cout << "Primer integ entradas: " << endl;
     Y0_apr.print();
+    Y = *DEInteg(Accel,0.0,-(obs(9,1)-Mjd0)*86400.0,1e-13,1e-6,6,&Y0_apr);
+    cout << "Superado primer Integ salida " << endl;
+    Y.print();
 
-    cout << "tamaño Y: " << endl;
-    cout << "filas: " << Y.getFilas() << endl;
-    cout << "columnas: " << Y.getColumnas() << endl;
 
-
-    cout << "tamaño Y0_apr: " << endl;
-    cout << "filas: " << Y0_apr.getFilas() << endl;
-    cout << "columnas: " << Y0_apr.getColumnas() << endl;
-
-    cout << "__________________________" << endl;
-
-    Matrix aux(1,6);
-    aux = DEInteg(Accel,0.0,-(obs(9,1)-Mjd0)*86400.0,1e-13,1e-6,6,&Y0_apr);
-    Y.redefine(&aux);
-
-    cout << "llego" << endl;
     Matrix P(6,6);
 
     for (int i = 1; i <= 3; i++) {
@@ -217,7 +202,7 @@ int main(){
     double t_old;
 
     cout << "1";
-    for (int i = 1; i <= nobs; i++) {
+    for (int i = 1; i <= 4; i++) {
         //Previous step
         t_old = t;
         Y_old = Y;
@@ -238,7 +223,7 @@ int main(){
         AuxParam.Mjd_TT = Mjd_TT;
 
         for (int ii = 1; ii <= 6; ii++) {
-            yPhi(ii, 1) = Y_old(ii, 1);
+            yPhi(ii, 1) = Y_old(1,ii);
             for (int j = 1; j <= 6; j++) {
                 if (ii == j) {
                     yPhi(6 * j + ii, 1) = 1;
@@ -248,8 +233,9 @@ int main(){
             }
         }
 
-        yPhi = DEInteg(VarEqn, 0, t - t_old, 1e-13, 1e-6, 42, &yPhi);
-
+        cout << "Sgundo integ entradas: " << endl;
+        yPhi = *DEInteg(VarEqn, 0.0, t - t_old, 1e-13, 1e-6, 42, &yPhi);
+        cout << "Superado segundo Integ salida " << endl;
 
         // Extract state transition matrices
         for (int j = 1; j <= 6; j++) {
@@ -258,7 +244,13 @@ int main(){
             }
         }
 
-        Y = DEInteg(&AccelT, 0, t - t_old, 1e-13, 1e-6, 6, &Y_old);
+
+        Matrix tempMat(6,1);
+        tempMat = Y_old.transpose();
+
+        cout << "Tercr integ entradas: " << endl;
+        Y = *DEInteg(Accel, 0.0, t - t_old, 1e-13, 1e-6, 6, &tempMat);
+        cout << "Superado tercer Integ salida " << endl;
 
         // Topocentric coordinates
         double theta = gmst(Mjd_UT1);                    // Earth rotation
@@ -267,8 +259,8 @@ int main(){
 
         Matrix r(3, 1);
         r(1, 1) = Y(1, 1);
-        r(2, 1) = Y(2, 1);
-        r(3, 1) = Y(3, 1);
+        r(2, 1) = Y(1, 2);
+        r(3, 1) = Y(1, 3);
 
         Matrix s(3, 1);
         s = LT * (U * r - Rs);                          // Topocentric position [m]
@@ -283,41 +275,43 @@ int main(){
 
         AzElPa(&s, Azim, Elev, dAds, dEds);     // Azimuth, Elevation
 
-        Matrix dAdY(6, 1);
-        Matrix tempProd(3, 1);
-        tempProd = dAds * LT * U;
+        Matrix dAdY(1, 6);
+        Matrix tempProd(1, 3);
+        tempProd = dAds.transpose() * LT * U;
 
         dAdY(1, 1) = tempProd(1, 1);
-        dAdY(2, 1) = tempProd(2, 1);
-        dAdY(3, 1) = tempProd(3, 1);
+        dAdY(1, 2) = tempProd(1, 2);
+        dAdY(1, 3) = tempProd(1, 3);
 
-        dAdY(4, 1) = 0;
-        dAdY(5, 1) = 0;
-        dAdY(6, 1) = 0;
+        dAdY(1, 4) = 0;
+        dAdY(1, 5) = 0;
+        dAdY(1, 6) = 0;
 
         // Measurement update
         tobs = obs(i, 2);
+        Matrix Ytemp = Y.clone().transpose();
+
         MeasUpdate(tobs, Azim, sigma_az, &dAdY, 6, K, Y, P);
 
 
         // Elevation and partials
         r(1, 1) = Y(1, 1);
-        r(2, 1) = Y(2, 1);
-        r(3, 1) = Y(3, 1);
+        r(2, 1) = Y(1, 2);
+        r(3, 1) = Y(1, 3);
 
         s = LT * (U * r - Rs);                          // Topocentric position [m]
         AzElPa(&s, Azim, Elev, dAds, dEds);     // Azimuth, Elevation
 
-        Matrix dEdY(6, 1);
-        tempProd = dEds * LT * U;
+        Matrix dEdY(1, 6);
+        tempProd = dEds.transpose() * LT * U;
 
         dEdY(1, 1) = tempProd(1, 1);
-        dEdY(2, 1) = tempProd(2, 1);
-        dEdY(3, 1) = tempProd(3, 1);
+        dEdY(1, 2) = tempProd(1, 2);
+        dEdY(1, 3) = tempProd(1, 3);
 
-        dEdY(4, 1) = 0;
-        dEdY(5, 1) = 0;
-        dEdY(6, 1) = 0;
+        dEdY(1, 4) = 0;
+        dEdY(1, 5) = 0;
+        dEdY(1, 6) = 0;
 
         // Measurement update
         tobs = obs(i, 3);
@@ -325,8 +319,8 @@ int main(){
 
         // Range and partials
         r(1, 1) = Y(1, 1);
-        r(2, 1) = Y(2, 1);
-        r(3, 1) = Y(3, 1);
+        r(2, 1) = Y(1, 2);
+        r(3, 1) = Y(1, 3);
 
         s = LT * (U * r - Rs);                          // Topocentric position [m]
 
@@ -337,21 +331,25 @@ int main(){
         dDds = (s * (1 / Dist)).transpose();                           // Range
 
 
-        Matrix dDdY(6, 1);
+        Matrix dDdY(1, 6);
         tempProd = dDds * LT * U;
 
         dDdY(1, 1) = tempProd(1, 1);
-        dDdY(2, 1) = tempProd(2, 1);
-        dDdY(3, 1) = tempProd(3, 1);
+        dDdY(1, 2) = tempProd(1, 2);
+        dDdY(1, 3) = tempProd(1, 3);
 
-        dDdY(4, 1) = 0;
-        dDdY(5, 1) = 0;
-        dDdY(6, 1) = 0;
+        dDdY(1, 4) = 0;
+        dDdY(1, 5) = 0;
+        dDdY(1, 6) = 0;
 
         // Measurement update
         tobs = obs(i, 4);
         MeasUpdate(tobs, Dist, sigma_range, &dDdY, 6, K, Y, P);
+
+        cout << "buclon " << i << endl;
     }
+
+    cout << "salio" << endl;
 
     double x_pole,y_pole,UT1_UTC,LOD,dpsi,deps,dx_pole,dy_pole,TAI_UTC;
     IERS(&eopdata,obs(46,1),'l', x_pole,y_pole,UT1_UTC,LOD,dpsi,deps,dx_pole,dy_pole,TAI_UTC);
@@ -366,7 +364,7 @@ int main(){
 
     Matrix Y0(2,3);
 
-    Y0 = DEInteg (&AccelT,0,-(obs(46,1)-obs(1,1))*86400.0,1e-13,1e-6,6,&Y);
+    Y0 = *DEInteg (Accel,0,-(obs(46,1)-obs(1,1))*86400.0,1e-13,1e-6,6,&Y);
 
     Matrix Y_true(6,1);
     Y_true(1,1) =5753.173e3;

@@ -3,8 +3,6 @@
 extern Matrix eopdata;
 extern aux AuxParam;
 
-//Y = (1,6)
-//return (1,6)
 Matrix Accel(double x, Matrix* Y){
     double x_pole;
     double y_pole;
@@ -54,8 +52,8 @@ Matrix Accel(double x, Matrix* Y){
 
     Matrix Y1(3,1);
     Y1(1,1) = (*Y)(1,1);
-    Y1(2,1) = (*Y)(1,2);
-    Y1(3,1) = (*Y)(1,3);
+    Y1(2,1) = (*Y)(2,1);
+    Y1(3,1) = (*Y)(3,1);
     Matrix a(3,1);
     a = AccelHarmonic(&Y1, &E, AuxParam.n, AuxParam.m);
 
@@ -80,15 +78,15 @@ Matrix Accel(double x, Matrix* Y){
         a = a + AccelPointMassT(Y1,r_Pluto,GM_Pluto);
     }
 
-    Matrix dY(1,6);
-    dY(1,1) = (*Y)(1,4);
-    dY(1,2) = (*Y)(1,5);
-    dY(1,3) = (*Y)(1,6);
+    Matrix dY(6,1);
+    dY(1,1) = (*Y)(4,1);
+    dY(2,1) = (*Y)(5,1);
+    dY(3,1) = (*Y)(6,1);
 
 
-    dY(1,4) = a(1,1);
-    dY(1,5) = a(1,2);
-    dY(1,6) = a(1,3);
+    dY(4,1) = a(1,1);
+    dY(5,1) = a(1,2);
+    dY(6,1) = a(1,3);
 
     return dY;
 }

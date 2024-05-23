@@ -9,10 +9,9 @@ void MeasUpdate(Matrix* z, Matrix* g, Matrix* s, Matrix*G , int n, Matrix& K, Ma
         Inv_W(i, i) = (*s)(i, 1) * (*s)(i ,1);    // Inverse weight(measurement covariance)
     }
 
-
-
     // Kalman gain
-    K = P*(*G).transpose()*(Inv_W+(*G)*P*(*G).transpose()).inverse();
+    Matrix prod = P*(*G).transpose()*(Inv_W+(*G)*P*(*G).transpose()).inverse();
+    (K).redefine(&prod);
 
     // State update
 

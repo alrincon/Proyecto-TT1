@@ -21,9 +21,7 @@ struct DE_STATE {
 //y = (1,6)
 //return (1,6)
 
-Matrix DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double relerr, double abserr, int n_eqn, Matrix *y) {
-    cout << "entra" << endl;
-
+Matrix* DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double relerr, double abserr, int n_eqn, Matrix *y) {
     double twou = 2 * 2.2204e-16;
     double fouru = 4 * 2.2204e-16;
 
@@ -37,7 +35,6 @@ Matrix DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double re
         two(i, 1) = pow(2.0, i-1);
     }
 
-    cout << "checkpoint 1" << endl;
     Matrix gstr(14, 1);
     gstr(1, 1) = 1.0;
     gstr(2, 1) = 0.5;
@@ -69,17 +66,16 @@ Matrix DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double re
     Matrix v(13, 1);
     Matrix psi_(13, 1);
 
-    if (t == tout) return *y;
+    if (t == tout) return y;
 
-    cout << "checkpoint 2" << endl;
     double epsilon = std::max(relerr, abserr);
     if (relerr < 0.0 || abserr < 0.0 || epsilon <= 0.0 || State_ > DE_STATE::DE_INVPARAM || (State_ != DE_STATE::DE_INIT && t != told)) {
         State_ = DE_STATE::DE_INVPARAM;
-        return *y;
+        return y;
     }
 
     double del = tout - t;
-    double absdel = abs(del);
+    double absdel = fabs(del);
 
     double tend = t + 100.0 * del;
     if (!PermitTOUT) tend = tout;
@@ -90,28 +86,23 @@ Matrix DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double re
     double releps = relerr / epsilon;
     double abseps = abserr / epsilon;
 
-    bool start = true;
-    double x = t;
-    double delsgn = sign(1.0, del);
-    double h = sign(max(fouru * abs(x), abs(tout - x)), tout - x);
+    bool start;
+    double x;
+    double delsgn;
+    double h;
 
-    cout << "checkpoint 3" << endl;
+
     if  ( (State_==DE_STATE::DE_INIT) || (delsgn*del<=0.0) ){
         // On start and restart also set the work variables x and yy(*),
         // store the direction of integration and initialize the step size
-        cout << "entra" << endl;
         start  = true;
         x      = t;
-        cout << "entra" << endl;
         yy     = (*y);
-        cout << "entra" << endl;
         delsgn = sign(1.0, del);
-        cout << "entra" << endl;
-        h      = sign( max(fouru*abs(x), abs(tout-x)), tout-x );
+        h      = sign( max(fouru*abs(x), fabs(tout-x)), tout-x );
     }
 
 
-    cout << "checkpoint 4" << endl;
     while (true) {
         Matrix yout(n_eqn, 1);
         Matrix ypout(n_eqn, 1);
@@ -120,7 +111,8 @@ Matrix DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double re
         int kold = 0;
 
         // If already past output point, interpolate solution and return
-        if (abs(x - t) >= absdel) {
+
+        if (fabs(x - t) >= absdel) {
             g(2, 1) = 1.0;
             rho(2, 1) = 1.0;
             hi = tout - x;
@@ -150,7 +142,6 @@ Matrix DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double re
             }
 
 
-            cout << "checkpoint 5" << endl;
             // Interpolate for the solution yout and for
             // the derivative of the solution ypout
             for (int j = 1; j <= ki; j++) {
@@ -166,13 +157,12 @@ Matrix DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double re
             t = tout;             // Set independent variable
             told = t;                // Store independent variable
             OldPermit = PermitTOUT;
-            return *y;                       // Normal exit
+            return y;                       // Normal exit
         }
 
-        cout << "checkpoint 6" << endl;
         // If cannot go past output point and sufficiently close,
         // extrapolate and return
-        if (!PermitTOUT && (abs(tout - x) < fouru * abs(x))) {
+        if (!PermitTOUT && (fabs(tout - x) < fouru * fabs(x))) {
             h = tout - x;
             yp = func(x, &yy);          // Compute derivative yp(x)
             Matrix typ(n_eqn,1);
@@ -182,13 +172,13 @@ Matrix DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double re
             t = tout;             // Set independent variable
             told = t;                // Store independent variable
             OldPermit = PermitTOUT;
-            return *y;                       // Normal exit
+            return y;                       // Normal exit
         }
 
         // Limit step size, set weight vector and take a step
-        h = sign(min(abs(h), abs(tend - x)), h);
+        h = sign(min(fabs(h), fabs(tend - x)), h);
         for (int l = 1; l <= n_eqn; l++) {
-            wt(l, 1) = releps * abs(yy(l, 1)) + abseps;
+            wt(l, 1) = releps * fabs(yy(l, 1)) + abseps;
         }
 
         //   Step
@@ -203,11 +193,10 @@ Matrix DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double re
 
         double crash;
 
-        cout << "checkpoint 7" << endl;
-        if (abs(h) < fouru * abs(x)) {
-            h = sign(fouru * abs(x), h);
+        if (fabs(h) < fouru * fabs(x)) {
+            h = sign(fouru * fabs(x), h);
             crash = true;
-            return *y;           // Exit
+            return y;           // Exit
         }
 
         double p5eps = 0.5 * epsilon;
@@ -232,56 +221,39 @@ Matrix DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double re
         if (p5eps < round) {
             epsilon = 2.0 * round * (1.0 + fouru);
             crash = true;
-            return *y;
+            return y;
         }
 
 
         double absh;
-        int k;
+        int k = 0;
         double hold;
         double hnew;
         bool phase1;
         bool nornd;
 
-        cout << "checkpoint 8" << endl;
         if (start) {
-            cout << "entra en start" << endl;
             // Initialize. Compute appropriate step size for first step.
 
-            cout << "tamaño y: " << endl;
-            cout << "filas: " << y->getFilas() << endl;
-            cout << "columnas: " << y->getColumnas() << endl;
-
-
-            cout << "tamaño yp: " << endl;
-            cout << "filas: " << yp.getFilas() << endl;
-            cout << "columnas: " << yp.getColumnas() << endl;
-
-            cout << "tamaño result: " << endl;
-            cout << "filas: " << func(x, y).getFilas() << endl;
-            cout << "columnas: " << func(x, y).getColumnas() << endl;
-
-            yp = func(x, y).transpose();
+            yp = func(x, y);
             double sum = 0.0;
 
-            cout << "checkpoint 81" << endl;
             for (int l = 1; l <= n_eqn; l++) {
                 phi(l, 2) = yp(l, 1);
                 phi(l, 3) = 0.0;
                 sum = sum + (yp(l, 1) * yp(l, 1)) / (wt(l, 1) * wt(l, 1));
-
-                cout << "checkpoint 81" << endl;
             }
 
             sum = sqrt(sum);
-            absh = abs(h);
+            absh = fabs(h);
 
             if (epsilon < 16.0 * sum * h * h) {
                 absh = 0.25 * sqrt(epsilon / sum);
             }
 
-            cout << "checkpoint 82" << endl;
-            h = sign(max(absh, fouru * abs(x)), h);
+            cout << max(absh, fouru * fabs(x)) << endl;
+            double ttt = sign(max(absh, fouru * fabs(x)), h);
+            h = ttt;
             hold = 0.0;
             hnew = 0.0;
             k = 1;
@@ -320,7 +292,6 @@ Matrix DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double re
         int nsp1;
         int realns;
 
-        cout << "checkpoint 9" << endl;
         while (true) {
             //
             // Begin block 1
@@ -474,8 +445,8 @@ Matrix DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double re
 
             double xold = x;
             x = x + h;
-            absh = abs(h);
-            yp = func(x, &p).transpose();
+            absh = fabs(h);
+            yp = func(x, &p);
 
             // Estimate errors at orders k, k-1, k-2
             erkm2 = 0.0;
@@ -582,11 +553,11 @@ Matrix DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double re
                 h = temp2 * h;
                 k = knew;
 
-                if (abs(h) < fouru * abs(x)) {
+                if (fabs(h) < fouru * fabs(x)) {
                     crash = true;
-                    h = sign(fouru * abs(x), h);
+                    h = sign(fouru * fabs(x), h);
                     epsilon = epsilon * 2.0;
-                    return *y;                 // Exit
+                    return y;                 // Exit
                 }
 
                 //
@@ -623,8 +594,7 @@ Matrix DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double re
                 phi(l, 16) = ((*y)(l,1) - p(l,1)) - rhot;
             }
         }
-
-        yp = func(x,y).transpose();
+        yp = func(x,y);
 
         // Update differences for next step
         for (int l = 1; l <= n_eqn; l++) {
@@ -700,7 +670,7 @@ Matrix DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double re
                 double temp2 = k + 1;
                 double r = p5eps / pow(erk,(1.0 / temp2)); //double r =  pow(p5eps/erk,(1.0 / temp2));
                 hnew = absh * max(0.5, min(0.9, r));
-                hnew = sign(max(hnew, fouru * abs(x)), h);
+                hnew = sign(max(hnew, fouru * fabs(x)), h);
             }else {
                 hnew = h;
             }
@@ -721,7 +691,7 @@ Matrix DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double re
             t = x;
             told = t;
             OldPermit = true;
-            return *y;                       // Weak failure exit
+            return y;                       // Weak failure exit
         }
 
         nostep = nostep+1;  // Count total number of steps
@@ -739,28 +709,4 @@ Matrix DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double re
             stiff = true;
         }
     }
-}
-
-//y = (1,n_eqn);
-Matrix DEIntegT(Matrix (*func)(double, Matrix*), double t, double tout, double relerr, double abserr, int n_eqn, Matrix *y){
-    Matrix yT(n_eqn,1);
-
-    for(int i = 1; i <= n_eqn; i++){
-        yT(i,1) = (*y)(1,i);
-    }
-
-    yT.print();
-
-    Matrix resT(n_eqn,1);
-    resT = DEInteg(func, t, tout, relerr, abserr, n_eqn, &yT);
-
-    Matrix res(1,n_eqn);
-
-    for(int i = 1; i <= n_eqn; i++){
-        res(1,i) = resT(i,1);
-    }
-
-    res.print();
-
-    return res;
 }
