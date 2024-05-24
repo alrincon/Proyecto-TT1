@@ -200,7 +200,7 @@ int main(){
     double t = 0;
     double t_old;
 
-    for (int i = 1; i <= 10; i++) {
+    for (int i = 1; i <= nobs; i++) {
         //Previous step
         t_old = t;
         Y_old = Y;
@@ -278,8 +278,8 @@ int main(){
 
         // Measurement update
         tobs = obs(i, 2);
-        Matrix Ytemp = Y.clone().transpose();
 
+        //falla aqui
         MeasUpdate(tobs, Azim, sigma_az, &dAdY, 6, K, Y, P);
 
 
@@ -336,9 +336,7 @@ int main(){
         MeasUpdate(tobs, Dist, sigma_range, &dDdY, 6, K, Y, P);
 
         cout << "Ciclo " << i << endl;
-        Y.print();
     }
-
     cout << "Fin ciclos" << endl;
 
     double x_pole,y_pole,UT1_UTC,LOD,dpsi,deps,dx_pole,dy_pole,TAI_UTC;

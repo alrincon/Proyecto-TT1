@@ -15,7 +15,7 @@ void MeasUpdate(Matrix* z, Matrix* g, Matrix* s, Matrix*G , int n, Matrix& K, Ma
 
     // State update
 
-    x = x + K*((*z)-(*g));
+    x = x + ((*z)-(*g))*K.transpose();
 
     Matrix id(n,n, true);
     // Covariance update

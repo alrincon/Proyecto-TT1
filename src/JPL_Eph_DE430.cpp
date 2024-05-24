@@ -173,6 +173,10 @@ void JPL_Eph_DE430(double Mjd_TDB, Matrix &r_Mercury, Matrix &r_Venus, Matrix &r
         Mjd0 = t1 + 4 * j;
     }
 
+    Cxt.setTam(1, 13);
+    Cyt.setTam(1, 13);
+    Czt.setTam(1, 13);
+
     Cxt = extractVector(&Cx_Moon, 13 * j + 1, 13 * j + 13);
     Cyt = extractVector(&Cy_Moon, 13 * j + 1, 13 * j + 13);
     Czt = extractVector(&Cz_Moon, 13 * j + 1, 13 * j + 13);
@@ -188,6 +192,10 @@ void JPL_Eph_DE430(double Mjd_TDB, Matrix &r_Mercury, Matrix &r_Venus, Matrix &r
     for (int k = 1; k <= tempSun.getColumnas(); k++) {
         tempSun(1, k) = tempSun(1, k) + 33;
     }
+
+    Cx.setTam(1, tempSun(1, 2) - tempSun(1, 1));
+    Cy.setTam(1, tempSun(1, 3) - tempSun(1, 2));
+    Cz.setTam(1, tempSun(1, 4) - tempSun(1, 3));
 
     Cx = extractVector(&PCtemp, tempSun(1, 1), tempSun(1, 2) - 1);
     Cy = extractVector(&PCtemp, tempSun(1, 2), tempSun(1, 3) - 1);
@@ -210,6 +218,9 @@ void JPL_Eph_DE430(double Mjd_TDB, Matrix &r_Mercury, Matrix &r_Venus, Matrix &r
         Mjd0 = t1 + 16 * j;
     }
 
+    Cxt.setTam(1, 11);
+    Cyt.setTam(1, 11);
+    Czt.setTam(1, 11);
     Cxt = extractVector(&Cx_Sun, 11 * j + 1, 11 * j + 11);
     Cyt = extractVector(&Cy_Sun, 11 * j + 1, 11 * j + 11);
     Czt = extractVector(&Cz_Sun, 11 * j + 1, 11 * j + 11);
@@ -222,10 +233,15 @@ void JPL_Eph_DE430(double Mjd_TDB, Matrix &r_Mercury, Matrix &r_Venus, Matrix &r
     Matrix Cy_Mercury = extractVector(&PCtemp, tempMercury(1, 2), tempMercury(1, 3) - 1);
     Matrix Cz_Mercury = extractVector(&PCtemp, tempMercury(1, 3), tempMercury(1, 4) - 1);
 
+
     for (int r = 1; r <= 3; r++) {
         for (int k = 1; k <= tempMercury.getColumnas(); k++) {
             tempMercury(1, k) = tempMercury(1, k) + 42;
         }
+
+        Cx.setTam(1, tempMercury(1, 2) - tempMercury(1, 1));
+        Cy.setTam(1, tempMercury(1, 3) - tempMercury(1, 2));
+        Cz.setTam(1, tempMercury(1, 4) - tempMercury(1, 3));
 
         Cx = extractVector(&PCtemp, tempMercury(1, 1), tempMercury(1, 2) - 1);
         Cy = extractVector(&PCtemp, tempMercury(1, 2), tempMercury(1, 3) - 1);
@@ -255,9 +271,13 @@ void JPL_Eph_DE430(double Mjd_TDB, Matrix &r_Mercury, Matrix &r_Venus, Matrix &r
         Mjd0 = t1 + 8 * j;
     }
 
+    Cxt.setTam(1, 14);
+    Cyt.setTam(1, 14);
+    Czt.setTam(1, 14);
+
     Cxt = extractVector(&Cx_Mercury, 14 * j + 1, 14 * j + 14);
-    Cyt = extractVector(&Cy_Mercury, 11 * j + 1, 11 * j + 11);
-    Czt = extractVector(&Cz_Mercury, 11 * j + 1, 11 * j + 11);
+    Cyt = extractVector(&Cy_Mercury, 14 * j + 1, 14 * j + 14);
+    Czt = extractVector(&Cz_Mercury, 14 * j + 1, 14 * j + 14);
 
     r_Mercury = Cheb3D(Mjd_TDB, 14, Mjd0, Mjd0 + 8, &Cxt, &Cyt, &Czt) * 1e3;
 
@@ -270,6 +290,10 @@ void JPL_Eph_DE430(double Mjd_TDB, Matrix &r_Mercury, Matrix &r_Venus, Matrix &r
     for (int k = 1; k <= tempVenus.getColumnas(); k++) {
         tempVenus(1, k) = tempVenus(1, k) + 30;
     }
+
+    Cx.setTam(1, tempVenus(1, 2) - tempVenus(1, 1));
+    Cy.setTam(1, tempVenus(1, 3) - tempVenus(1, 2));
+    Cz.setTam(1, tempVenus(1, 4) - tempVenus(1, 3));
 
     Cx = extractVector(&PCtemp, tempVenus(1, 1), tempVenus(1, 2) - 1);
     Cy = extractVector(&PCtemp, tempVenus(1, 2), tempVenus(1, 3) - 1);
@@ -292,6 +316,10 @@ void JPL_Eph_DE430(double Mjd_TDB, Matrix &r_Mercury, Matrix &r_Venus, Matrix &r
         Mjd0 = t1 + 16 * j;
     }
 
+    Cxt.setTam(1, 10);
+    Cyt.setTam(1, 10);
+    Czt.setTam(1, 10);
+
     Cxt = extractVector(&Cx_Venus, 10 * j + 1, 10 * j + 10);
     Cyt = extractVector(&Cy_Venus, 10 * j + 1, 10 * j + 10);
     Czt = extractVector(&Cz_Venus, 10 * j + 1, 10 * j + 10);
@@ -306,6 +334,11 @@ void JPL_Eph_DE430(double Mjd_TDB, Matrix &r_Mercury, Matrix &r_Venus, Matrix &r
 
     j = 0;
     Mjd0 = t1;
+
+
+    Cxt.setTam(1, 11);
+    Cyt.setTam(1, 11);
+    Czt.setTam(1, 11);
 
     Cxt = extractVector(&Cx_Mars, 11 * j + 1, 11 * j + 11);
     Cyt = extractVector(&Cy_Mars, 11 * j + 1, 11 * j + 11);
@@ -323,6 +356,10 @@ void JPL_Eph_DE430(double Mjd_TDB, Matrix &r_Mercury, Matrix &r_Venus, Matrix &r
     j = 0;
     Mjd0 = t1;
 
+    Cxt.setTam(1, 8);
+    Cyt.setTam(1, 8);
+    Czt.setTam(1, 8);
+
     Cxt = extractVector(&Cx_Jupiter, 8 * j + 1, 8 * j + 8);
     Cyt = extractVector(&Cy_Jupiter, 8 * j + 1, 8 * j + 8);
     Czt = extractVector(&Cz_Jupiter, 8 * j + 1, 8 * j + 8);
@@ -339,6 +376,10 @@ void JPL_Eph_DE430(double Mjd_TDB, Matrix &r_Mercury, Matrix &r_Venus, Matrix &r
     j = 0;
     Mjd0 = t1;
 
+    Cxt.setTam(1, 7);
+    Cyt.setTam(1, 7);
+    Czt.setTam(1, 7);
+
     Cxt = extractVector(&Cx_Saturn, 7 * j + 1, 7 * j + 7);
     Cyt = extractVector(&Cy_Saturn, 7 * j + 1, 7 * j + 7);
     Czt = extractVector(&Cz_Saturn, 7 * j + 1, 7 * j + 7);
@@ -354,6 +395,10 @@ void JPL_Eph_DE430(double Mjd_TDB, Matrix &r_Mercury, Matrix &r_Venus, Matrix &r
 
     j = 0;
     Mjd0 = t1;
+
+    Cxt.setTam(1, 6);
+    Cyt.setTam(1, 6);
+    Czt.setTam(1, 6);
 
     Cxt = extractVector(&Cx_Uranus, 6 * j + 1, 6 * j + 6);
     Cyt = extractVector(&Cy_Uranus, 6 * j + 1, 6 * j + 6);
@@ -404,11 +449,20 @@ void JPL_Eph_DE430(double Mjd_TDB, Matrix &r_Mercury, Matrix &r_Venus, Matrix &r
             tempNutations(1, k) = tempNutations(1, k) + 20;
         }
 
-        Matrix Cx = extractVector(&PCtemp, tempNutations(1, 1), tempNutations(1, 2) - 1);
-        Matrix Cy = extractVector(&PCtemp, tempNutations(1, 2), tempNutations(1, 3) - 1);
+        Cx.setTam(1, tempNutations(1, 2) - tempNutations(1, 1));
+        Cy.setTam(1, tempNutations(1, 3) - tempNutations(1, 2));
 
-        Cx_Nutations = concatenateVector(&Cx_Nutations, &Cx);
-        Cy_Nutations = concatenateVector(&Cy_Nutations, &Cy);
+        Cx = extractVector(&PCtemp, tempNutations(1, 1), tempNutations(1, 2) - 1);
+        Cy = extractVector(&PCtemp, tempNutations(1, 2), tempNutations(1, 3) - 1);
+
+        Matrix aux1 = concatenateVector(&Cx_Nutations, &Cx);
+        Cx_Nutations.redefine(&aux1);
+
+        Matrix aux2 = concatenateVector(&Cy_Nutations, &Cy);
+        Cy_Nutations.redefine(&aux2);
+
+        /*Cx_Nutations = concatenateVector(&Cx_Nutations, &Cx);
+        Cy_Nutations = concatenateVector(&Cy_Nutations, &Cy);*/
     }
 
     if (0 <= dt && dt <= 8) {
@@ -425,9 +479,13 @@ void JPL_Eph_DE430(double Mjd_TDB, Matrix &r_Mercury, Matrix &r_Venus, Matrix &r
         Mjd0 = t1 + 8 * j;
     }
 
+    Cxt.setTam(1, 10);
+    Cyt.setTam(1, 10);
+    Czt.setTam(1, 10);
+
     Cxt = extractVector(&Cx_Nutations, 10 * j + 1, 10 * j + 10);
     Cyt = extractVector(&Cy_Nutations, 10 * j + 1, 10 * j + 10);
-    Czt = Matrix(10, 1);
+    Czt = Matrix(1, 10);
 
     Matrix Nutations = Cheb3D(Mjd_TDB, 10, Mjd0, Mjd0 + 8, &Cxt, &Cyt, &Czt);
 
@@ -447,9 +505,18 @@ void JPL_Eph_DE430(double Mjd_TDB, Matrix &r_Mercury, Matrix &r_Venus, Matrix &r
         Matrix Cy = extractVector(&PCtemp, tempLibrations(1, 2), tempLibrations(1, 3) - 1);
         Matrix Cz = extractVector(&PCtemp, tempLibrations(1, 3), tempLibrations(1, 4) - 1);
 
-        Cx_Librations = concatenateVector(&Cx_Librations, &Cx);
+        /*Cx_Librations = concatenateVector(&Cx_Librations, &Cx);
         Cy_Librations = concatenateVector(&Cy_Librations, &Cy);
-        Cz_Librations = concatenateVector(&Cz_Librations, &Cz);
+        Cz_Librations = concatenateVector(&Cz_Librations, &Cz);*/
+
+        Matrix aux1 = concatenateVector(&Cx_Librations, &Cx);
+        Cx_Librations.redefine(&aux1);
+
+        Matrix aux2 = concatenateVector(&Cy_Librations, &Cy);
+        Cy_Librations.redefine(&aux2);
+
+        Matrix aux3 = concatenateVector(&Cz_Librations, &Cz);
+        Cz_Librations.redefine(&aux2);
     }
 
     if (0<=dt && dt<=8) {
