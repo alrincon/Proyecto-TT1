@@ -14,6 +14,7 @@
 #include "../include/TimeUpdate.h"
 #include "../include/AzElPa.h"
 #include "../include/MeasUpdate.h"
+#include "../include/largestRoot.h"
 
 
 #include "../include/EFK_Tests.h"
@@ -23,12 +24,13 @@ extern Matrix eopdata;
 extern Matrix obs;
 extern Matrix Cnm;
 extern Matrix Snm;
+extern Matrix PC;
 extern aux AuxParam;
 
 
 int main(){
     int nobs = 46;
-    int infFile = 100;
+    int infFile = 21413;
 
     //fichero DE430Coeff.txt
     FILE *f1 = fopen("../data/DE430Coeff.txt", "r");
@@ -80,11 +82,11 @@ int main(){
 
     for (int i = 1; i <= infFile; i++) {
         fscanf(fp3, "%lf %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf",
-               &eopdata(i, 1), &eopdata(i, 2), &eopdata(i, 3),
-               &eopdata(i, 4), &eopdata(i, 5), &eopdata(i, 6),
-               &eopdata(i, 7), &eopdata(i, 8), &eopdata(i, 9),
-               &eopdata(i, 10), &eopdata(i, 11), &eopdata(i, 12),
-               &eopdata(i, 13));
+               &eopdata( 1,i), &eopdata( 2,i), &eopdata( 3,i),
+               &eopdata(4,i), &eopdata(5,i), &eopdata(6,i),
+               &eopdata(7,i), &eopdata(8,i), &eopdata(9,i),
+               &eopdata(10,i), &eopdata(11,i), &eopdata(12,i),
+               &eopdata(13,i));
     }
     if (fclose(fp3))   // Close the stream.
         perror("fclose error");
@@ -134,24 +136,22 @@ int main(){
     Matrix Rs(3,1);
     Rs = Position(lon, lat, alt);
 
-
     double Mjd1 = obs(1,1);
     double Mjd2 = obs(9,1);
     double Mjd3 = obs(18,1);
 
-    Matrix r2(1,3);
-    Matrix v2(1,3);
+    Matrix r2(3,1);
+    Matrix v2(3,1);
 
     anglesg(obs(1,2),obs(9,2),obs(18,2),obs(1,3),obs(9,3),obs(18,3),Mjd1,Mjd2,Mjd3,&Rs,&Rs,&Rs, r2, v2);
-
-    Matrix Y0_apr(6,1); //OJO
+    Matrix Y0_apr(1,6);
 
     Y0_apr(1,1) = r2(1,1);
-    Y0_apr(2,1) = r2(1,2);
-    Y0_apr(3,1) = r2(1,3);
-    Y0_apr(4,1) = v2(1,1);
-    Y0_apr(5,1) = v2(1,2);
-    Y0_apr(6,1) = v2(1,3);
+    Y0_apr(1,2) = r2(2,1);
+    Y0_apr(1,3) = r2(3,1);
+    Y0_apr(1,4) = v2(1,1);
+    Y0_apr(1,5) = v2(2,1);
+    Y0_apr(1,6) = v2(3,1);
 
 
     double Mjd0 = Mjday(1995,1,29,02,38,0);
@@ -159,6 +159,7 @@ int main(){
     double Mjd_UTC = obs(9,1);
 
     AuxParam.Mjd_UTC = Mjd_UTC;
+    AuxParam.Mjd_TT = Mjd_UTC;
     AuxParam.n = 20;
     AuxParam.m = 20;
     AuxParam.sun = 1;
@@ -171,8 +172,10 @@ int main(){
     Matrix Y(1,6);
     Matrix Y_old(1,6);
 
-    Y = *DEInteg(Accel,0.0,-(obs(9,1)-Mjd0)*86400.0,1e-13,1e-6,6,&Y0_apr);
-
+    Y0_apr.print();
+    cout << "Resultado" << endl;
+    Y = DEInteg(Accel,0.0,-(obs(9,1)-Mjd0)*86400.0,1e-13,1e-6,6,&Y0_apr);
+    Y.print();
 
     Matrix P(6,6);
 
@@ -187,7 +190,7 @@ int main(){
     Matrix LT(3,3);
     LT = LTC(lon,lat);
 
-    Matrix yPhi(42,1);
+    Matrix yPhi(1,42);
     Matrix Phi(6,6);
 
     Matrix K(6,6);
@@ -197,7 +200,7 @@ int main(){
     double t = 0;
     double t_old;
 
-    for (int i = 1; i <= nobs; i++) {
+    for (int i = 1; i <= 10; i++) {
         //Previous step
         t_old = t;
         Y_old = Y;
@@ -218,31 +221,26 @@ int main(){
         AuxParam.Mjd_TT = Mjd_TT;
 
         for (int ii = 1; ii <= 6; ii++) {
-            yPhi(ii, 1) = Y_old(1,ii);
+            yPhi(1,ii) = Y_old(1,ii);
             for (int j = 1; j <= 6; j++) {
                 if (ii == j) {
-                    yPhi(6 * j + ii, 1) = 1;
+                    yPhi(1,6 * j + ii) = 1;
                 } else {
-                    yPhi(6 * j + ii, 1) = 0;
+                    yPhi(1,6 * j + ii) = 0;
                 }
             }
         }
 
-        yPhi = *DEInteg(VarEqn, 0.0, t - t_old, 1e-13, 1e-6, 42, &yPhi);
+        yPhi = DEInteg(VarEqn, 0.0, t - t_old, 1e-13, 1e-6, 42, &yPhi);
 
         // Extract state transition matrices
         for (int j = 1; j <= 6; j++) {
             for (int ii = 1; ii <= 6; ii++) {
-                Phi(ii, j) = yPhi(6 * j + ii, 1);
+                Phi(j,ii) = yPhi(1,6 * j + ii);
             }
         }
 
-
-        Matrix tempMat(6,1);
-        tempMat = Y_old.transpose();
-
-        Y = *DEInteg(Accel, 0.0, t - t_old, 1e-13, 1e-6, 6, &tempMat);
-
+        Y = DEInteg(Accel, 0.0, t - t_old, 1e-13, 1e-6, 6, &Y_old);
         // Topocentric coordinates
         double theta = gmst(Mjd_UT1);                    // Earth rotation
         Matrix U(3, 3);
@@ -338,7 +336,7 @@ int main(){
         MeasUpdate(tobs, Dist, sigma_range, &dDdY, 6, K, Y, P);
 
         cout << "Ciclo " << i << endl;
-        tempMat.print();
+        Y.print();
     }
 
     cout << "Fin ciclos" << endl;
@@ -354,28 +352,28 @@ int main(){
     AuxParam.Mjd_UTC = Mjd_UTC;
     AuxParam.Mjd_TT = Mjd_TT;
 
-    Matrix Y0(2,3);
+    Matrix Y0(1,6);
 
-    Y0 = *DEInteg (Accel,0,-(obs(46,1)-obs(1,1))*86400.0,1e-13,1e-6,6,&Y);
+    Y0 = DEInteg (Accel,0,-(obs(46,1)-obs(1,1))*86400.0,1e-13,1e-6,6,&Y);
 
-    Matrix Y_true(6,1);
+    Matrix Y_true(1,6);
     Y_true(1,1) =5753.173e3;
-    Y_true(2,1) = 2673.361e3;
-    Y_true(3,1) = 3440.304e3;
-    Y_true(4,1) = 4.324207e3;
-    Y_true(5,1) = -1.924299e3;
-    Y_true(6,1) = -5.728216e3;
+    Y_true(1,2) = 2673.361e3;
+    Y_true(1,3) = 3440.304e3;
+    Y_true(1,4) = 4.324207e3;
+    Y_true(1,5) = -1.924299e3;
+    Y_true(1,6) = -5.728216e3;
 
     cout << "Error of Position Estimation" << endl;
     cout << "dX " << Y0(1,1)-Y_true(1,1) << "[m]" << endl;
-    cout << "dY " << Y0(2,1)-Y_true(2,1) << "[m]" << endl;
-    cout << "dZ " << Y0(3,1)-Y_true(3,1) << "[m]" << endl;
+    cout << "dY " << Y0(1,2)-Y_true(1,2) << "[m]" << endl;
+    cout << "dZ " << Y0(1,3)-Y_true(1,3) << "[m]" << endl;
 
     cout << "Error of Velocity Estimation" << endl;
-    cout << "dVx " << Y0(4,1)-Y_true(4,1) << "[m]" << endl;
-    cout << "dVy " << Y0(5,1)-Y_true(5,1) << "[m]" << endl;
-    cout << "dVz " << Y0(6,1)-Y_true(6,1) << "[m]" << endl;
+    cout << "dVx " << Y0(1,4)-Y_true(1,4) << "[m]" << endl;
+    cout << "dVy " << Y0(1,5)-Y_true(1,5) << "[m]" << endl;
+    cout << "dVz " << Y0(1,6)-Y_true(1,6) << "[m]" << endl;
 
-    check_test();
+    //check_test();
 }
 

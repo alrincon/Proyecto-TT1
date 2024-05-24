@@ -379,6 +379,12 @@
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/realmod.cpp">
 			<Option target="Proyecto"/>
 		</Unit>
+		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/rpoly.cpp">
+			<Option target="Proyecto"/>
+		</Unit>
+		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/rpoly.h">
+			<Option target="Proyecto"/>
+		</Unit>
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/sign_.cpp">
 			<Option target="Proyecto"/>
 		</Unit>

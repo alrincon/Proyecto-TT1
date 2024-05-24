@@ -17,6 +17,9 @@ Matrix VarEqn(double x, Matrix* yPhi){
     double dy_pole;
     double TAI_UTC;
 
+    Matrix yInput(yPhi->getColumnas(), yPhi->getFilas());
+    yInput = yPhi->transpose();
+
     IERS(&eopdata, AuxParam.Mjd_UTC, 'l', x_pole, y_pole, UT1_UTC, LOD, dpsi, deps, dx_pole, dy_pole, TAI_UTC);
 
     double UT1_TAI;
@@ -38,15 +41,15 @@ Matrix VarEqn(double x, Matrix* yPhi){
 
     // State vector components
     Matrix r(3,1);
-    r(1,1) = (*yPhi)(1,1);
-    r(2,1) = (*yPhi)(2,1);
-    r(3,1) = (*yPhi)(3,1);
+    r(1,1) = yInput(1,1);
+    r(2,1) = yInput(2,1);
+    r(3,1) = yInput(3,1);
 
 
     Matrix v(3,1);
-    v(1,1) = (*yPhi)(4,1);
-    v(2,1) = (*yPhi)(5,1);
-    v(3,1) = (*yPhi)(6,1);
+    v(1,1) = yInput(4,1);
+    v(2,1) = yInput(5,1);
+    v(3,1) = yInput(6,1);
 
 
     Matrix Phi(6,6);
@@ -56,14 +59,14 @@ Matrix VarEqn(double x, Matrix* yPhi){
     // State transition matrix
     for(int j = 1; j <= 6; j++){
         for(int i = 1; i <= 6; i++){
-            Phi(i, j) = (*yPhi)(6*j+i,1);
+            Phi(i, j) = yInput(6*j+i,1);
         }
     }
 
     // Acceleration and gradient
     Matrix a(3,1);
     a = AccelHarmonic ( &r, &E, AuxParam.n, AuxParam.m);
-    Matrix G (3,1);
+    Matrix G (3,3);
     G = G_AccelHarmonic ( &r, &E, AuxParam.n, AuxParam.m );
 
     // Time derivative of state transition matrix
@@ -100,5 +103,5 @@ Matrix VarEqn(double x, Matrix* yPhi){
         }
     }
 
-    return yPhip;
+    return yPhip.transpose();
 }

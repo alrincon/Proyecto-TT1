@@ -63,8 +63,8 @@ void IERS(Matrix* eop, double Mjd_UTC, double& x_pole, double& y_pole, double& U
 }
 
 int findMatchRow(Matrix a, int b){
-    for(int i = 0; i < a.getColumnas(); i++){
-        if(a(1,i) == b){
+    for(int i = 1; i <= a.getColumnas(); i++){
+        if(fabs(a(1,i) - b) < 10e-6){
             return i;
         }
     }

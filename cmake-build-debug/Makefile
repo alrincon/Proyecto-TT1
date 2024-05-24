@@ -1280,6 +1280,30 @@ src/realmod.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/realmod.cpp.s
 .PHONY : src/realmod.cpp.s
 
+src/rpoly.obj: src/rpoly.cpp.obj
+.PHONY : src/rpoly.obj
+
+# target to build an object file
+src/rpoly.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/rpoly.cpp.obj
+.PHONY : src/rpoly.cpp.obj
+
+src/rpoly.i: src/rpoly.cpp.i
+.PHONY : src/rpoly.i
+
+# target to preprocess a source file
+src/rpoly.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/rpoly.cpp.i
+.PHONY : src/rpoly.cpp.i
+
+src/rpoly.s: src/rpoly.cpp.s
+.PHONY : src/rpoly.s
+
+# target to generate assembly for a file
+src/rpoly.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/rpoly.cpp.s
+.PHONY : src/rpoly.cpp.s
+
 src/sign_.obj: src/sign_.cpp.obj
 .PHONY : src/sign_.obj
 
@@ -1529,6 +1553,9 @@ help:
 	@echo ... src/realmod.obj
 	@echo ... src/realmod.i
 	@echo ... src/realmod.s
+	@echo ... src/rpoly.obj
+	@echo ... src/rpoly.i
+	@echo ... src/rpoly.s
 	@echo ... src/sign_.obj
 	@echo ... src/sign_.i
 	@echo ... src/sign_.s

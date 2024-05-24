@@ -14,6 +14,9 @@ Matrix Accel(double x, Matrix* Y){
     double dy_pole;
     double TAI_UTC;
 
+    Matrix yInput(Y->getColumnas(), Y->getFilas());
+    yInput = Y->transpose();
+
     IERS(&eopdata, AuxParam.Mjd_UTC + x/86400.0,'l', x_pole,y_pole,UT1_UTC,LOD,dpsi,deps,dx_pole,dy_pole,TAI_UTC);
 
     double UT1_TAI;
@@ -51,9 +54,9 @@ Matrix Accel(double x, Matrix* Y){
     // Acceleration due to harmonic gravity field
 
     Matrix Y1(3,1);
-    Y1(1,1) = (*Y)(1,1);
-    Y1(2,1) = (*Y)(2,1);
-    Y1(3,1) = (*Y)(3,1);
+    Y1(1,1) = yInput(1,1);
+    Y1(2,1) = yInput(2,1);
+    Y1(3,1) = yInput(3,1);
     Matrix a(3,1);
     a = AccelHarmonic(&Y1, &E, AuxParam.n, AuxParam.m);
 
@@ -78,40 +81,14 @@ Matrix Accel(double x, Matrix* Y){
         a = a + AccelPointMassT(Y1,r_Pluto,GM_Pluto);
     }
 
-    Matrix dY(6,1);
-    dY(1,1) = (*Y)(4,1);
-    dY(2,1) = (*Y)(5,1);
-    dY(3,1) = (*Y)(6,1);
+    Matrix dY(1,6);
+    dY(1,1) = yInput(4,1);
+    dY(1,2) = yInput(5,1);
+    dY(1,3) = yInput(6,1);
 
-
-    dY(4,1) = a(1,1);
-    dY(5,1) = a(1,2);
-    dY(6,1) = a(1,3);
+    dY(1,4) = a(1,1);
+    dY(1,5) = a(2,1);
+    dY(1,6) = a(3,1);
 
     return dY;
-}
-
-//Y(6, 1)
-//return (6,1)
-Matrix AccelT(double x, Matrix* Y){
-    Matrix YT(1,6);
-    YT(1,1) = (*Y)(1,1);
-    YT(1,2) = (*Y)(2,1);
-    YT(1,3) = (*Y)(3,1);
-    YT(1,4) = (*Y)(4,1);
-    YT(1,5) = (*Y)(5,1);
-    YT(1,6) = (*Y)(6,1);
-
-    Matrix resT(1,6);
-    resT = AccelT(x, &YT);
-
-    Matrix res(6,1);
-    res(1,1) = resT(1,1);
-    res(2,1) = resT(1,2);
-    res(3,1) = resT(1,3);
-    res(4,1) = resT(1,4);
-    res(5,1) = resT(1,5);
-    res(6,1) = resT(1,6);
-
-    return res;
 }

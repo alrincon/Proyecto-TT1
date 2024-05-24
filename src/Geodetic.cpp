@@ -12,8 +12,8 @@ void Geodetic(double& lon, double& lat, double& h, Matrix* r){
     double e2      = f*(2.0-f);        // Square of eccentricity
 
     double X = (*r)(1,1);                   // Cartesian coordinates
-    double Y = (*r)(1,2);
-    double Z = (*r)(1,3);
+    double Y = (*r)(2,1);
+    double Z = (*r)(3,1);
     double rho2 = X*X + Y*Y;           // Square of distance from z-axis
 
 

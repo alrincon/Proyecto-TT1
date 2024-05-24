@@ -15,9 +15,9 @@ public:
 aux AuxParam;
 
 int nobs = 46;
-int infFile = 100;
+int infFile = 21413;
 
-Matrix eopdata(infFile, 13);
+Matrix eopdata(13,infFile);
 Matrix Cnm(181, 181);
 Matrix Snm(181, 181);
 Matrix PC(2285,1020);

@@ -15,19 +15,20 @@ void gibbs(Matrix *r1, Matrix *r2, Matrix *r3, Matrix &v2, double &theta, double
     double magr3 = (*r3).norm();
 
     v2(1,1)= 0.0;
-    v2(1,3)= 0.0;
-    v2(1,3)= 0.0;
+    v2(2,1)= 0.0;
+    v2(3,1)= 0.0;
 
-    Matrix p(1, 3);
+    Matrix p(3,1);
     p = crossProduct( r2,r3 );
-    Matrix q(1, 3);
+    Matrix q(3,1);
     q = crossProduct( r3,r1 );
-    Matrix w(1, 3);
+    Matrix w(3,1);
     w = crossProduct( r1,r2 );
 
-    Matrix pn(1, 3);
+    Matrix pn(3, 1);
     pn = unit( &p );
-    Matrix r1n(1, 3);
+    Matrix r1n(3, 1);
+
     r1n = unit( r1 );
 
     copa = asin( dotProduct(&pn,&r1n));

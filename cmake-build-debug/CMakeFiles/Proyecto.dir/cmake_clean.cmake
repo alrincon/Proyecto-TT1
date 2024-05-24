@@ -95,6 +95,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Proyecto.dir/src/largestRoot.cpp.obj.d"
   "CMakeFiles/Proyecto.dir/src/realmod.cpp.obj"
   "CMakeFiles/Proyecto.dir/src/realmod.cpp.obj.d"
+  "CMakeFiles/Proyecto.dir/src/rpoly.cpp.obj"
+  "CMakeFiles/Proyecto.dir/src/rpoly.cpp.obj.d"
   "CMakeFiles/Proyecto.dir/src/sign_.cpp.obj"
   "CMakeFiles/Proyecto.dir/src/sign_.cpp.obj.d"
   "CMakeFiles/Proyecto.dir/src/tests.cpp.obj"

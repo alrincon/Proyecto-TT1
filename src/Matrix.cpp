@@ -77,6 +77,11 @@ void Matrix::initMatrix()
 
 Matrix& Matrix::operator=(const Matrix& matrix2)
 {
+
+    if (col != matrix2.col || fil != matrix2.fil) {
+        throw std::invalid_argument("Fallo en igualda, el número de columnas y filas de A debe ser igual a las de B");
+    }
+
     for (int i = 0; i < fil; i++)
         for (int j = 0; j < col; j++){
             this->matrix[i][j] = matrix2.matrix[i][j];
@@ -87,6 +92,11 @@ Matrix& Matrix::operator=(const Matrix& matrix2)
 
 Matrix Matrix::operator+(const Matrix& matrix2)
 {
+
+    if (col != matrix2.col || fil != matrix2.fil) {
+        throw std::invalid_argument("Fallo en suma, el número de columnas y filas de A debe ser igual a las de B");
+    }
+
     Matrix result(fil, col);
 
     for (int i = 0; i < fil; i++)
@@ -98,6 +108,10 @@ Matrix Matrix::operator+(const Matrix& matrix2)
 
 Matrix Matrix::operator-(const Matrix& matrix2)
 {
+    if (col != matrix2.col || fil != matrix2.fil) {
+        throw std::invalid_argument("Fallo en resta, el número de columnas y filas de A debe ser igual a las de B");
+    }
+
     Matrix result(fil, col);
 
     for (int i = 0; i < fil; i++)
@@ -110,7 +124,7 @@ Matrix Matrix::operator-(const Matrix& matrix2)
 Matrix Matrix::operator*(const Matrix& matrix2)
 {
     if (col != matrix2.fil) {
-        throw std::invalid_argument("El número de columnas de A debe ser igual al número de filas de B");
+        throw std::invalid_argument("Fallo en producto, el número de columnas de A debe ser igual al número de filas de B");
     }
 
     Matrix result(fil, matrix2.col);
@@ -130,6 +144,10 @@ Matrix Matrix::operator*(const Matrix& matrix2)
 
 double& Matrix::operator()(const int i, const int j) const
 {
+    if (i > fil || j > col) {
+        throw std::invalid_argument("Los indices exceden el rango de la matriz");
+    }
+
     return matrix[i-1][j-1];
 }
 

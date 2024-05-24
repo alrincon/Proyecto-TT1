@@ -31,7 +31,7 @@ void doubler(double cc1, double cc2, double magrsite1, double magrsite2, double 
     double dv31 = atan2(sindv31,cosdv31);
 
     double cosdv32 = dotProduct(&r3,&r2)/(magr3*magr2);
-    double sindv32 = crossProduct(&r3,&r2).norm()/(magr3*magr2);
+    double sindv32 = (crossProduct(&r3,&r2)).norm()/(magr3*magr2);
     double dv32 = atan2(sindv32,cosdv32);
 
     double c1;

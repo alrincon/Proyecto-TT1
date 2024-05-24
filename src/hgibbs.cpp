@@ -14,8 +14,8 @@ void hgibbs (Matrix* r1, Matrix* r2, Matrix* r3, double Mjd1, double Mjd2, doubl
     double magr3 = (*r3).norm();
 
     v2(1,1)= 0.0;
-    v2(1,2)= 0.0;
-    v2(1,3)= 0.0;
+    v2(2,1)= 0.0;
+    v2(3,1)= 0.0;
 
     double tolangle = 0.01745329251994;
     double dt21 = (Mjd2-Mjd1)*86400.0;

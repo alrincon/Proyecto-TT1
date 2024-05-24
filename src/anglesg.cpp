@@ -23,10 +23,8 @@ void anglesg (double az1, double az2, double az3, double el1, double el2, double
 
     double lon1, lat1, h1;
     Geodetic(lon1, lat1, h1,Rs1);
-
     double lon2, lat2, h2;
     Geodetic(lon2, lat2, h2, Rs2);
-
     double lon3, lat3, h3;
     Geodetic(lon3, lat3, h3, Rs3);
 
@@ -49,23 +47,31 @@ void anglesg (double az1, double az2, double az3, double el1, double el2, double
     Matrix Lb3(3,1);
     Lb3 = M1.transpose()*L3;
 
+
     //mean of date system (J2000)
     double Mjd_UTC = Mjd1;
     double x_pole,y_pole,UT1_UTC,LOD,dpsi,deps,dx_pole,dy_pole,TAI_UTC;
     IERS(&eopdata,Mjd_UTC,'l', x_pole,y_pole,UT1_UTC,LOD,dpsi,deps,dx_pole,dy_pole,TAI_UTC);
 
+
     double UT1_TAI,UTC_GPS,UT1_GPS,TT_UTC,GPS_UTC;
     timediff(UT1_UTC,TAI_UTC, UT1_TAI,UTC_GPS,UT1_GPS,TT_UTC,GPS_UTC);
 
-    double Mjd_TT = Mjd_UTC + TT_UTC/86400;
-    double Mjd_UT1 = Mjd_TT + (UT1_UTC-TT_UTC)/86400;
+
+
+    double Mjd_TT = Mjd_UTC + TT_UTC/86400.0;
+    double Mjd_UT1 = Mjd_TT + (UT1_UTC-TT_UTC)/86400.0;
 
     Matrix P = PrecMatrix(MJD_J2000,Mjd_TT);
     Matrix N = NutMatrix(Mjd_TT);
     Matrix T(3,3);
     T = N * P;
     Matrix E(3,3);
+
+
     E = PoleMatrix(x_pole,y_pole) * GHAMatrix(Mjd_UT1) * T;
+
+
 
     Matrix Lm1(3,1);
     Lm1= E.transpose()*Lb1;
@@ -86,8 +92,8 @@ void anglesg (double az1, double az2, double az3, double el1, double el2, double
 
 
 
-    Mjd_TT = Mjd_UTC + TT_UTC/86400;
-    Mjd_UT1 = Mjd_TT + (UT1_UTC-TT_UTC)/86400;
+    Mjd_TT = Mjd_UTC + TT_UTC/86400.0;
+    Mjd_UT1 = Mjd_TT + (UT1_UTC-TT_UTC)/86400.0;
 
     P = PrecMatrix(MJD_J2000,Mjd_TT);
     N = NutMatrix(Mjd_TT);
@@ -96,14 +102,14 @@ void anglesg (double az1, double az2, double az3, double el1, double el2, double
 
     Matrix Lm2(3,1);
     Lm2 = E.transpose()*Lb2;
-    t = E.transpose()*(*Rs2);
-    Rs2 = &t;
+    Matrix t2 = E.transpose()*(*Rs2);
+    Rs2 = &t2;
 
     Mjd_UTC = Mjd3;
     IERS(&eopdata,Mjd_UTC,'l', x_pole,y_pole,UT1_UTC,LOD,dpsi,deps,dx_pole,dy_pole,TAI_UTC);
     timediff(UT1_UTC,TAI_UTC, UT1_TAI,UTC_GPS,UT1_GPS,TT_UTC,GPS_UTC);
 
-    Mjd_TT = Mjd_UTC + TT_UTC/86400;
+    Mjd_TT = Mjd_UTC + TT_UTC/86400.0;
     Mjd_UT1 = Mjd_TT + (UT1_UTC-TT_UTC)/86400.0;
 
     P = PrecMatrix(MJD_J2000,Mjd_TT);
@@ -113,12 +119,14 @@ void anglesg (double az1, double az2, double az3, double el1, double el2, double
 
     Matrix Lm3(3,1);
     Lm3 = E.transpose()*Lb3;
-    t = E.transpose()*(*Rs3);
-    Rs3 = &t;
+    Matrix t3 = E.transpose()*(*Rs3);
+    Rs3 = &t3;
+
+
 
     //geocentric inertial position
-    double tau1 = (Mjd1-Mjd2)*86400;
-    double tau3 = (Mjd3-Mjd2)*86400;
+    double tau1 = (Mjd1-Mjd2)*86400.0;
+    double tau3 = (Mjd3-Mjd2)*86400.0;
 
     double a1 = tau3/(tau3-tau1);
     double a3 =-tau1/(tau3-tau1);
@@ -136,8 +144,11 @@ void anglesg (double az1, double az2, double az3, double el1, double el2, double
     B(2,1) = (*Rs1)(2,1); B(2,2) = (*Rs2)(2,1); B(2,3) = (*Rs3)(2,1);
     B(3,1) = (*Rs1)(3,1); B(3,2) = (*Rs2)(3,1); B(3,3) = (*Rs3)(3,1);
 
+
     Matrix D(3,3);
     D = A.inverse()*B;
+
+
 
     double d1s = D(2,1)*a1-D(2,2)+D(2,3)*a3;
     double d2s = D(2,1)*b1+D(2,3)*b3;
@@ -155,23 +166,20 @@ void anglesg (double az1, double az2, double az3, double el1, double el2, double
     double c9 =  -pow(GM_Earth,2)*pow(d2s,2);
 
 
-    //double bigr2 = largestRoot(c1, c2, c3, c4, c5, c6, c7, c8, c9);
-    double bigr2 = 0.9;
+    double bigr2 = largestRoot(c1, c2, c3, c4, c5, c6, c7, c8, c9);
     double u = GM_Earth/(pow(bigr2,3));
+
 
     double C1 = a1+b1*u;
     double C2 = -1;
     double C3 = a3+b3*u;
 
-
-    //si no funciona trasponer la matriz
-    Matrix C(3,1);
+    Matrix C(1,3);
     C(1,1) = C1;
-    C(2,1) = C2;
-    C(3,1) = C3;
+    C(1,2) = C2;
+    C(1,3) = C3;
 
-    Matrix temp1(3,1);
-    temp1 = D*C*(-1);
+    Matrix temp1 = D*C.transpose()*(-1);
     double rho1 = temp1(1,1)/(a1+b1*u);
     double rho2 = -temp1(2,1);
     double rho3 = temp1(3,1)/(a3+b3*u);
@@ -180,13 +188,15 @@ void anglesg (double az1, double az2, double az3, double el1, double el2, double
     double rhoold2 = rho2;
     double rhoold3 = rho3;
 
+
+
+
     rho2 = 99999999.9;
     int ll   = 0;
 
-    Matrix r1(1,3);
-    Matrix r3(1,3);
-
-    while ((abs(rhoold2-rho2) > 1e-12) && (ll <= 0 )) {
+    Matrix r1(3,1);
+    Matrix r3(3,1);
+    while ((fabs(rhoold2-rho2) > 1e-12) && (ll <= 0 )) {
         ll = ll + 1;
         rho2 = rhoold2;
 
@@ -205,7 +215,7 @@ void anglesg (double az1, double az2, double az3, double el1, double el2, double
 
         gibbs(&r1, &r2, &r3, v2, theta, theta1, copa, error);
 
-        if (strcmp (error, "ok")  == 0 & (copa < M_PI / 180)) {
+        if (strcmp (error, "ok")  != 0 && (copa < M_PI / 180)) {
             hgibbs(&r1, &r2, &r3, Mjd1, Mjd2, Mjd3, v2, theta, theta1, copa, error);
         }
 
@@ -213,11 +223,11 @@ void anglesg (double az1, double az2, double az3, double el1, double el2, double
 
         Matrix r2v2(1,6);
         r2v2(1,1) = r2(1,1);
-        r2v2(1,2) = r2(1,2);
-        r2v2(1,3) = r2(1,3);
+        r2v2(1,2) = r2(2,1);
+        r2v2(1,3) = r2(3,1);
         r2v2(1,4) = v2(1,1);
-        r2v2(1,5) = v2(1,2);
-        r2v2(1,6) = v2(1,3);
+        r2v2(1,5) = v2(2,1);
+        r2v2(1,6) = v2(3,1);
 
         elements(&r2v2, p, a, e, i, Omega, omega, M);
 
@@ -262,8 +272,6 @@ void anglesg (double az1, double az2, double az3, double el1, double el2, double
         double D1 = G1 + H1 / pow(magr1, 3);
         double D2 = G2 + H2 / pow(magr2, 3);
         double D3 = G3 + H3 / pow(magr3, 3);
-
-        cout << " fin calculo matrices" << endl;
 
         Matrix C(1,3);
         C(1,1) = C1; C(1,2) = C2; C(1,3) = C3;

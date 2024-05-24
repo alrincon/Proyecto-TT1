@@ -1363,6 +1363,7 @@ CMakeFiles/Proyecto.dir/src/EKF_GEOS3.cpp.obj: ../src/EKF_GEOS3.cpp \
   ../include/AzElPa.h \
   ../include/dotProduct.h \
   ../include/MeasUpdate.h \
+  ../include/largestRoot.h \
   ../include/EFK_Tests.h
 
 CMakeFiles/Proyecto.dir/src/EKF_Tests.cpp.obj: ../src/EKF_Tests.cpp \
@@ -1608,7 +1609,20 @@ CMakeFiles/Proyecto.dir/src/EKF_Tests.cpp.obj: ../src/EKF_Tests.cpp \
   ../include/NutMatrix.h \
   ../include/GHAMatrix.h \
   ../include/G_AccelHarmonic.h \
-  ../include/types.h
+  ../include/types.h \
+  ../include/anglesg.h \
+  ../include/Geodetic.h \
+  ../include/LTC.h \
+  ../include/gibbs.h \
+  ../include/hgibbs.h \
+  ../include/elements.h \
+  ../include/largestRoot.h \
+  ../include/JPL_Eph_DE430.h \
+  ../include/Cheb3D.h \
+  ../include/Accel.h \
+  ../include/Mjday_TDB.h \
+  ../include/AccelPointMass.h \
+  ../include/JPL_Eph_DE430.h
 
 CMakeFiles/Proyecto.dir/src/EccAnom.cpp.obj: ../src/EccAnom.cpp \
   ../include/EccAnom.h \
@@ -7243,6 +7257,56 @@ CMakeFiles/Proyecto.dir/src/realmod.cpp.obj: ../src/realmod.cpp \
   C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_laguerre.tcc \
   C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/riemann_zeta.tcc
 
+CMakeFiles/Proyecto.dir/src/rpoly.cpp.obj: ../src/rpoly.cpp \
+  ../src/rpoly.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/math.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cmath \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/c++config.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/os_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32/bits/cpu_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/cpp_type_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/type_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/math.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/_mingw.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/msvcrtver.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/w32api.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/sdkddkver.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/features.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/std_abs.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/stdlib.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/stddef.h \
+  C:/URApps/CLion_2022_2_2/MinGW/include/alloca.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/specfun.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_algobase.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/functexcept.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/exception_defines.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/ext/numeric_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_pair.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/move.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/concept_check.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/type_traits \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/debug/assertions.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/stl_iterator.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/ptr_traits.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/debug/debug.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/predefined_ops.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/limits \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/gamma.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/special_function_util.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/bessel_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/special_function_util.h \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/beta_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/ell_integral.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/exp_integral.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/hypergeometric.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/legendre_function.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/modified_bessel_func.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_hermite.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/poly_laguerre.tcc \
+  C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1/riemann_zeta.tcc
+
 CMakeFiles/Proyecto.dir/src/sign_.cpp.obj: ../src/sign_.cpp \
   ../include/sign_.h \
   C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/cmath \
@@ -8277,6 +8341,10 @@ C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/bits/uniform_in
 ../src/hgibbs.cpp:
 
 C:/URApps/CLion_2022_2_2/MinGW/lib/gcc/mingw32/8.2.0/include/c++/complex:
+
+../src/rpoly.cpp:
+
+../src/rpoly.h:
 
 ../src/sign_.cpp:
 
