@@ -1,9 +1,10 @@
 #include "../include/MeasUpdate.h"
 
-//Los vectores son (n,1)
 void MeasUpdate(Matrix* z, Matrix* g, Matrix* s, Matrix*G , int n, Matrix& K, Matrix& x, Matrix& P){
     int m = z->getFilas();
     Matrix Inv_W(m,m);
+
+    Matrix xT = x.transpose();
 
     for(int i = 1; i <= m; i++) {
         Inv_W(i, i) = (*s)(i, 1) * (*s)(i ,1);    // Inverse weight(measurement covariance)
@@ -15,7 +16,9 @@ void MeasUpdate(Matrix* z, Matrix* g, Matrix* s, Matrix*G , int n, Matrix& K, Ma
 
     // State update
 
-    x = x + ((*z)-(*g))*K.transpose();
+    xT = xT + K*((*z)-(*g));
+
+    x = xT.transpose();
 
     Matrix id(n,n, true);
     // Covariance update

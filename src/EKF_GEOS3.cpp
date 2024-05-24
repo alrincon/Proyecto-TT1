@@ -167,15 +167,12 @@ int main(){
     AuxParam.planets = 1;
     //parametros de modelo
 
-    int n_eqn  = 6;
-
     Matrix Y(1,6);
     Matrix Y_old(1,6);
 
-    Y0_apr.print();
-    cout << "Resultado" << endl;
+    check_test();
+
     Y = DEInteg(Accel,0.0,-(obs(9,1)-Mjd0)*86400.0,1e-13,1e-6,6,&Y0_apr);
-    Y.print();
 
     Matrix P(6,6);
 
@@ -313,7 +310,7 @@ int main(){
 
         s = LT * (U * r - Rs);                          // Topocentric position [m]
 
-        double Dist = s.norm();
+        Dist = s.norm();
 
         Matrix dDds(1, 3);
 
@@ -371,7 +368,5 @@ int main(){
     cout << "dVx " << Y0(1,4)-Y_true(1,4) << "[m]" << endl;
     cout << "dVy " << Y0(1,5)-Y_true(1,5) << "[m]" << endl;
     cout << "dVz " << Y0(1,6)-Y_true(1,6) << "[m]" << endl;
-
-    //check_test();
 }
 

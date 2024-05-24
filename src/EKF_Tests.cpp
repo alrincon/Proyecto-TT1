@@ -207,7 +207,6 @@ int Cheb3D_01() {
     Cz(1,5) = 3;
 
     Matrix res = Cheb3D(t,N,Ta,Tb,&Cx,&Cy,&Cz);
-    res.print();
     _assert(compareVectors({res(1,1), res(1,2), res(1,3)}, {0.00000000000000, -7.50000000000000, -6.00000000000000 }));
 
     return 0;
@@ -600,7 +599,6 @@ int angl_01(){
     return 0;
 }
 
-//CORRECTO
 int MeasUpdate_01(){
     Matrix z(3,1);
 
@@ -633,11 +631,11 @@ int MeasUpdate_01(){
     K(2,1) =  0; K(2,2) =  -7; K(2,3) =  4;
     K(3,1) =  1; K(3,2) =  -2; K(3,3) = -8;
 
-    Matrix x(3,1);
+    Matrix x(1,3);
 
     x(1,1) =  5;
-    x(2,1) = -3;
-    x(3,1) =  5;
+    x(1,2) = -3;
+    x(1,3) =  5;
 
     Matrix P(3,3);
 
@@ -672,7 +670,7 @@ int MeasUpdate_01(){
         -0.17704710717673, -0.07176730951628, -0.17767941827379,
         0.95415744546317 , -0.54536832121404, -0.06386342080304}));
 
-    _assert(compareVectors({x(1,1), x(2,1), x(3,1)},
+    _assert(compareVectors({x(1,1), x(1,2), x(1,3)},
                            {3.96427442301612, -2.62854884603225, 7.13635788808094}));
 
     _assert(compareVectors({P(1,1), P(1,2), P(1,3), P(2,1), P(2,2), P(2,3), P(3,1), P(3,2), P(3,3)},
@@ -865,20 +863,20 @@ int gmst_01(){
 //CORRECTO
 int hgibbs_01(){
     //IN
-    Matrix r1(1,3);
+    Matrix r1(3,1);
     r1(1,1) = 1;
-    r1(1,2) = 2.5;
-    r1(1,3) = 3.6;
+    r1(2,1) = 2.5;
+    r1(3,1) = 3.6;
 
-    Matrix r2(1,3);
+    Matrix r2(3,1);
     r2(1,1) = 1.5;
-    r2(1,2) = 3;
-    r2(1,3) = 3.9;
+    r2(2,1) = 3;
+    r2(3,1) = 3.9;
 
-    Matrix r3(1,3);
+    Matrix r3(3,1);
     r3(1,1) = 2;
-    r3(1,2) = 3.3;
-    r3(1,3) = 5;
+    r3(2,1) = 3.3;
+    r3(3,1) = 5;
 
     double Mjd1 = 1.4;
     double Mjd2 = 1.7;
@@ -898,7 +896,7 @@ int hgibbs_01(){
     */
 
     //OUT
-    Matrix v2(1,3);
+    Matrix v2(3,1);
     double theta;
     double theta1;
     double copa;
@@ -906,7 +904,7 @@ int hgibbs_01(){
 
     hgibbs(&r1, &r2, &r3, Mjd1, Mjd2, Mjd3, v2, theta, theta1, copa, error);
 
-    _assert(compareVectors({v2(1,1), v2(1,2), v2(1,3)}, {-2645622754722265, -10842213878151156, -13879679200981824}));
+    _assert(compareVectors({v2(1,1), v2(2,1), v2(3,1)}, {-2645622754722265, -10842213878151156, -13879679200981824}));
 
     _assert(abs(theta - 0.08566810351896) < TOL_);
     _assert(abs(theta1 - 0.07374308868996) < TOL_);
@@ -1017,49 +1015,49 @@ int gast_01(){
 int VarEqn_01(){
     double x = 0.75;
 
-    Matrix yPhi(42,1);
-    yPhi(1, 1) = 1;
-    yPhi(2, 1) = -9;
-    yPhi(3, 1) = 10;
-    yPhi(4, 1) = 12;
-    yPhi(5, 1) = -4;
-    yPhi(6, 1) = 1;
-    yPhi(7, 1) = 4;
-    yPhi(8, 1) = 8;
-    yPhi(9, 1) = 4;
-    yPhi(10, 1) = 1;
-    yPhi(11, 1) = 3;
-    yPhi(12, 1) = 2;
-    yPhi(13, 1) = 2;
-    yPhi(14, 1) = -5;
-    yPhi(15, 1) = -1;
-    yPhi(16, 1) = 0;
-    yPhi(17, 1) = -7;
-    yPhi(18, 1) = 2;
-    yPhi(19, 1) = -3;
-    yPhi(20, 1) = -6;
-    yPhi(21, 1) = -9;
-    yPhi(22, 1) = -12;
-    yPhi(23, 1) = -15;
-    yPhi(24, 1) = -18;
-    yPhi(25, 1) = -1;
-    yPhi(26, 1) = -2;
-    yPhi(27, 1) = -3;
-    yPhi(28, 1) = -4;
-    yPhi(29, 1) = -5;
-    yPhi(30, 1) = -6;
-    yPhi(31, 1) = 1.1;
-    yPhi(32, 1) = 1.2;
-    yPhi(33, 1) = 1.3;
-    yPhi(34, 1) = 1.4;
-    yPhi(35, 1) = 1.5;
-    yPhi(36, 1) = 1.6;
-    yPhi(37, 1) = 2.2;
-    yPhi(38, 1) = 2.3;
-    yPhi(39, 1) = 2.4;
-    yPhi(40, 1) = 2.5;
-    yPhi(41, 1) = 2.6;
-    yPhi(42, 1) = 2.7;
+    Matrix yPhi(1,42);
+    yPhi(1,1)= 1;
+    yPhi(1,2)= -9;
+    yPhi(1,3)= 10;
+    yPhi(1,4)= 12;
+    yPhi(1,5)= -4;
+    yPhi(1,6)= 1;
+    yPhi(1,7)= 4;
+    yPhi(1,8)= 8;
+    yPhi(1,9)= 4;
+    yPhi(1,10) = 1;
+    yPhi(1,11) = 3;
+    yPhi(1,12) = 2;
+    yPhi(1,13) = 2;
+    yPhi(1,14) = -5;
+    yPhi(1,15) = -1;
+    yPhi(1,16) = 0;
+    yPhi(1,17) = -7;
+    yPhi(1,18) = 2;
+    yPhi(1,19) = -3;
+    yPhi(1,20) = -6;
+    yPhi(1,21) = -9;
+    yPhi(1,22) = -12;
+    yPhi(1,23) = -15;
+    yPhi(1,24) = -18;
+    yPhi(1,25) = -1;
+    yPhi(1,26) = -2;
+    yPhi(1,27) = -3;
+    yPhi(1,28) = -4;
+    yPhi(1,29) = -5;
+    yPhi(1,30) = -6;
+    yPhi(1,31) = 1.1;
+    yPhi(1,32) = 1.2;
+    yPhi(1,33) = 1.3;
+    yPhi(1,34) = 1.4;
+    yPhi(1,35) = 1.5;
+    yPhi(1,36) = 1.6;
+    yPhi(1,37) = 2.2;
+    yPhi(1,38) = 2.3;
+    yPhi(1,39) = 2.4;
+    yPhi(1,40) = 2.5;
+    yPhi(1,41) = 2.6;
+    yPhi(1,42) = 2.7;
 
 
     /*
@@ -1110,7 +1108,7 @@ int VarEqn_01(){
 
     Matrix res = VarEqn(0.75, &yPhi);
 
-    _assert(compareVectors({res(1,1), res(2,1), res(3,1), res(4,1), res(5,1), res(6,1), res(7,1), res(8,1), res(9,1), res(10,1), res(11,1), res(12,1), res(13,1), res(14,1), res(15,1), res(16,1), res(17,1), res(18,1), res(19,1), res(20,1), res(21,1), res(22,1), res(23,1), res(24,1), res(25,1), res(26,1), res(27,1), res(28,1), res(29,1), res(30,1), res(31,1), res(32,1), res(33,1), res(34,1), res(35,1), res(36,1), res(37,1), res(38,1), res(39,1), res(40,1), res(41,1), res(42,1)},
+    _assert(compareVectors({res(1,1), res(1,2), res(1,3), res(1,4), res(1,5), res(1,6), res(1,7), res(1,8), res(1,9), res(1,10), res(1,11), res(1,12), res(1,13), res(1,14), res(1,15), res(1,16), res(1,17), res(1,18), res(1,19), res(1,20), res(1,21), res(1,22), res(1,23), res(1,24), res(1,25), res(1,26), res(1,27), res(1,28), res(1,29), res(1,30), res(1,31), res(1,32), res(1,33), res(1,34), res(1,35), res(1,36), res(1,37), res(1,38), res(1,39), res(1,40), res(1,41), res(1,42)},
                            {12.00000000000000,
                             -4.00000000000000,
                             1.00000000000000,
@@ -1239,86 +1237,49 @@ int anglessg_01(){
 
     anglesg(az1, az2, az3, el1, el2, el3,Mjd1,Mjd2,Mjd3,&Rs,&Rs,&Rs, r2, v2);
 
-    _assert(compareVectors({r2(1,1), r2(2,1), r2(3,1)}, {7205582183476.55175781250000,-36394540637361.20312500000000,-13120700372165.50781250000000}));
-    _assert(compareVectors({v2(1,1),v2(2,1), v2(3,1)}, {23.03600272081803,-116.35023148433311,-41.94497048910125}));
+    _assert(compareVectors({r2(1,1), r2(2,1), r2(3,1)}, {-3012088509.11487054824829,15242218685.93862533569336,5496207262.23770809173584}));
+    _assert(compareVectors({v2(1,1),v2(2,1), v2(3,1)}, {2699.63908358978006,-13640.68588004964658,-4910.19468647397116}));
 
 
     return 0;
 }
 
 int JPL_Eph_DE430(){
-    Matrix r_Mercury(3,1);
-    Matrix r_Venus(3,1);
-    Matrix r_Earth(3,1);
-    Matrix r_Mars(3,1);
-    Matrix r_Jupiter(3,1);
-    Matrix r_Saturn(3,1);
-    Matrix r_Uranus(3,1);
-    Matrix r_Neptune(3,1);
-    Matrix r_Pluto(3,1);
-    Matrix r_Moon(3,1);
-    Matrix r_Sun(3,1);
+    Matrix r_Mercury(1,3);
+    Matrix r_Venus(1,3);
+    Matrix r_Earth(1,3);
+    Matrix r_Mars(1,3);
+    Matrix r_Jupiter(1,3);
+    Matrix r_Saturn(1,3);
+    Matrix r_Uranus(1,3);
+    Matrix r_Neptune(1,3);
+    Matrix r_Pluto(1,3);
+    Matrix r_Moon(1,3);
+    Matrix r_Sun(1,3);
 
     JPL_Eph_DE430(49746.1128763999,r_Mercury,r_Venus,r_Earth,r_Mars,r_Jupiter,r_Saturn,r_Uranus, r_Neptune,r_Pluto,r_Moon,r_Sun);
-/*
-    cout << "valores" << endl;
-    cout << "r_Mercury" << endl;
-    r_Mercury.print();
-    cout << r_Mercury(1,1) << "   " << r_Mercury(2,1) << "   " << r_Mercury(3,1) << endl;
-    cout << r_Mercury.getFilas() << "  " << r_Mercury.getColumnas()<< endl;
-    cout << "+++++++" << endl;
-    cout << "r_Venus" << endl;
-    r_Venus.print();
-    cout << "+++++++" << endl;
-    cout << "r_Earth" << endl;
-    r_Earth.print();
-    cout << "+++++++" << endl;
-    cout << "r_Mars" << endl;
-    r_Mars.print();
-    cout << "+++++++" << endl;
-    cout << "r_Jupiter" << endl;
-    r_Jupiter.print();
-    cout << "+++++++" << endl;
-    cout << "r_Saturn" << endl;
-    r_Saturn.print();
-    cout << "+++++++" << endl;
-    cout << "r_Uranus" << endl;
-    r_Uranus.print();
-    cout << "+++++++" << endl;
-    cout << "r_Neptune" << endl;
-    r_Neptune.print();
-    cout << "+++++++" << endl;
-    cout << "r_Pluto" << endl;
-    r_Pluto.print();
-    cout << "+++++++" << endl;
-    cout << "r_Moon" << endl;
-    r_Moon.print();//fallo
-    cout << "+++++++" << endl;
-    cout << "r_Sun" << endl;
-    r_Sun.print();
-    cout << "fin valores" << endl;
-*/
 
+    _assert(compareVectors({r_Mercury(1,1),r_Mercury(1,2), r_Mercury(1,3)}, {83772905189.86315917968750, -65290454439.25350189208984, -23390629645.41803741455078}));
 
-    _assert(compareVectors({r_Venus(1,1),r_Venus(2,1), r_Venus(3,1)}, {-15227808349.19389343261719,-110136124950.86943054199219,-41022337370.63686370849609}));
+    _assert(compareVectors({r_Venus(1,1),r_Venus(1,2), r_Venus(1,3)}, {-15227808349.19389343261719,-110136124950.86943054199219,-41022337370.63686370849609}));
 
-    _assert(compareVectors({r_Earth(1,1),r_Earth(2,1), r_Earth(3,1)}, {-92472772680.09974670410156,106393603655.53057861328125,46129569866.12557983398438}));
+    _assert(compareVectors({r_Earth(1,1),r_Earth(1,2), r_Earth(1,3)}, {-92472772680.09974670410156,106393603655.53057861328125,46129569866.12557983398438}));
 
-    _assert(compareVectors({r_Mars(1,1),r_Mars(2,1), r_Mars(3,1)}, {-88277798473.76695251464844,46964990228.49914550781250,29071127006.03056335449219}));
+    _assert(compareVectors({r_Mars(1,1),r_Mars(1,2), r_Mars(1,3)}, {-88277798473.76695251464844,46964990228.49914550781250,29071127006.03056335449219}));
 
-    _assert(compareVectors({r_Jupiter(1,1),r_Jupiter(2,1), r_Jupiter(3,1)}, {-298383266667.87084960937500,-754497339800.52270507812500,-314410139017.64038085937500}));
+    _assert(compareVectors({r_Jupiter(1,1),r_Jupiter(1,2), r_Jupiter(1,3)}, {-298383266667.87084960937500,-754497339800.52270507812500,-314410139017.64038085937500}));
 
-    _assert(compareVectors({r_Saturn(1,1),r_Saturn(2,1), r_Saturn(3,1)}, {1482035974927.73242187500000,-453870923240.66571044921875,-249401413783.27105712890625}));
+    _assert(compareVectors({r_Saturn(1,1),r_Saturn(1,2), r_Saturn(1,3)}, {1482035974927.73242187500000,-453870923240.66571044921875,-249401413783.27105712890625}));
 
-    _assert(compareVectors({r_Uranus(1,1),r_Uranus(2,1), r_Uranus(3,1)}, {1412370256343.40747070312500,-2511353537383.14208984375000,-1118108003556.99047851562500}));
+    _assert(compareVectors({r_Uranus(1,1),r_Uranus(1,2), r_Uranus(1,3)}, {1412370256343.40747070312500,-2511353537383.14208984375000,-1118108003556.99047851562500}));
 
-    _assert(compareVectors({r_Neptune(1,1),r_Neptune(2,1), r_Neptune(3,1)}, {1871252960132.36352539062500,-3928974841842.59619140625000,-1655019851828.05908203125000}));
+    _assert(compareVectors({r_Neptune(1,1),r_Neptune(1,2), r_Neptune(1,3)}, {1871252960132.36352539062500,-3928974841842.59619140625000,-1655019851828.05908203125000}));
 
-    _assert(compareVectors({r_Pluto(1,1),r_Pluto(2,1), r_Pluto(3,1)}, {-2171412614553.17797851562500,-3915432033426.32910156250000,-552715859865.25683593750000}));
+    _assert(compareVectors({r_Pluto(1,1),r_Pluto(1,2), r_Pluto(1,3)}, {-2171412614553.17797851562500,-3915432033426.32910156250000,-552715859865.25683593750000}));
 
-    _assert(compareVectors({r_Moon(1,1),r_Moon(2,1), r_Moon(3,1)}, {89463061.41452670097351,-336587597.53726130723953,-114638183.88342174887657}));
+    _assert(compareVectors({r_Moon(1,1),r_Moon(1,2), r_Moon(1,3)}, {89463061.41452670097351,-336587597.53726130723953,-114638183.88342174887657}));
 
-    _assert(compareVectors({r_Sun(1,1),r_Sun(2,1), r_Sun(3,1)}, {92300062279.84397888183594,-105373881161.06535339355469,-45685797078.33899688720703}));
+    _assert(compareVectors({r_Sun(1,1),r_Sun(1,2), r_Sun(1,3)}, {92300062279.84397888183594,-105373881161.06535339355469,-45685797078.33899688720703}));
 
 
     return 0;
@@ -1326,18 +1287,24 @@ int JPL_Eph_DE430(){
 
 int Accel_01(){
     double x = 0.5;
-    Matrix Y(6,1);
+    Matrix Y(1,6);
     Y(1,1) = 1;
-    Y(2,1) = 2;
-    Y(3,1) = 3;
-    Y(4,1) = 4;
-    Y(5,1) = 5;
-    Y(6,1) = 6;
+    Y(1,2) = 2;
+    Y(1,3) = 3;
+    Y(1,4) = 4;
+    Y(1,5) = 5;
+    Y(1,6) = 6;
 
     Matrix res = Accel(x, &Y);
 
-    //res debe ser 6,1
-    res.print();
+    _assert(compareVectors({res(1,1),res(1,2), res(1,3), res(1,4), res(1,5), res(1,6)}, {
+    4.00000000000000,
+     5.00000000000000,
+     6.00000000000000,
+     -471010558047621988587913909448671909650375564787349795468405082677115760841073283365019401699788064431255484852499948353752305500160.00000000000000,
+    -2246660984646394166059964940525112324986811344270867184440307547912545646199989268019447929414451705624083443865098096881241719570432.00000000000000,
+    -3731402515517448595593712178093056039286968131588511044842860459458435608674245892077054060650874330524857460759519957201011613892608.00000000000000}));
+
 
     return 0;
 }
@@ -1386,8 +1353,6 @@ int all_tests(){
     _verify(anglessg_01);
     _verify(JPL_Eph_DE430);
     _verify(Accel_01);
-
-
 
     return 0;
 }

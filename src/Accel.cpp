@@ -57,6 +57,7 @@ Matrix Accel(double x, Matrix* Y){
     Y1(1,1) = yInput(1,1);
     Y1(2,1) = yInput(2,1);
     Y1(3,1) = yInput(3,1);
+
     Matrix a(3,1);
     a = AccelHarmonic(&Y1, &E, AuxParam.n, AuxParam.m);
 
