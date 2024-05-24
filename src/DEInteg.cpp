@@ -67,9 +67,11 @@ Matrix DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double re
     Matrix v(1,13);
     Matrix psi_(1,13);
 
-    if (t == tout) return y;
 
     double epsilon = max(relerr, abserr);
+
+    if (fabs(t - tout) < epsilon) return y;
+
     if (relerr < 0.0 || abserr < 0.0 || epsilon <= 0.0 || State_ > DE_STATE::DE_INVPARAM || (State_ != DE_STATE::DE_INIT && t != told)) {
         State_ = DE_STATE::DE_INVPARAM;
         cout << "SALIDA DE_INVPARAM" << endl;
@@ -111,12 +113,13 @@ Matrix DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double re
     double hi;
     int ki;
     int kold = 0;
+    int steps = 0;
 
     while (true) {
-
+        steps++;
         // If already past output point, interpolate solution and return
 
-        if (fabs(x - t) >= absdel) {
+        if (fabs(x - t) >= absdel || steps > limitn) {
             g( 1,2) = 1.0;
             rho( 1,2) = 1.0;
             hi = tout - x;
@@ -710,7 +713,7 @@ Matrix DEInteg(Matrix (*func)(double, Matrix*), double t, double tout, double re
 
         kle4 = kle4+1;
 
-        if (kold>  4) {
+        if (kold >  4) {
             kle4 = 0;
         }
 

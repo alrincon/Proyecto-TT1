@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Proyecto.dir/src/Cheb3D.cpp.obj.d"
   "CMakeFiles/Proyecto.dir/src/DEInteg.cpp.obj"
   "CMakeFiles/Proyecto.dir/src/DEInteg.cpp.obj.d"
+  "CMakeFiles/Proyecto.dir/src/DEInteg2.cpp.obj"
+  "CMakeFiles/Proyecto.dir/src/DEInteg2.cpp.obj.d"
   "CMakeFiles/Proyecto.dir/src/EKF_GEOS3.cpp.obj"
   "CMakeFiles/Proyecto.dir/src/EKF_GEOS3.cpp.obj.d"
   "CMakeFiles/Proyecto.dir/src/EKF_Tests.cpp.obj"

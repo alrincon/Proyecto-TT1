@@ -15,4 +15,6 @@
 
 Matrix VarEqn(double x, Matrix* yPhi);
 
+Matrix VarEqnOUT(double x, Matrix& yPhi);
+
 #endif

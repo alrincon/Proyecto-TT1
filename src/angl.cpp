@@ -20,7 +20,7 @@ double angl (Matrix* vec1, Matrix* vec2){
 
     double temp;
 
-    if (magv1*magv2 > small^2) {
+    if (magv1*magv2 > pow(small,2)) {
         temp = dotProduct(vec1, vec2) / (magv1 * magv2);
 
 

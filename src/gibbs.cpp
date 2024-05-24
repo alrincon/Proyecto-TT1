@@ -37,12 +37,16 @@ void gibbs(Matrix *r1, Matrix *r2, Matrix *r3, Matrix &v2, double &theta, double
         strcpy(error, "not coplanar");
     }
 
-    Matrix d = p + q + w;
+    Matrix d(3,1);
+    d = p + q + w;
     double magd = d.norm();
-    Matrix n = p*magr1 + q*magr2 + w*magr3;
+    Matrix n(3,1);
+    n = p*magr1 + q*magr2 + w*magr3;
     double magn = n.norm();
-    Matrix nn = unit( &n );
-    Matrix dn = unit( &d );
+    Matrix nn(3,1);
+    nn = unit( &n );
+    Matrix dn(3,1);
+    dn = unit( &d );
 
     // -------------------------------------------------------------
     //determine if  the orbit is possible. both d and n must be in
@@ -59,8 +63,10 @@ void gibbs(Matrix *r1, Matrix *r2, Matrix *r3, Matrix &v2, double &theta, double
         double r1mr2 = magr1 - magr2;
         double r3mr1 = magr3 - magr1;
         double r2mr3 = magr2 - magr3;
-        Matrix s =  (*r3)*r1mr2 +  (*r2)*r3mr1 +  (*r1)*r2mr3;
-        Matrix b = crossProduct(&d, r2);
+        Matrix s(3,1);
+        s =  (*r3)*r1mr2 +  (*r2)*r3mr1 +  (*r1)*r2mr3;
+        Matrix b(3,1);
+        b = crossProduct(&d, r2);
         double l = sqrt(GM_Earth / (magd * magn));
         double tover2 = l / magr2;
         v2 =  b*tover2 +  s*l;

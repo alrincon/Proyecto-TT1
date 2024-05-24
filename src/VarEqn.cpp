@@ -105,3 +105,7 @@ Matrix VarEqn(double x, Matrix* yPhi){
 
     return yPhip.transpose();
 }
+
+Matrix VarEqnOUT(double x, Matrix& yPhi){
+    return VarEqn(x, &yPhi);
+}

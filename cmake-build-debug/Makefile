@@ -296,6 +296,30 @@ src/DEInteg.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/DEInteg.cpp.s
 .PHONY : src/DEInteg.cpp.s
 
+src/DEInteg2.obj: src/DEInteg2.cpp.obj
+.PHONY : src/DEInteg2.obj
+
+# target to build an object file
+src/DEInteg2.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/DEInteg2.cpp.obj
+.PHONY : src/DEInteg2.cpp.obj
+
+src/DEInteg2.i: src/DEInteg2.cpp.i
+.PHONY : src/DEInteg2.i
+
+# target to preprocess a source file
+src/DEInteg2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/DEInteg2.cpp.i
+.PHONY : src/DEInteg2.cpp.i
+
+src/DEInteg2.s: src/DEInteg2.cpp.s
+.PHONY : src/DEInteg2.s
+
+# target to generate assembly for a file
+src/DEInteg2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/src/DEInteg2.cpp.s
+.PHONY : src/DEInteg2.cpp.s
+
 src/EKF_GEOS3.obj: src/EKF_GEOS3.cpp.obj
 .PHONY : src/EKF_GEOS3.obj
 
@@ -1430,6 +1454,9 @@ help:
 	@echo ... src/DEInteg.obj
 	@echo ... src/DEInteg.i
 	@echo ... src/DEInteg.s
+	@echo ... src/DEInteg2.obj
+	@echo ... src/DEInteg2.i
+	@echo ... src/DEInteg2.s
 	@echo ... src/EKF_GEOS3.obj
 	@echo ... src/EKF_GEOS3.i
 	@echo ... src/EKF_GEOS3.s

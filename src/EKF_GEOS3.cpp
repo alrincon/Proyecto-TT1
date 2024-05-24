@@ -15,6 +15,7 @@
 #include "../include/AzElPa.h"
 #include "../include/MeasUpdate.h"
 #include "../include/largestRoot.h"
+#include "../include/DEInteg2.h"
 
 
 #include "../include/EFK_Tests.h"
@@ -143,7 +144,25 @@ int main(){
     Matrix r2(3,1);
     Matrix v2(3,1);
 
+    cout << obs(1,2) << endl;
+    cout << obs(9,2) << endl;
+    cout << obs(18,2) << endl;
+    cout << obs(1,3) << endl;
+    cout << obs(9,3) << endl;
+    cout << obs(18,3) << endl;
+    cout << Mjd1 << endl;
+    cout << Mjd2 << endl;
+    cout << Mjd3 << endl;
+    cout << "_________" << endl;
+    Rs.print();
+
     anglesg(obs(1,2),obs(9,2),obs(18,2),obs(1,3),obs(9,3),obs(18,3),Mjd1,Mjd2,Mjd3,&Rs,&Rs,&Rs, r2, v2);
+
+    cout << "Resultado" << endl;
+    r2.print();
+    cout << "__________" << endl;
+    v2.print();
+
     Matrix Y0_apr(1,6);
 
     Y0_apr(1,1) = r2(1,1);
@@ -172,7 +191,11 @@ int main(){
 
     check_test();
 
-    Y = DEInteg(Accel,0.0,-(obs(9,1)-Mjd0)*86400.0,1e-13,1e-6,6,&Y0_apr);
+    cout << "Antes: " << endl;
+    Y0_apr.print();
+    Y = DEInteg2(AccelOUT,0.0,-(obs(9,1)-Mjd0)*86400.0,1e-13,1e-6,6,&Y0_apr);
+    cout << "Despues: " << endl;
+    Y.print();
 
     Matrix P(6,6);
 
@@ -221,14 +244,15 @@ int main(){
             yPhi(1,ii) = Y_old(1,ii);
             for (int j = 1; j <= 6; j++) {
                 if (ii == j) {
-                    yPhi(1,6 * j + ii) = 1;
+                    yPhi(1,6 * j + ii) = 1.0;
                 } else {
                     yPhi(1,6 * j + ii) = 0;
                 }
             }
         }
 
-        yPhi = DEInteg(VarEqn, 0.0, t - t_old, 1e-13, 1e-6, 42, &yPhi);
+        yPhi = DEInteg2(VarEqnOUT, 0.0, t - t_old, 1e-13, 1e-6, 42, &yPhi);
+
 
         // Extract state transition matrices
         for (int j = 1; j <= 6; j++) {
@@ -237,7 +261,7 @@ int main(){
             }
         }
 
-        Y = DEInteg(Accel, 0.0, t - t_old, 1e-13, 1e-6, 6, &Y_old);
+        Y = DEInteg2(AccelOUT, 0.0, t - t_old, 1e-13, 1e-6, 6, &Y_old);
         // Topocentric coordinates
         double theta = gmst(Mjd_UT1);                    // Earth rotation
         Matrix U(3, 3);
@@ -342,14 +366,14 @@ int main(){
     double UT1_TAI,UTC_GPS,UT1_GPS,TT_UTC,GPS_UTC;
     timediff(UT1_UTC,TAI_UTC, UT1_TAI,UTC_GPS,UT1_GPS,TT_UTC,GPS_UTC);
 
-    double Mjd_TT = Mjd_UTC + TT_UTC/86400;
+    double Mjd_TT = Mjd_UTC + TT_UTC/86400.0;
 
     AuxParam.Mjd_UTC = Mjd_UTC;
     AuxParam.Mjd_TT = Mjd_TT;
 
     Matrix Y0(1,6);
 
-    Y0 = DEInteg (Accel,0,-(obs(46,1)-obs(1,1))*86400.0,1e-13,1e-6,6,&Y);
+    Y0 = DEInteg2 (AccelOUT,0,-(obs(46,1)-obs(1,1))*86400.0,1e-13,1e-6,6,&Y);
 
     Matrix Y_true(1,6);
     Y_true(1,1) =5753.173e3;
@@ -365,8 +389,8 @@ int main(){
     cout << "dZ " << Y0(1,3)-Y_true(1,3) << "[m]" << endl;
 
     cout << "Error of Velocity Estimation" << endl;
-    cout << "dVx " << Y0(1,4)-Y_true(1,4) << "[m]" << endl;
-    cout << "dVy " << Y0(1,5)-Y_true(1,5) << "[m]" << endl;
-    cout << "dVz " << Y0(1,6)-Y_true(1,6) << "[m]" << endl;
+    cout << "dVx " << Y0(1,4)-Y_true(1,4) << "[m/s]" << endl;
+    cout << "dVy " << Y0(1,5)-Y_true(1,5) << "[m/s]" << endl;
+    cout << "dVz " << Y0(1,6)-Y_true(1,6) << "[m/s]" << endl;
 }
 

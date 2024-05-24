@@ -117,11 +117,12 @@ void anglesg (double az1, double az2, double az3, double el1, double el2, double
     T = N * P;
     E = PoleMatrix(x_pole,y_pole) * GHAMatrix(Mjd_UT1) * T;
 
+
+
     Matrix Lm3(3,1);
     Lm3 = E.transpose()*Lb3;
     Matrix t3 = E.transpose()*(*Rs3);
     Rs3 = &t3;
-
 
 
     //geocentric inertial position
@@ -140,14 +141,13 @@ void anglesg (double az1, double az2, double az3, double el1, double el2, double
     A(3,1) = Lm1(3,1); A(3,2) = Lm2(3,1); A(3,3) = Lm3(3,1);
 
     Matrix B(3,3);
-    B(1,1) = (*Rs1)(1,1); B(1,2) = (*Rs2)(1,1); B(1,3) = (*Rs3)(1,1);
-    B(2,1) = (*Rs1)(2,1); B(2,2) = (*Rs2)(2,1); B(2,3) = (*Rs3)(2,1);
-    B(3,1) = (*Rs1)(3,1); B(3,2) = (*Rs2)(3,1); B(3,3) = (*Rs3)(3,1);
+    B(1,1) = (*Rs1)(1,1); B(1,2) = (*Rs2)(1,1); B(1,3) = (*Rs2)(1,1);
+    B(2,1) = (*Rs1)(2,1); B(2,2) = (*Rs2)(2,1); B(2,3) = (*Rs2)(2,1);
+    B(3,1) = (*Rs1)(3,1); B(3,2) = (*Rs2)(3,1); B(3,3) = (*Rs2)(3,1);
 
 
     Matrix D(3,3);
     D = A.inverse()*B;
-
 
 
     double d1s = D(2,1)*a1-D(2,2)+D(2,3)*a3;
@@ -179,7 +179,10 @@ void anglesg (double az1, double az2, double az3, double el1, double el2, double
     C(1,2) = C2;
     C(1,3) = C3;
 
-    Matrix temp1 = D*C.transpose()*(-1);
+    Matrix temp1(3,1);
+
+
+    temp1 = ((D*(-1.0)*C.transpose()));
     double rho1 = temp1(1,1)/(a1+b1*u);
     double rho2 = -temp1(2,1);
     double rho3 = temp1(3,1)/(a3+b3*u);
@@ -215,7 +218,7 @@ void anglesg (double az1, double az2, double az3, double el1, double el2, double
 
         gibbs(&r1, &r2, &r3, v2, theta, theta1, copa, error);
 
-        if (strcmp (error, "ok")  != 0 && (copa < M_PI / 180)) {
+        if (strcmp (error, "ok")  != 0 && (copa < M_PI / 180.0)) {
             hgibbs(&r1, &r2, &r3, Mjd1, Mjd2, Mjd3, v2, theta, theta1, copa, error);
         }
 

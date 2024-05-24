@@ -93,3 +93,8 @@ Matrix Accel(double x, Matrix* Y){
 
     return dY;
 }
+
+
+Matrix AccelOUT(double x, Matrix& Y){
+    return Accel(x, &Y);
+}

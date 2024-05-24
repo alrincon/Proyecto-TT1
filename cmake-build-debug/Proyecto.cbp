@@ -100,6 +100,9 @@
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/DEInteg.h">
 			<Option target="Proyecto"/>
 		</Unit>
+		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/DEInteg2.h">
+			<Option target="Proyecto"/>
+		</Unit>
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/EFK_Tests.h">
 			<Option target="Proyecto"/>
 		</Unit>
@@ -254,6 +257,9 @@
 			<Option target="Proyecto"/>
 		</Unit>
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/DEInteg.cpp">
+			<Option target="Proyecto"/>
+		</Unit>
+		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/DEInteg2.cpp">
 			<Option target="Proyecto"/>
 		</Unit>
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/EKF_GEOS3.cpp">
