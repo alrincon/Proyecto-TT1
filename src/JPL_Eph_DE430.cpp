@@ -70,6 +70,8 @@ Matrix concatenateVector(Matrix *v1, Matrix *v2){
 
 
 void JPL_Eph_DE430(double Mjd_TDB, Matrix &r_Mercury, Matrix &r_Venus, Matrix &r_Earth, Matrix &r_Mars, Matrix &r_Jupiter, Matrix &r_Saturn, Matrix &r_Uranus, Matrix &r_Neptune, Matrix &r_Pluto, Matrix &r_Moon, Matrix &r_Sun) {
+    //solucionar uso compartido de matrices ¿funciones?
+
     double JD = Mjd_TDB + 2400000.5;
     int i = findPC(JD);
     Matrix PCtemp = extractColumn(&PC, i);
@@ -171,9 +173,9 @@ void JPL_Eph_DE430(double Mjd_TDB, Matrix &r_Mercury, Matrix &r_Venus, Matrix &r
         Mjd0 = t1 + 4 * j;
     }
 
-    Matrix Cxt = extractVector(&Cx_Moon, 13 * j + 1, 13 * j + 13);
-    Matrix Cyt = extractVector(&Cy_Moon, 13 * j + 1, 13 * j + 13);
-    Matrix Czt = extractVector(&Cz_Moon, 13 * j + 1, 13 * j + 13);
+    Cxt = extractVector(&Cx_Moon, 13 * j + 1, 13 * j + 13);
+    Cyt = extractVector(&Cy_Moon, 13 * j + 1, 13 * j + 13);
+    Czt = extractVector(&Cz_Moon, 13 * j + 1, 13 * j + 13);
 
     r_Moon = Cheb3D(Mjd_TDB, 13, Mjd0, Mjd0 + 4, &Cxt, &Cyt, &Czt) * 1e3;
 
