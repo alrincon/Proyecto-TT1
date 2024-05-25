@@ -1,5 +1,21 @@
 #include "../include/G_AccelHarmonic.h"
 
+//------------------------------------------------------------------------------
+// G_AccelHarmonic(Matrix* r, Matrix* U, int n_max, int m_max)
+//------------------------------------------------------------------------------
+/**
+ * Computes the gradient of the gravitational acceleration due to harmonic coefficients.
+ *
+ * This function calculates the gradient of the gravitational acceleration due
+ * to the harmonic coefficients at a given position.
+ *
+ * @param r Pointer to the position vector.
+ * @param U Pointer to the harmonic coefficients.
+ * @param n_max Maximum degree of harmonic coefficients.
+ * @param m_max Maximum order of harmonic coefficients.
+ * @return Gradient of the gravitational acceleration.
+ */
+//------------------------------------------------------------------------------
 Matrix G_AccelHarmonic(Matrix* r, Matrix* U, int n_max, int m_max){
     double d = 1.0;   // Position increment [m]
 
@@ -9,7 +25,7 @@ Matrix G_AccelHarmonic(Matrix* r, Matrix* U, int n_max, int m_max){
     // Gradient
     for(int i = 1; i <= 3; i++){
         for(int j = 1; j <= 3; j++){
-            dr(j,1) = 0;
+            dr(j,1) = 0.0;
         }
 
         // Set offset in i-th component of the position vector

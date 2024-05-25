@@ -1,5 +1,25 @@
 #include "../include/elements.h"
 
+//------------------------------------------------------------------------------
+// elements(Matrix* y, double &p, double &a, double &e, double &i, double &Omega, double &omega, double &M)
+//------------------------------------------------------------------------------
+/**
+ * Computes orbital elements from state vector.
+ *
+ * This function computes orbital elements (semi-latus rectum, semi-major axis,
+ * eccentricity, inclination, longitude of the ascending node, argument of
+ * perigee, and mean anomaly) from the state vector (position and velocity).
+ *
+ * @param y Pointer to the state vector (position and velocity).
+ * @param p Semi-latus rectum.
+ * @param a Semi-major axis.
+ * @param e Eccentricity.
+ * @param i Inclination.
+ * @param Omega Longitude of the ascending node.
+ * @param omega Argument of perigee.
+ * @param M Mean anomaly.
+ */
+//------------------------------------------------------------------------------
 void elements (Matrix* y, double &p, double &a, double &e, double &i, double &Omega, double &omega, double &M){
     double pi2 = 2*M_PI;
 
@@ -25,9 +45,9 @@ void elements (Matrix* y, double &p, double &a, double &e, double &i, double &Om
 
     double R  = r.norm();                                                   // Distance
 
-    a = 1/(2/R-dotProduct(&v,&v)/GM_Earth);                          // Semi-major axis
+    a = 1.0/(2.0/R-dotProduct(&v,&v)/GM_Earth);                          // Semi-major axis
 
-    double eCosE = 1-R/a;                                                   // e*cos(E)
+    double eCosE = 1.0-R/a;                                                   // e*cos(E)
     double eSinE = dotProduct(&r,&v)/sqrt(GM_Earth*a);               // e*sin(E)
 
     double e2 = eCosE*eCosE +eSinE*eSinE;

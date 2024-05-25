@@ -1,21 +1,23 @@
 #include "../include/EccAnom.h"
 
-/*%--------------------------------------------------------------------------
-%
-% Purpose:
-%   Computes the eccentric anomaly for elliptic orbits
-%
-% Inputs:
-%   M         Mean anomaly in [rad]
-%   e         Eccentricity of the orbit [0,1]
-%
-% Output:
-%             Eccentric anomaly in [rad]
-%
-% Last modified:   2015/08/12   M. Mahooti
-%
-%--------------------------------------------------------------------------*/
-
+//------------------------------------------------------------------------------
+// EccAnom(double M, double e)
+//------------------------------------------------------------------------------
+/**
+ * Computes the eccentric anomaly for a given mean anomaly and eccentricity.
+ *
+ * This function computes the eccentric anomaly for a given mean anomaly and
+ * eccentricity using the Newton-Raphson method. It iterates until convergence
+ * or until the maximum number of iterations is reached.
+ *
+ * @param M Mean anomaly.
+ * @param e Eccentricity.
+ *
+ * @return Eccentric anomaly.
+ *
+ * @throws runtime_error if convergence problems occur during iteration.
+ */
+//------------------------------------------------------------------------------
 double EccAnom(double M, double e) {
     int maxit = 15;
     int i = 1;
@@ -34,7 +36,7 @@ double EccAnom(double M, double e) {
     E = E - f / (1.0 - e * cos(E));
 
     // Iteration
-    while (abs(f) > 1e2 * numeric_limits<double>::epsilon()) {
+    while (abs(f) > 1e2 *  2.2204e-16) {
         f = E - e * sin(E) - M;
         E = E - f / (1.0 - e * cos(E));
         i++;

@@ -1,5 +1,17 @@
 #include "../include/Position.h"
 
+//------------------------------------------------------------------------------
+// Matrix Position(double lon, double lat, double h)
+//------------------------------------------------------------------------------
+/**
+ * Computes the position vector in the Earth-fixed frame.
+ *
+ * @param lon  Longitude (radians).
+ * @param lat  Latitude (radians).
+ * @param h    Height above the reference ellipsoid (meters).
+ * @return     Position vector.
+ */
+//------------------------------------------------------------------------------
 Matrix Position(double lon, double lat, double h){
     Matrix res(3,1);
 

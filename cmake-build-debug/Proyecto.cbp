@@ -226,6 +226,9 @@
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/realmod.h">
 			<Option target="Proyecto"/>
 		</Unit>
+		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/rpoly.h">
+			<Option target="Proyecto"/>
+		</Unit>
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/sign_.h">
 			<Option target="Proyecto"/>
 		</Unit>
@@ -236,9 +239,6 @@
 			<Option target="Proyecto"/>
 		</Unit>
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/include/unit.h">
-			<Option target="Proyecto"/>
-		</Unit>
-		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/main.cpp">
 			<Option target="Proyecto"/>
 		</Unit>
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/Accel.cpp">
@@ -386,9 +386,6 @@
 			<Option target="Proyecto"/>
 		</Unit>
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/rpoly.cpp">
-			<Option target="Proyecto"/>
-		</Unit>
-		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/rpoly.h">
 			<Option target="Proyecto"/>
 		</Unit>
 		<Unit filename="C:/Users/alons/CLionProjects/Proyecto-TT1/src/sign_.cpp">

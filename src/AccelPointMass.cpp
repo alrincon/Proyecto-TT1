@@ -1,24 +1,21 @@
 #include "../include/AccelPointMass.h"
 
-/*
-%--------------------------------------------------------------------------
-%
-% AccelPointMass: Computes the perturbational acceleration due to a point
-%				  mass
-%
-% Inputs:
-%   r           Satellite position vector
-%   s           Point mass position vector
-%   GM          Gravitational coefficient of point mass
-%
-% Output:
-%   a    		Acceleration (a=d^2r/dt^2)
-%
-% Last modified:   2018/01/27   M. Mahooti
-%
-%--------------------------------------------------------------------------
-*/
-
+//------------------------------------------------------------------------------
+// Matrix AccelPointMass(Matrix& r, Matrix& s, double GM)
+//------------------------------------------------------------------------------
+/**
+ * Calculates the gravitational acceleration on a satellite due to a point mass.
+ * This function computes the acceleration vector of a satellite due to the gravitational
+ * attraction of another body, treated as a point mass.
+ *
+ * @param <r> reference to a Matrix containing the position vector of the satellite
+ * @param <s> reference to a Matrix containing the position vector of the point mass
+ * @param <GM> gravitational parameter (G * mass) of the point mass
+ * @return a Matrix containing the acceleration vector on the satellite
+ * @exception none
+ * @note no special notes
+ */
+//------------------------------------------------------------------------------
 Matrix AccelPointMass(Matrix& r, Matrix& s, double GM){
     //Relative position vector of satellite w.r.t. point mass
     Matrix d = r - s;
@@ -27,6 +24,22 @@ Matrix AccelPointMass(Matrix& r, Matrix& s, double GM){
     return (d*(1.0/(pow(d.norm(),3))) + s*(1.0/(pow(s.norm(),3))))*(-GM);
 }
 
+//------------------------------------------------------------------------------
+// Matrix AccelPointMassT(Matrix& r, Matrix& s, double GM)
+//------------------------------------------------------------------------------
+/**
+ * Calculates the gravitational acceleration on a satellite due to a transposed point mass vector.
+ * This function transposes the point mass position vector and then computes the gravitational
+ * acceleration on the satellite due to this point mass.
+ *
+ * @param <r> reference to a Matrix containing the position vector of the satellite
+ * @param <s> reference to a Matrix containing the position vector of the point mass
+ * @param <GM> gravitational parameter (G * mass) of the point mass
+ * @return a Matrix containing the acceleration vector on the satellite
+ * @exception none
+ * @note no special notes
+ */
+//------------------------------------------------------------------------------
 Matrix AccelPointMassT(Matrix& r, Matrix& s, double GM){
     Matrix sT(r.getFilas(),1);
 

@@ -1,4 +1,5 @@
-#include "rpoly.h"
+#include "../include/rpoly.h"
+
 
 /*      rpoly.cpp -- Jenkins-Traub real polynomial root finder.
  *

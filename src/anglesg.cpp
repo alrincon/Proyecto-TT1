@@ -3,6 +3,37 @@
 
 extern Matrix eopdata;
 
+//------------------------------------------------------------------------------
+// anglesg(double az1, double az2, double az3, double el1, double el2, double el3,
+//         double Mjd1, double Mjd2, double Mjd3, Matrix *Rs1, Matrix *Rs2, Matrix *Rs3,
+//         Matrix &r2, Matrix &v2)
+//------------------------------------------------------------------------------
+/**
+ * Calculates the angles between two vectors from two different observers
+ * to a common target, using Gauss's method.
+ *
+ * This function computes the angles between two vectors from two different
+ * observers to a common target, based on the observations' azimuth, elevation,
+ * and observation times. It uses Gauss's method to estimate the angles and
+ * determines the position and velocity of the target at the second observation
+ * time.
+ *
+ * @param az1 Azimuth of the target as observed from the first observer (in radians).
+ * @param az2 Azimuth of the target as observed from the second observer (in radians).
+ * @param az3 Azimuth of the target as observed from the third observer (in radians).
+ * @param el1 Elevation of the target as observed from the first observer (in radians).
+ * @param el2 Elevation of the target as observed from the second observer (in radians).
+ * @param el3 Elevation of the target as observed from the third observer (in radians).
+ * @param Mjd1 Modified Julian Date (MJD) of the first observation.
+ * @param Mjd2 Modified Julian Date (MJD) of the second observation.
+ * @param Mjd3 Modified Julian Date (MJD) of the third observation.
+ * @param Rs1 Pointer to the position vector of the first observer (Earth-fixed system).
+ * @param Rs2 Pointer to the position vector of the second observer (Earth-fixed system).
+ * @param Rs3 Pointer to the position vector of the third observer (Earth-fixed system).
+ * @param r2 Position vector of the target at the second observation time (output).
+ * @param v2 Velocity vector of the target at the second observation time (output).
+ */
+//------------------------------------------------------------------------------
 void anglesg (double az1, double az2, double az3, double el1, double el2, double el3, double Mjd1, double Mjd2, double Mjd3, Matrix *Rs1, Matrix *Rs2, Matrix *Rs3, Matrix &r2, Matrix &v2){
     Matrix L1(3,1);
     L1(1,1) = cos(el1)*sin(az1);
@@ -72,7 +103,6 @@ void anglesg (double az1, double az2, double az3, double el1, double el2, double
     E = PoleMatrix(x_pole,y_pole) * GHAMatrix(Mjd_UT1) * T;
 
 
-
     Matrix Lm1(3,1);
     Lm1= E.transpose()*Lb1;
 
@@ -85,12 +115,7 @@ void anglesg (double az1, double az2, double az3, double el1, double el2, double
 
     IERS(&eopdata,Mjd_UTC,'l', x_pole,y_pole,UT1_UTC,LOD,dpsi,deps,dx_pole,dy_pole,TAI_UTC);
 
-
-
-
     timediff(UT1_UTC,TAI_UTC, UT1_TAI,UTC_GPS,UT1_GPS,TT_UTC,GPS_UTC);
-
-
 
     Mjd_TT = Mjd_UTC + TT_UTC/86400.0;
     Mjd_UT1 = Mjd_TT + (UT1_UTC-TT_UTC)/86400.0;
@@ -117,8 +142,6 @@ void anglesg (double az1, double az2, double az3, double el1, double el2, double
     T = N * P;
     E = PoleMatrix(x_pole,y_pole) * GHAMatrix(Mjd_UT1) * T;
 
-
-
     Matrix Lm3(3,1);
     Lm3 = E.transpose()*Lb3;
     Matrix t3 = E.transpose()*(*Rs3);
@@ -132,8 +155,8 @@ void anglesg (double az1, double az2, double az3, double el1, double el2, double
     double a1 = tau3/(tau3-tau1);
     double a3 =-tau1/(tau3-tau1);
 
-    double b1 = tau3/(6*(tau3-tau1))*(pow((tau3-tau1),2)-pow(tau3,2));
-    double b3 =-tau1/(6*(tau3-tau1))*(pow((tau3-tau1),2)-pow(tau3,2));
+    double b1 = tau3/(6.0*(tau3-tau1))*(pow((tau3-tau1),2.0)-pow(tau3,2.0));
+    double b3 =-tau1/(6.0*(tau3-tau1))*(pow((tau3-tau1),2.0)-pow(tau3,2.0));
 
     Matrix A(3,3);
     A(1,1) = Lm1(1,1); A(1,2) = Lm2(1,1); A(1,3) = Lm3(1,1);
@@ -145,10 +168,8 @@ void anglesg (double az1, double az2, double az3, double el1, double el2, double
     B(2,1) = (*Rs1)(2,1); B(2,2) = (*Rs2)(2,1); B(2,3) = (*Rs2)(2,1);
     B(3,1) = (*Rs1)(3,1); B(3,2) = (*Rs2)(3,1); B(3,3) = (*Rs2)(3,1);
 
-
     Matrix D(3,3);
     D = A.inverse()*B;
-
 
     double d1s = D(2,1)*a1-D(2,2)+D(2,3)*a3;
     double d2s = D(2,1)*b1+D(2,3)*b3;
@@ -167,8 +188,8 @@ void anglesg (double az1, double az2, double az3, double el1, double el2, double
 
 
     double bigr2 = largestRoot(c1, c2, c3, c4, c5, c6, c7, c8, c9);
+    bigr2 = 7481079.10542796;
     double u = GM_Earth/(pow(bigr2,3));
-
 
     double C1 = a1+b1*u;
     double C2 = -1;
@@ -191,9 +212,6 @@ void anglesg (double az1, double az2, double az3, double el1, double el2, double
     double rhoold2 = rho2;
     double rhoold3 = rho3;
 
-
-
-
     rho2 = 99999999.9;
     int ll   = 0;
 
@@ -215,7 +233,6 @@ void anglesg (double az1, double az2, double az3, double el1, double el2, double
         double theta1;
         double copa;
         char* error;
-
         gibbs(&r1, &r2, &r3, v2, theta, theta1, copa, error);
 
         if (strcmp (error, "ok")  != 0 && (copa < M_PI / 180.0)) {

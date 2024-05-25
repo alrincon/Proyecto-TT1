@@ -1,10 +1,32 @@
 #include "../include/Matrix.h"
 
+//------------------------------------------------------------------------------
+// Matrix::Matrix(int fil, int col)
+//------------------------------------------------------------------------------
+/**
+ * Constructs a matrix with the specified number of rows and columns, initialized to zeros.
+ *
+ * @param fil Number of rows.
+ * @param col Number of columns.
+ */
+//------------------------------------------------------------------------------
 Matrix::Matrix(int fil, int col) : fil(fil), col(col)
 {
     initMatrix();
 }
 
+//------------------------------------------------------------------------------
+// Matrix::Matrix(int fil, int col, double v[], int n)
+//------------------------------------------------------------------------------
+/**
+ * Constructs a matrix with the specified number of rows and columns, initialized with provided values. If the number of provided values is less than the total size of the matrix, the remaining elements are set to zero.
+ *
+ * @param fil Number of rows.
+ * @param col Number of columns.
+ * @param v   Array containing the values to initialize the matrix.
+ * @param n   Number of values in the array.
+ */
+//------------------------------------------------------------------------------
 Matrix::Matrix(int fil, int col, double v[], int n): fil(fil), col(col)
 {
     initMatrix();
@@ -20,6 +42,17 @@ Matrix::Matrix(int fil, int col, double v[], int n): fil(fil), col(col)
         }
 }
 
+//------------------------------------------------------------------------------
+// Matrix::Matrix(int fil, int col, bool identity)
+//------------------------------------------------------------------------------
+/**
+ * Constructs a matrix with the specified number of rows and columns, initialized as an identity matrix if 'identity' is true, or as a zero matrix otherwise.
+ *
+ * @param fil      Number of rows.
+ * @param col      Number of columns.
+ * @param identity If true, initializes the matrix as an identity matrix; otherwise, initializes it as a zero matrix.
+ */
+//------------------------------------------------------------------------------
 Matrix::Matrix(int fil, int col, bool identity): fil(fil), col(col)
 {
     if(identity){
@@ -51,11 +84,27 @@ Matrix::Matrix(int fil, int col, bool identity): fil(fil), col(col)
     }
 }
 
+//------------------------------------------------------------------------------
+// Matrix::Matrix(const Matrix& m)
+//------------------------------------------------------------------------------
+/**
+ * Constructs a matrix as a copy of another matrix.
+ *
+ * @param m The matrix to be copied.
+ */
+//------------------------------------------------------------------------------
 Matrix::Matrix(const Matrix& m)
 {
     *this = m;
 }
 
+//------------------------------------------------------------------------------
+// Matrix::~Matrix()
+//------------------------------------------------------------------------------
+/**
+ * Destructor for the Matrix class.
+ */
+//------------------------------------------------------------------------------
 Matrix::~Matrix()
 {
     for (int i = 0; i < fil; i++)
@@ -64,6 +113,13 @@ Matrix::~Matrix()
     delete[] matrix;
 }
 
+//------------------------------------------------------------------------------
+// void Matrix::initMatrix()
+//------------------------------------------------------------------------------
+/**
+ * Initializes the matrix with zeros.
+ */
+//------------------------------------------------------------------------------
 void Matrix::initMatrix()
 {
     matrix = new double*[fil];
@@ -75,6 +131,16 @@ void Matrix::initMatrix()
             matrix[i][j] = 0.0;
 }
 
+//------------------------------------------------------------------------------
+// Matrix& Matrix::operator=(const Matrix& matrix2)
+//------------------------------------------------------------------------------
+/**
+ * Assigns the values of another matrix to this matrix.
+ *
+ * @param matrix2 The matrix whose values are to be assigned.
+ * @return        Reference to this matrix after assignment.
+ */
+//------------------------------------------------------------------------------
 Matrix& Matrix::operator=(const Matrix& matrix2)
 {
 
@@ -90,6 +156,16 @@ Matrix& Matrix::operator=(const Matrix& matrix2)
     return *this;
 }
 
+//------------------------------------------------------------------------------
+// Matrix Matrix::operator+(const Matrix& matrix2)
+//------------------------------------------------------------------------------
+/**
+ * Adds another matrix to this matrix.
+ *
+ * @param matrix2 The matrix to be added.
+ * @return        The result of the addition.
+ */
+//------------------------------------------------------------------------------
 Matrix Matrix::operator+(const Matrix& matrix2)
 {
 
@@ -106,6 +182,16 @@ Matrix Matrix::operator+(const Matrix& matrix2)
     return result;
 }
 
+//------------------------------------------------------------------------------
+// Matrix Matrix::operator-(const Matrix& matrix2)
+//------------------------------------------------------------------------------
+/**
+ * Subtracts another matrix from this matrix.
+ *
+ * @param matrix2 The matrix to be subtracted.
+ * @return        The result of the subtraction.
+ */
+//------------------------------------------------------------------------------
 Matrix Matrix::operator-(const Matrix& matrix2)
 {
     if (col != matrix2.col || fil != matrix2.fil) {
@@ -121,6 +207,16 @@ Matrix Matrix::operator-(const Matrix& matrix2)
     return result;
 }
 
+//------------------------------------------------------------------------------
+// Matrix Matrix::operator*(const Matrix& matrix2)
+//------------------------------------------------------------------------------
+/**
+ * Multiplies this matrix by another matrix.
+ *
+ * @param matrix2 The matrix to be multiplied.
+ * @return        The result of the multiplication.
+ */
+//------------------------------------------------------------------------------
 Matrix Matrix::operator*(const Matrix& matrix2)
 {
     if (col != matrix2.fil) {
@@ -141,7 +237,17 @@ Matrix Matrix::operator*(const Matrix& matrix2)
     return result;
 }
 
-
+//------------------------------------------------------------------------------
+// double& Matrix::operator()(const int i, const int j) const
+//------------------------------------------------------------------------------
+/**
+ * Accesses the element at the specified row and column of the matrix.
+ *
+ * @param i Row index (1-based).
+ * @param j Column index (1-based).
+ * @return  Reference to the element at the specified row and column.
+ */
+//------------------------------------------------------------------------------
 double& Matrix::operator()(const int i, const int j) const
 {
     if (i > fil || j > col) {
@@ -151,6 +257,13 @@ double& Matrix::operator()(const int i, const int j) const
     return matrix[i-1][j-1];
 }
 
+//------------------------------------------------------------------------------
+// void Matrix::print()
+//------------------------------------------------------------------------------
+/**
+ * Prints the matrix to the standard output.
+ */
+//------------------------------------------------------------------------------
 void Matrix::print()
 {
     for (int i = 0; i < fil; i++){
@@ -162,14 +275,41 @@ void Matrix::print()
     std::cout << std::endl;
 }
 
+//------------------------------------------------------------------------------
+// int Matrix::getFilas()
+//------------------------------------------------------------------------------
+/**
+ * Gets the number of rows in the matrix.
+ *
+ * @return Number of rows.
+ */
+//------------------------------------------------------------------------------
 int Matrix::getFilas(){
     return fil;
 }
 
+//------------------------------------------------------------------------------
+// int Matrix::getColumnas()
+//------------------------------------------------------------------------------
+/**
+ * Gets the number of columns in the matrix.
+ *
+ * @return Number of columns.
+ */
+//------------------------------------------------------------------------------
 int Matrix::getColumnas(){
     return col;
 }
 
+//------------------------------------------------------------------------------
+// double Matrix::norm()
+//------------------------------------------------------------------------------
+/**
+ * Computes the norm of the matrix.
+ *
+ * @return The norm of the matrix.
+ */
+//------------------------------------------------------------------------------
 double Matrix::norm(){
     double suma = 0;
 
@@ -196,16 +336,46 @@ double Matrix::norm(){
     return -1;
 }
 
+//------------------------------------------------------------------------------
+// void Matrix::assign(int i, int j, double v)
+//------------------------------------------------------------------------------
+/**
+ * Assigns a value to the element at the specified row and column of the matrix.
+ *
+ * @param i Row index (1-based).
+ * @param j Column index (1-based).
+ * @param v Value to be assigned.
+ */
+//------------------------------------------------------------------------------
 void Matrix::assign(int i, int j, double v){
     matrix[i][j] = v;
 }
 
+//------------------------------------------------------------------------------
+// void Matrix::setTam(int nfil, int ncol)
+//------------------------------------------------------------------------------
+/**
+ * Sets the number of rows and columns in the matrix and initializes it with zeros.
+ *
+ * @param nfil Number of rows.
+ * @param ncol Number of columns.
+ */
+//------------------------------------------------------------------------------
 void Matrix::setTam(int nfil, int ncol){
     fil = nfil;
     col = ncol;
     initMatrix();
 }
 
+//------------------------------------------------------------------------------
+// void Matrix::redefine(Matrix* mat)
+//------------------------------------------------------------------------------
+/**
+ * Redefines the matrix using the values of another matrix.
+ *
+ * @param mat The matrix whose values are to be copied.
+ */
+//------------------------------------------------------------------------------
 void Matrix::redefine(Matrix* mat){
     fil = mat->getFilas();
     col = mat->getColumnas();
@@ -219,6 +389,16 @@ void Matrix::redefine(Matrix* mat){
     }
 }
 
+//------------------------------------------------------------------------------
+// Matrix Matrix::extractCol(int i)
+//------------------------------------------------------------------------------
+/**
+ * Extracts a column from the matrix as a new matrix.
+ *
+ * @param i Index of the column to be extracted (1-based).
+ * @return  A matrix containing the extracted column.
+ */
+//------------------------------------------------------------------------------
 Matrix Matrix::extractCol(int i){
     Matrix res(fil, 1);
 
@@ -229,6 +409,16 @@ Matrix Matrix::extractCol(int i){
     return res;
 }
 
+//------------------------------------------------------------------------------
+// Matrix Matrix::extractRow(int i)
+//------------------------------------------------------------------------------
+/**
+ * Extracts a row from the matrix as a new matrix.
+ *
+ * @param i Index of the row to be extracted (1-based).
+ * @return  A matrix containing the extracted row.
+ */
+//------------------------------------------------------------------------------
 Matrix Matrix::extractRow(int i){
     Matrix res(1, col);
 
@@ -239,6 +429,16 @@ Matrix Matrix::extractRow(int i){
     return res;
 }
 
+//------------------------------------------------------------------------------
+// Matrix Matrix::operator*(const double scalar)
+//------------------------------------------------------------------------------
+/**
+ * Multiplies each element of the matrix by a scalar value.
+ *
+ * @param scalar The scalar value to multiply by.
+ * @return       The result of the multiplication.
+ */
+//------------------------------------------------------------------------------
 Matrix Matrix::operator*(const double scalar) {
     Matrix result(fil, col);
     for (int i = 0; i < fil; i++) {
@@ -249,7 +449,15 @@ Matrix Matrix::operator*(const double scalar) {
     return result;
 }
 
-
+//------------------------------------------------------------------------------
+// Matrix Matrix::transpose()
+//------------------------------------------------------------------------------
+/**
+ * Computes the transpose of the matrix.
+ *
+ * @return The transpose of the matrix.
+ */
+//------------------------------------------------------------------------------
 Matrix Matrix::transpose() {
     Matrix transposed(col, fil);
     for (int i = 0; i < fil; i++) {
@@ -261,6 +469,15 @@ Matrix Matrix::transpose() {
 }
 #include <algorithm>
 
+//------------------------------------------------------------------------------
+// Matrix Matrix::inverse()
+//------------------------------------------------------------------------------
+/**
+ * Computes the inverse of the matrix.
+ *
+ * @return The inverse of the matrix.
+ */
+//------------------------------------------------------------------------------
 Matrix Matrix::inverse() {
     if (fil != col) {
         throw std::runtime_error("Inverse can only be calculated for square matrices.");
@@ -331,6 +548,15 @@ Matrix Matrix::inverse() {
     return inv;
 }
 
+//------------------------------------------------------------------------------
+// Matrix Matrix::clone()
+//------------------------------------------------------------------------------
+/**
+ * Creates a deep copy of the matrix.
+ *
+ * @return A copy of the matrix.
+ */
+//------------------------------------------------------------------------------
 Matrix Matrix::clone(){
     Matrix result(fil, col);
     for (int i = 0; i < fil; i++) {

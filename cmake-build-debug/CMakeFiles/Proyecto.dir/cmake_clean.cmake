@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Proyecto.dir/main.cpp.obj"
-  "CMakeFiles/Proyecto.dir/main.cpp.obj.d"
   "CMakeFiles/Proyecto.dir/src/Accel.cpp.obj"
   "CMakeFiles/Proyecto.dir/src/Accel.cpp.obj.d"
   "CMakeFiles/Proyecto.dir/src/AccelHarmonic.cpp.obj"

@@ -2,14 +2,16 @@
 #include "../include/R_z.h"
 #include <cmath>
 
-/*%--------------------------------------------------------------------------
-%  input:
-%    angle       - angle of rotation [rad]
-%
-%  output:
-%    rotmat      - vector result
-%--------------------------------------------------------------------------*/
-
+//------------------------------------------------------------------------------
+// Matrix R_z(double angle)
+//------------------------------------------------------------------------------
+/**
+ * Computes the rotation matrix about the z-axis.
+ *
+ * @param angle  Angle of rotation (radians).
+ * @return       Rotation matrix about the z-axis.
+ */
+//------------------------------------------------------------------------------
 Matrix R_z(double angle){
     Matrix rotmat(3,3);
 

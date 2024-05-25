@@ -1,7 +1,19 @@
 #include "../include/Geodetic.h"
 #include "../include/SAT_const.h"
 
-//r(1,3)
+//------------------------------------------------------------------------------
+// Geodetic(double& lon, double& lat, double& h, Matrix* r)
+//------------------------------------------------------------------------------
+/**
+ * Computes the geodetic coordinates (longitude, latitude, and altitude) from
+ * the Cartesian coordinates (X, Y, Z).
+ *
+ * @param lon Longitude (output).
+ * @param lat Latitude (output).
+ * @param h Altitude (output).
+ * @param r Cartesian coordinates (input).
+ */
+//------------------------------------------------------------------------------
 void Geodetic(double& lon, double& lat, double& h, Matrix* r){
 
     double eps = 0.0000001;
@@ -36,7 +48,7 @@ void Geodetic(double& lon, double& lat, double& h, Matrix* r){
         double SinPhi = ZdZ / Nh;                    // Sine of geodetic latitude
         N = R_equ / sqrt(1.0 - e2 * SinPhi * SinPhi);
         double dZ_new = N * e2 * SinPhi;
-        if (abs(dZ - dZ_new) < epsRequ) {
+        if (fabs(dZ - dZ_new) < epsRequ) {
             break;
         }
 

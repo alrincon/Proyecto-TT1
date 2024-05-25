@@ -1,11 +1,21 @@
 #include "../include/NutAngles.h"
 
-//dpsi, deps
+//------------------------------------------------------------------------------
+// void NutAngles(double Mjd_TT, double& dpsi, double& deps)
+//------------------------------------------------------------------------------
+/**
+ * Computes the nutation in longitude and obliquity.
+ *
+ * @param Mjd_TT  Modified Julian Date (MJD) in Terrestrial Time (TT).
+ * @param dpsi    Nutation in longitude [rad].
+ * @param deps    Nutation in obliquity [rad].
+ */
+//------------------------------------------------------------------------------
 void  NutAngles (double Mjd_TT, double& dpsi, double& deps){
     double T  = (Mjd_TT - MJD_J2000)/36525.0;
     double T2 = T*T;
     double T3 = T2*T;
-    double rev = 360*3600; // arcsec/revolution
+    double rev = 360.0*3600.0; // arcsec/revolution
 
     int N_coeff = 106;
 

@@ -2,14 +2,16 @@
 #include "../include/R_x.h"
 #include <cmath>
 
-/*%--------------------------------------------------------------------------
-%  input:
-%    angle       - angle of rotation [rad]
-%
-%  output:
-%    rotmat      - vector result
-%--------------------------------------------------------------------------*/
-
+//------------------------------------------------------------------------------
+// Matrix R_x(double angle)
+//------------------------------------------------------------------------------
+/**
+ * Computes the rotation matrix about the x-axis.
+ *
+ * @param angle  Angle of rotation (radians).
+ * @return       Rotation matrix about the x-axis.
+ */
+//------------------------------------------------------------------------------
 Matrix R_x(double angle){
     Matrix rotmat(3,3);
 

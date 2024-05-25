@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/alons/CLionProjects/Proyecto-TT1/main.cpp" "CMakeFiles/Proyecto.dir/main.cpp.obj" "gcc" "CMakeFiles/Proyecto.dir/main.cpp.obj.d"
   "C:/Users/alons/CLionProjects/Proyecto-TT1/src/Accel.cpp" "CMakeFiles/Proyecto.dir/src/Accel.cpp.obj" "gcc" "CMakeFiles/Proyecto.dir/src/Accel.cpp.obj.d"
   "C:/Users/alons/CLionProjects/Proyecto-TT1/src/AccelHarmonic.cpp" "CMakeFiles/Proyecto.dir/src/AccelHarmonic.cpp.obj" "gcc" "CMakeFiles/Proyecto.dir/src/AccelHarmonic.cpp.obj.d"
   "C:/Users/alons/CLionProjects/Proyecto-TT1/src/AccelPointMass.cpp" "CMakeFiles/Proyecto.dir/src/AccelPointMass.cpp.obj" "gcc" "CMakeFiles/Proyecto.dir/src/AccelPointMass.cpp.obj.d"

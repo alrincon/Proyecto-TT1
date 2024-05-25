@@ -3,14 +3,7 @@
 
 #include "../include/Matrix.h"
 #include "types.h"
-/*
-class Global{
-public:
 
-
-    static void initialize();
-};
-*/
 
 aux AuxParam;
 

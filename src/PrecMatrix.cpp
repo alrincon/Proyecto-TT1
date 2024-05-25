@@ -1,5 +1,16 @@
 #include "../include/PrecMatrix.h"
 
+//------------------------------------------------------------------------------
+// Matrix PrecMatrix(double Mjd_1, double Mjd_2)
+//------------------------------------------------------------------------------
+/**
+ * Computes the precession transformation matrix.
+ *
+ * @param Mjd_1  Modified Julian Date (MJD) of initial epoch.
+ * @param Mjd_2  Modified Julian Date (MJD) of final epoch.
+ * @return       Precession transformation matrix.
+ */
+//------------------------------------------------------------------------------
 Matrix  PrecMatrix (double Mjd_1, double Mjd_2){
     double T  = (Mjd_1-MJD_J2000)/36525.0;
     double dT = (Mjd_2-Mjd_1)/36525.0;

@@ -1,24 +1,24 @@
 #include "../include/AzElPa.h"
 
-//--------------------------------------------------------------------------
-//
-// Purpose:
-//  Computes azimuth, elevation and partials from local tangent coordinates
-//
-// Input:
-//   s      Topocentric local tangent coordinates (East-North-Zenith frame)
-//
-// Outputs:
-//   A      Azimuth [rad]
-//   E      Elevation [rad]
-//   dAds   Partials of azimuth w.r.t. s
-//   dEds   Partials of elevation w.r.t. s
-//
-// Last modified:   2015/08/12   M. Mahooti
-//
-//--------------------------------------------------------------------------
-
-//los vectores son n,1
+//------------------------------------------------------------------------------
+// AzElPa(Matrix* s, double& Az, double& El, Matrix& dAds, Matrix& dEds)
+//------------------------------------------------------------------------------
+/**
+ * Calculates azimuth and elevation angles from a given position vector.
+ *
+ * This function computes the azimuth and elevation angles from a given position
+ * vector. It also calculates the partial derivatives of azimuth and elevation
+ * with respect to the position vector components.
+ *
+ * @param s Pointer to the position vector.
+ * @param Az Reference to store the azimuth angle (in radians).
+ * @param El Reference to store the elevation angle (in radians).
+ * @param dAds Matrix to store the partial derivatives of azimuth with respect to
+ *             the position vector components.
+ * @param dEds Matrix to store the partial derivatives of elevation with respect to
+ *             the position vector components.
+ */
+//------------------------------------------------------------------------------
 void AzElPa(Matrix* s, double& Az, double& El, Matrix& dAds, Matrix& dEds) {
     double pi2 = 2.0 * M_PI;
 

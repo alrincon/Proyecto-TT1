@@ -28,7 +28,7 @@ extern Matrix Snm;
 extern Matrix PC;
 extern aux AuxParam;
 
-
+/*
 int main(){
     int nobs = 46;
     int infFile = 21413;
@@ -143,25 +143,7 @@ int main(){
 
     Matrix r2(3,1);
     Matrix v2(3,1);
-
-    cout << obs(1,2) << endl;
-    cout << obs(9,2) << endl;
-    cout << obs(18,2) << endl;
-    cout << obs(1,3) << endl;
-    cout << obs(9,3) << endl;
-    cout << obs(18,3) << endl;
-    cout << Mjd1 << endl;
-    cout << Mjd2 << endl;
-    cout << Mjd3 << endl;
-    cout << "_________" << endl;
-    Rs.print();
-
     anglesg(obs(1,2),obs(9,2),obs(18,2),obs(1,3),obs(9,3),obs(18,3),Mjd1,Mjd2,Mjd3,&Rs,&Rs,&Rs, r2, v2);
-
-    cout << "Resultado" << endl;
-    r2.print();
-    cout << "__________" << endl;
-    v2.print();
 
     Matrix Y0_apr(1,6);
 
@@ -189,13 +171,7 @@ int main(){
     Matrix Y(1,6);
     Matrix Y_old(1,6);
 
-    check_test();
-
-    cout << "Antes: " << endl;
-    Y0_apr.print();
     Y = DEInteg2(AccelOUT,0.0,-(obs(9,1)-Mjd0)*86400.0,1e-13,1e-6,6,&Y0_apr);
-    cout << "Despues: " << endl;
-    Y.print();
 
     Matrix P(6,6);
 
@@ -220,6 +196,9 @@ int main(){
     double t = 0;
     double t_old;
 
+    double Mjd_TT;
+    double Mjd_UT1;
+
     for (int i = 1; i <= nobs; i++) {
         //Previous step
         t_old = t;
@@ -232,11 +211,15 @@ int main(){
         double x_pole, y_pole, UT1_UTC, LOD, dpsi, deps, dx_pole, dy_pole, TAI_UTC;
         IERS(&eopdata, Mjd_UTC, 'l', x_pole, y_pole, UT1_UTC, LOD, dpsi, deps, dx_pole, dy_pole, TAI_UTC);
 
+
+
         double UT1_TAI, UTC_GPS, UT1_GPS, TT_UTC, GPS_UTC;
         timediff(UT1_UTC, TAI_UTC, UT1_TAI, UTC_GPS, UT1_GPS, TT_UTC, GPS_UTC);
 
-        double Mjd_TT = Mjd_UTC + TT_UTC / 86400;
-        double Mjd_UT1 = Mjd_TT + (UT1_UTC - TT_UTC) / 86400.0;
+
+
+        Mjd_TT = Mjd_UTC + TT_UTC / 86400.0;
+        Mjd_UT1 = Mjd_TT + (UT1_UTC - TT_UTC) / 86400.0;
         AuxParam.Mjd_UTC = Mjd_UTC;
         AuxParam.Mjd_TT = Mjd_TT;
 
@@ -246,7 +229,7 @@ int main(){
                 if (ii == j) {
                     yPhi(1,6 * j + ii) = 1.0;
                 } else {
-                    yPhi(1,6 * j + ii) = 0;
+                    yPhi(1,6 * j + ii) = 0.0;
                 }
             }
         }
@@ -257,7 +240,7 @@ int main(){
         // Extract state transition matrices
         for (int j = 1; j <= 6; j++) {
             for (int ii = 1; ii <= 6; ii++) {
-                Phi(j,ii) = yPhi(1,6 * j + ii);
+                Phi(ii,j) = yPhi(1,6 * j + ii);
             }
         }
 
@@ -355,10 +338,7 @@ int main(){
         // Measurement update
         tobs = obs(i, 4);
         MeasUpdate(tobs, Dist, sigma_range, &dDdY, 6, K, Y, P);
-
-        cout << "Ciclo " << i << endl;
     }
-    cout << "Fin ciclos" << endl;
 
     double x_pole,y_pole,UT1_UTC,LOD,dpsi,deps,dx_pole,dy_pole,TAI_UTC;
     IERS(&eopdata,obs(46,1),'l', x_pole,y_pole,UT1_UTC,LOD,dpsi,deps,dx_pole,dy_pole,TAI_UTC);
@@ -366,7 +346,7 @@ int main(){
     double UT1_TAI,UTC_GPS,UT1_GPS,TT_UTC,GPS_UTC;
     timediff(UT1_UTC,TAI_UTC, UT1_TAI,UTC_GPS,UT1_GPS,TT_UTC,GPS_UTC);
 
-    double Mjd_TT = Mjd_UTC + TT_UTC/86400.0;
+    Mjd_TT = Mjd_UTC + TT_UTC/86400.0;
 
     AuxParam.Mjd_UTC = Mjd_UTC;
     AuxParam.Mjd_TT = Mjd_TT;
@@ -376,7 +356,7 @@ int main(){
     Y0 = DEInteg2 (AccelOUT,0,-(obs(46,1)-obs(1,1))*86400.0,1e-13,1e-6,6,&Y);
 
     Matrix Y_true(1,6);
-    Y_true(1,1) =5753.173e3;
+    Y_true(1,1) = 5753.173e3;
     Y_true(1,2) = 2673.361e3;
     Y_true(1,3) = 3440.304e3;
     Y_true(1,4) = 4.324207e3;
@@ -394,3 +374,4 @@ int main(){
     cout << "dVz " << Y0(1,6)-Y_true(1,6) << "[m/s]" << endl;
 }
 
+*/
